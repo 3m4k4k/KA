@@ -1,0 +1,163 @@
+{
+  "document_id": "DOC-2c9ba7d2333e",
+  "pipeline_version": "0.1.0",
+  "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+  "original_path": "/Users/salaheldin/Desktop/question-bank-pipeline/input/Basis MCQ by Dr.Jalal.pdf",
+  "file_type": "pdf",
+  "file_hash": "2c9ba7d2333e672e7ecca19f595c3e77c6df40c01d02f23f9acdbe947dc1ba3d",
+  "subject": null,
+  "topic": null,
+  "subtopic": null,
+  "pages": [
+    {
+      "page": 1,
+      "text": "BASIS OF HUMAN ANATOMY\n\nM.C.Q's\n\n1- The following statement describes the anatomical position:\n   a- The eyes are looking backwards.\n   b- The upper limbs are hanging by the sides.\n   c- The palms are facing backwards.\n   d- The thumbs are directed medially.\n\n2- Anatomical position is:\n   a- A term used referring to the body facing forwards and sitting down.\n   b- The position in which the body is lying down with feet parallel and arms by\n      the sides.\n   c- The position in which the body is erect, facing front with feet parallel and\n      arms hanging at the sides with the palms facing forwards.\n   d- The position in which the body is erect, facing forward with feet parallel and\n      arms hanging at the sides with palms facing backwards.\n\n3- The plane which divides the body into 2 equal halves right and left is:\n   a- Median plane\n   b- Coronal plane\n   c- Paramedian plane\n   d- Horizontal plane\n\n4- Which of the following is true about the coronal plane?\n   a- It is a horizontal plane.\n   b- It divides the body into anterior and posterior halves.\n   c- It cuts the body Into upper and lower halves.\n   d- It is a vertical plane that divides the body Into 2 equal right and left halves.\n\n5- The anatomical term that means \"away from the median plane\" is:\n   a- Lateral.\n   b- Medial.\n   c- Distal.\n   d- Proximal.\n```markdown\n\nBASIS OF HUMAN ANATOMY\n\nM.C.Q's\n\n1- The following statement describes the anatomical position:\n   a- The eyes are looking backwards.\n   b- The upper limbs are hanging by the sides.\n   c- The palms are facing backwards.\n   d- The thumbs are directed medially.\n\n2- Anatomical position is:\n   a- A term used referring to the body facing forwards and sitting down.\n   b- The position in which the body is lying down with feet parallel and arms by\n      the sides.\n   c- The position in which the body is erect, facing front with feet parallel and\n      arms hanging at the sides with the palms facing forwards\u3002\n   d- The position in which the body is erect, facing forward with feet\u5e73\u884c\u548c\n      arms\u60ac\u6302\u5728\u4fa7\u9762\u7684\u4e24\u4fa7\u3002\n\n3- The plane which divides the body into 2 equal halves right and left is:\n   a- Median plane\n   b- Coronal plane\n   c- Paramedian plane\n   d- Horizontal plane\n\n4- Which of the following is true about the coronial plane?\n   a- It is a horizontal plane.\n   b- It divides the body into anterior and posterior halves\u3002\n   c- It cuts the body Into upper and lower halves\u3002\n   d- It is a vertical plane that divides the body Into 2 equal right and left halves\u3002\n\n5- The anatomical term that means \"away from the median plane\" is:\n   a- Lateral.\n   b- Medial\u3002\n   c- Distal\u3002\n   d- Proximal\u3002```",
+      "extraction_method": "vision_model",
+      "confidence": 0.3,
+      "is_garbled": true,
+      "garbled_reason": "repeated_content:blocks_0_and_5_sim_1.00:'1- The following statement describes the anatomical position...'",
+      "char_count": 2633,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0001.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 2,
+      "text": "6- The anatomical term that means \"nearer to the root of the limb\" is:\n   a- Lateral.\n   b- Medial.\n   c- Distal.\n   d- Proximal.\n\n7- The superficial layer of the skin is composed of which type of tissues:\n   a- Simple columnar epithelium.\n   b- Stratified squamous epithelium.\n   c- Dense fibrous tissue.\n   d- Stratified columnary epithelium.\n\n8- The type of tissue that makes up the bulk of the dermis is:\n   a- Collagen.\n   b-Melanin.\n   c-Keratin.\n   d-Fibroplastin.\n\n9- One of the functions of superficial fascia is:\n   a-Presence of skin muscles.\n   b-Formation of aponeurosis.\n   c- Formation of broad sheets.\n   d- Formation of interosseous membranes.\n\n10- One of the functions of deep fascia is that it:\n    a-Facilitates the movement of the skin.\n    b-Prevents heat loss from the body.\n    c- Contains many types of glands.\n    d-Forms the interosseous membranes.\n\n11- The intermuscular septa and interosseous membranes:\n   a-Surround the muscles of the upper and lower limbs.\n   b-Separate different groups of muscles which have different actions.\n   c-Are transverse thickened bands of deep fascia present at wrist joint.\n   d-Form tough sheaths around big blood vessels.\n\n12- The retinacula:\n    a-Surround the muscles of the upper and lower limbs.\n    b-Separate different groups of muscles which have different actions.\n    c-Are transverse thickened bands of deep fascia present at wrist joint.\n    d-Form tough sheaths around big blood vessels.\nBasis of Human Anatomy\n\n2",
+      "extraction_method": "vision_model",
+      "confidence": 0.9,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 1489,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0002.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 3,
+      "text": "13- Yellow elastic fibrocartilage is present in:\n   a- Developing bone of the fetus.\n   b- Auricle of the ear.\n   c- Articular cartilage of joints.\n   d- Symphysis pubis.\n\n14- White fibrocartilage is present in:\n   a- Epiglottis.\n   b- Auricle of the\u8033\u3002\n   c- Articular cartilage of joints\u3002\n   d- Intervertebral disc\u3002\n\n15- Hyaline cartilage is present in\uff1a\n    a- Epiglottis\u3002\n    b- Auricle of the\u8033\u3002\n    c- Artificial cartilage of joints\u3002\n    d- Intervertebral disc.\n\n16- Appendicular skeleton is formed of:\n   a- Skull and mandible.\n   b- Bones of the upper and lower limbs\u3002\n   c- Ribs and sternum\u3002\n   d- Vertebral column\u3002\n\n17- Intra-membranous ossification occurs in\uff1a\n    a- Clavicle\u3002\n    b- Vertebrae\u3002\n    c- Ribs\u3002\n    d- Base of the skull.\n\n18- Intra-cartilagenous ossification occurs in:\n   a- Roof of the skull\u3002\n   b- Clavicle\u3002\n   c- Skull cap\u3002\n   d- Vertebrae\u3002\n\n19- The expanded upper and lower ends of the long bone are called\uff1a\n    a-Epiphysis\u3002\n    b-Epiphyseal plate\u3002\n    c-Diaphysis\u3002\n    d-Metaphysis\u3002\nBasis of Human Anatomy 3",
+      "extraction_method": "vision_model",
+      "confidence": 0.892,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 1034,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0003.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 4,
+      "text": "20- The compact bone with a central medullary cavity is called:\n   a- Epiphysis.\n   b- Epiphyseal plate.\n   c-Dlaphysis.\n   d-Metaphysis.\n\n21- The part which is responsible for the growth of long bones in length is\ncalled:\n   a-Epiphysis.\n   b-Epiphyseal plate.\n   c-Dlaphysis.\n   d-Metaphysis.\n\n22- The scapula is a:\n   a-Short bone.\n   b-Long bone.\n   c-Flat bone.\n   d-Seasamoid bone.\n\n23- The ribs are:\n   a-Shortbone.\n   b-Longbone.\n   c-Flatbone.\n   d-Seasamoidbone.\n\n24- The Paranasal sinuses are:\n   a-Shortbone.\n   b-Longbone.\n   c-Flatbone.\n   d-Pneumatic bones.\n\n25- The patella is a:\n   a-Short bone.\n   b-Longbone.\n   c-Flatbone.\n   d-Seasamoidbone.",
+      "extraction_method": "vision_model",
+      "confidence": 0.9,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 662,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0004.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 5,
+      "text": "26. What is the type of joint that connects the roots of the teeth to their sockets?\n   a- Gomphosis.\n   b- Sutures.\n   c- Cartilagenous.\n   d- Synovial.\n\n27. What is the type of joint that connects the bones of the skull?\n   a- Gomphosis.\n   b- Sutures.\n   c- Cartilaginous.\n   d- Synovial.\n\n28. What is the type of joint present at the ends of the growing long bones?\n   a- Fibrous.\n   b- Primary cartilaginous.\n   c- Secondary cartilaginous.\n   d- Synovial.\n\n29. What is the type of joint of the intervertebral discs?\n   a- Fibrous.\n   b- Primary cartilaginous.\n   c- Secondary cartilaginous.\n   d- Synovial.\n\n30. One of the following joints is uniaxial:\n    a- Shoulder.\n    b-Wrist.\n    c-Elbow.\n    d-Knee.\n\n31. One of the following is biaxial joint:\n    a-Shoulder.\n    b-Hip.\n    c-Elbow.\n    d-Knee.\nBasis of Human Anatomy\n\n26- What is the type of joint that connects the roots of the teeth to their sockets?\n   a- Gomphosis.\n   b- Sutures.\n   c- Cartilagenous.\n   d- Synovial.\n\n27- What is the type of joint that connects the bones of the skull?\n   a- Gomphosis\u3002\n   b- Sutures\u3002\n   c- Cartilaginous\u3002\n   d- Synovial\u3002\n\n28- What is the type of joint present at the ends of the growing long bones\uff1f\n    a- Fibrous\u3002\n    b- Primary cartilaginous\u3002\n    c- Secondary cartilaginous\u3002\n    d- Synovial.\n\n29- What is the type of joint of the intervertebral discs?\n    a- Fibrous\u3002\n    b- Primary cartilaginous\u3002\n    c- Secondary cartilaginous\u3002\n    d- Synovial\u3002\n\n30. One of the following joints is uniaxial:\n    a- Shoulder\u3002\n    b-Wrist\u3002\n    c-Elbow\u3002\n    d-Knee.\n\n31. One of the following is biaxial joint\uff1a\n    a-Shoulder\u3002\n    b-Hip\u3002\n    c-Elbow\u3002\n    d-Knee\u3002",
+      "extraction_method": "vision_model",
+      "confidence": 0.3,
+      "is_garbled": true,
+      "garbled_reason": "repeated_content:blocks_0_and_6_sim_0.99:'26. What is the type of joint that connects the roots of the...'",
+      "char_count": 1649,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0005.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 6,
+      "text": "32) One of the following is a polyaxial joint:\na- Hip.\nb- Knee.\nc- Wrist.\nd- Superior radioulnar.\n\n33-) The shoulder joint is:\na- Hinge.\nb- Ellipsoid.\nc- Bicondylar.\nd- Ball and socket.\n\n34-) The elbow joint is:\na- Hinge.\nb- Ellipsold.\nc- Bicondylar.\nd- Ball andocket.\n\n35-) The wrist joint is:\na- Hinge.\nb- Ellipsold.\nc- Bicondylar.\nd- Ballandsocket.\n\n36-) The hip joint is:\na- Hinge.\nb- Ellipsold.\nc- Bicondylar.\nd- Ball andocket.\n\n37-) The skeletal muscles are:\na- Involuntary.\nb- Present in the heart.\nc- Present in the wall of blood vessels.\nd- Attached tothe bones.\n\n38-) The smooth muscles are:\na- Voluntary.\nb- Presentinheart.\nc-PresentInthewallofbloodvessels.\nd-Attachedtothebone.",
+      "extraction_method": "vision_model",
+      "confidence": 0.9,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 689,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0006.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 7,
+      "text": "39. An example of strap-like muscle is:\n   a- Rectus abdominis.\n   b- Sartorius.\n   c- Deltold.\n   d- Supinator.\n\n40. An example of strap-like muscle with tendinous intersections is:\n    a- Sartorius.\n    b- Deltoid.\n    c- Rectus abdominis.\n    d- Tibialis anterior.\n\n41. An example of multipennate muscle is:\n   a- Deltold.\n   b- Tibialis anterior.\n   c- Rectus anterior.\n   d- Supinator.\n\n42. An example of bipennate muscle is:\n   a- Rectus abdominis.\n   b- Rectus femoris.\n   c- Sartorius.\n   d- Deltold.\n\n43. The right atrium receives blood from:\n    a- Superior and inferior vena cava.\n    b- Pulmonary artery.\n    c- Aorta.\n    d- Pulmonary veins.\n\n44. Regarding the systemic circulation, which of the following statements is true?\n   a- The blood passes from the right ventricle to the right atrium.\n   b-Oxygenated blood is collected by the velns into the right atrium.\n   c-Deoxygenated blood passes through the aorta to all tissues of the body.\n   d-Oxygenated blood passes through the aorta to all tissues of the body.\nBasis of Human Anatomy\n\n7",
+      "extraction_method": "vision_model",
+      "confidence": 0.9,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 1056,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0007.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 8,
+      "text": "45- Regarding the pulmonary circulation, which of the following statements is true?\na- The blood passes from the right ventricle to the right atrium.\nb- Oxygenated blood is collected by the veins into the right atrium.\nc- Oxygenated blood returns from the lung to the left atrium.\nd- Deoxygenated blood passes through the aorta to all tissues of the body.\n\n46- Regarding the portal circulation, which of the following statements is true?\na- The venous blood from the digestive system enters the liver through theportal vein.\nb- Thevenous blood leaves the liver through theportalvein.\nc-Thevenous bloodfromthedigestivesystementerstheliverthroughthehepaticvein.\nd-Thevenousbloodenterstheliverthroughthelinerlorvena cava.\n\n47- The thoracic duct drains:\na- The right side of the head and neck.\nb- Therightlowerlimb.\nc- Therightupperlimb.\nd- Therighthalfofthethalax.\n\n48- The right lymphatic duct drains:\na-Thewholebodybelowthediaphragm.\nb-Therightlowerlimb.\nc-Therightupperlimb.\nd-Therighthalfoftheabdomen.\n\n49- The brain stem consists of:\na-2 cerebral hemispheres.\nb-Midbrain,pons,cerebellum.\nc-Midbrain,medullaoblongata.\nd-Midbrain,pons&medullaoblongata.\n\n50- The segments of the spinal cord are:\na-8 cervical,10thoracic,5lumbar,5sacralandone coccygeal.\nb-10cervical,12thoracic,5lumbar,5sacral and one coccygeal.\nc-8cervical,12thoracic,5lumbar,onesacralandone coccygeal\u3002\nd-8 cervical,12thoracic,5lumbar,5sacral\u548cone coccygeal\u3002\nThe segments of the spinal cord are:\na- 8 cervical, 10 thoracic, 5 lumbar, 5 sacral and one coccygeal.\nb- 10 cervical, 12 thoracic, 5 lumbar, 5 sacral and one coccygeal\u3002\nc- 8 cervical, 12 thoracic, 5 lumbar, onesacralandone coccygeal\u3002",
+      "extraction_method": "vision_model",
+      "confidence": 0.899,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 1658,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0008.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 9,
+      "text": "51. If you are asked to draw a section through the human body that demonstrates the heart and both lungs, which of the following planes would be appropriate for your section?\na- Horizontal plane.\nb- Lateral sagittal plane.\nc- Paramedian plane.\nd- Median plane.\n\n52. Near to the median plane is:\na- lateral.\nb- proximal.\nc- medial.\nd- inferior.\n\n53. Deep fascia :\na. Strong and thick in the anterior abdominal wall.\nb. More thickened in females than in males.\nc. Contains small amount of fat.\nd. Absent in the face.\n\n54. The retinacula:\na. Expand the origin of muscles.\nb. Separate different compartments of the limbs.\nc. Keep the underlying tendons in position\nd. Are found around the knee.\n\n55. Appendicular skeleton includes:\na. Skull and mandible.\nb. Bones of the limbs.\nc. Ribs and sternum.\nd. Vertebral column.\n\n56. The type of cartilage in the tip of the nose is:\na. hyaline cartilage.\nb. white fibrocartilage.\nc. yellow elastic fibrocartilage.\nd. no cartilage at all.\n9",
+      "extraction_method": "vision_model",
+      "confidence": 0.9,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 976,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0009.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 10,
+      "text": "MODEL ANSWERS\n\n1- b 15- c 29- c 43- a\n2- c 16- b 30- c 44- d\n3- a 17- a 31- d 45- c\n4- b 18- d 32- a 46- a\n5- a 19- a 33- d 47- b\n6- d 20- d 34- a 48- c\n7- b 21- b 35- b 49- d\n8- a 22- c 36- d 50- d\n9- a 23- c 37- d 51- a\n10- d 24- d 38- c 52- c\n11- b 25- d 39- b 53- d\n12- c 26- a 40- c 54- c\n13- b 27- b 41- a 56- b\n14- d 28- b 42- b 56- c\nBasis of Human Anatomy\n\nMODEL ANSWERS\n1- b 15- c 29- c 43- a\n2- c 16- b 30- c 44- d\n3- a 17- a 31- d 45- c\n4- b 18- d 32- a 46- a\n5- a 19- a 33- d 47- b\n6- d 20- d 34- a 48- c\n7- b 21- b 35- b 49- d\n8- a 22- c 36- d 50- d\n9- a 23- c 37- d 51- a\n10- d 24- d 38- c 52- c\n11- b 25- d 39- b 53- d\n12- c 26- a 40- c 54- c\n13- b 27- b 41- a 55- b\n14- d 28- b 42- b 56- c",
+      "extraction_method": "vision_model",
+      "confidence": 0.9,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 706,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0010.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 11,
+      "text": "FILL IN THE BLANKS\n\n1- The position which is used as a reference in describing human body is called ...\n\n2- The plane which divides the body into 2 equal halves right and left is called ...\n\n3- The vertical plane which is perpendicular on the median plane is called .....\n\n4- Near to the front of the body is ....\n\n5- Near to the back of the body is ....\n\n6- Near to the median plane is ....\n\n7- Away from the median plane is ...\n\n8- Approximation of 2 ventral aspects is ...\n\n9- When the 2 ventral aspects move away from each other it is called .....\n\n10- Movement towards the median plane is ...\n\n11- Movement away from the median plane is ....\n\n12- Lateral rotation of forearm is ...\n\n13- Medial rotation of forearm is ...\n\n14- When the sole of foot is directed inwards it is called ...\n\n15- When the sole of foot is directed outwards it is called .....\n\nX 16- An example of a muscle present in the superficial fascia of the neck is ....\n\nX 17- An example of a muscle present in the superficial fascia of the upper limb is ...\n\nX 18- The muscle which is present in the superficial fascia of the scrotum is .....\n\n19- The deep fascia forms sheaths around big vessels and nerves e.g. Sheath in the lower limb and ... sheath in the head and neck\n\n20- Deep fascia forms ..... for insertion of muscles of both sides in the middle line\n\nX 21- An example of a muscle of which its tendon passes under a fibrous pulley is ....\nBasis of Human Anatomy 11\nFILL IN THE BLANKS\n\n1- The position which is used as a reference in describing human body is called ...\n\n2- The plane which divides the body into 2 equal halves right and left is called ...\n\n3- The vertical plane which is perpendicular on the median plane is called .....\n\n4- Near to the front of the body is ....\n\n5- Near to the back of the body is ....\n\n6- Near to the median plane is ....\n\n7- Away from the median plane is ...\n\n8- Approximation of 2 ventral aspects is ...\n\n9- When the 2 ventral aspects move away from each other it is called .....\n\n10- Movement towards the median plane is ...\n\n11- Movement away from the median plane is ....\n\n12- Lateral rotation of forearm is ...\n\n13- Medial rotation of forearm is ...\n\n14- When the sole of foot is directed inwards it is called ...\n\n15- When the sole of foot is directed outwards it is called .....\n\nX 16- An example of a muscle present in the superficial fascia of the neck is ....\n\nX 17- An example of a muscle present in the superficial fascia of the upper limb is ...\n\nX 18- The muscle which is present in the superficial fascia of the scrotum is .....\n\n19- The deep fascia forms sheaths around big vessels and nerves e.g. Sheath in the lower limb and ... sheath in the head and neck\n\n20- Deep fascia forms ..... for insertion of muscles of both sides in the middle line\n\nX 21- An example of a muscle of which its tendon passes under a fibrous pulley is ....",
+      "extraction_method": "vision_model",
+      "confidence": 0.3,
+      "is_garbled": true,
+      "garbled_reason": "repeated_content:blocks_0_and_12_sim_1.00:'1- The position which is used as a reference in describing h...'",
+      "char_count": 2867,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0011.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 12,
+      "text": "22- Eplphysis of bone is covered with ...\n\n23- An example of pneumatic bone is ...\n\n24- A bone embedded in a tendon is called ... bone\n\n25- The largest sesamoid bone in the body is ...\n\n26- An example of unlaxial joint is ...\n\n27- An example of blacxial joint is ...\n\n28- An example of polyaxial joint is ...\n\n29- An example of plane synovial joints is ...\nBasis of Human Anatomy 12\n22- Eplphysis of bone is covered with .....\n23- An example of pneumatic bone is ...\n24- A bone embedded in a tendon is called ..... bone\n25- The largest sesamoid bone in the body is ..\n26- An example of unlaxial joint is ..\n27- An example of blacxial joint is ..\n28- An example of polyaxial joint is ..\n29- An example of plane synovial joints is .....\n12",
+      "extraction_method": "vision_model",
+      "confidence": 0.9,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 737,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0012.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    },
+    {
+      "page": 13,
+      "text": "MODEL ANSWERS\n\n1- Anatomical position\n2- Median (sagittal) plane\n3- Coronal plane\n4- Anterior\n5- Posterior\n6- Medial\n7- Lateral\n8- Flexion\n9- Extension\n10- Adduction\n11- Abduction\n12- Supination\n13- Pronation\n14- Inversion\n15- Eversion\n16- Platysma\n17- Palmaris brevis\n18- Dartos muscle\n19- Femoral sheath and carotid sheath\n20- Median raphe\n21- Digastric muscle\n22- Articular (hyaline) cartilage\n23- Maxilla or sphenoid bone or ethmoid bone or frontal bone\n24- Sesamoid bone\n25- Patella\n26- Elbow or superior radioulnar or ankle\n27- Knee or wrist joint\n28- Hip or shoulder joint\n29- Superior tibiofibular and the joint between the articular facets of vertebrae",
+      "extraction_method": "vision_model",
+      "confidence": 0.9,
+      "is_garbled": false,
+      "garbled_reason": null,
+      "char_count": 661,
+      "rendered_image_path": "/Users/salaheldin/Desktop/question-bank-pipeline/output/_renders/Basis MCQ by Dr.Jalal_p0013.png",
+      "vision_model_used": "ollama:glm-ocr:latest"
+    }
+  ],
+  "ingested_at": "2026-09-08T01:51:21.794973+00:00",
+  "needs_review": true,
+  "review_reasons": [
+    "page_1_garbled:repeated_content:blocks_0_and_5_sim_1.00:'1- The following statement describes the anatomical position...'",
+    "page_5_garbled:repeated_content:blocks_0_and_6_sim_0.99:'26. What is the type of joint that connects the roots of the...'",
+    "page_11_garbled:repeated_content:blocks_0_and_12_sim_1.00:'1- The position which is used as a reference in describing h...'"
+  ]
+}

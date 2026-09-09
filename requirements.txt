@@ -1,0 +1,11 @@
+pymupdf>=1.24
+python-docx>=1.1
+pydantic>=2.6
+pillow>=10.0
+
+# Optional: enables free OCR for images/screenshots. If not installed,
+# image files are simply routed to needs-review (pending_vision) with
+# the original file path preserved -- nothing breaks.
+# You also need the tesseract binary itself installed on your system
+# (e.g. `apt install tesseract-ocr` / `brew install tesseract`).
+pytesseract>=0.3
