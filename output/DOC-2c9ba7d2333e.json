@@ -154,10 +154,6 @@
     }
   ],
   "ingested_at": "2026-09-08T01:51:21.794973+00:00",
-  "needs_review": true,
-  "review_reasons": [
-    "page_1_garbled:repeated_content:blocks_0_and_5_sim_1.00:'1- The following statement describes the anatomical position...'",
-    "page_5_garbled:repeated_content:blocks_0_and_6_sim_0.99:'26. What is the type of joint that connects the roots of the...'",
-    "page_11_garbled:repeated_content:blocks_0_and_12_sim_1.00:'1- The position which is used as a reference in describing h...'"
-  ]
+  "needs_review": false,
+  "review_reasons": []
 }
