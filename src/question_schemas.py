@@ -128,6 +128,22 @@ class QuestionRecord(BaseModel):
     anomalies: list[str] = Field(default_factory=list)
     suggestions: list[Suggestion] = Field(default_factory=list)
 
+    # ---- AI Parser stage (Layer 3) -- all additive, all optional ----
+    # This stage never re-parses or touches question_text/options/
+    # matching_pairs/source_answer above; it only adds a judgment pass
+    # on top of segmentation's already-structured output. A None value
+    # here means "not yet reviewed" (or a review attempt that failed
+    # and was left for retry) -- it never means "reviewed and found
+    # perfect". Routing to auto-import vs needs-review is computed by
+    # ai_parser.py from these fields plus `anomalies` above; it is not
+    # stored as its own field so it's always freshly derived, never
+    # stale.
+    ai_confidence: Optional[float] = Field(default=None, ge=0.0, le=1.0)
+    ai_concerns: list[str] = Field(default_factory=list)
+    ai_notes: Optional[str] = None
+    ai_model_used: Optional[str] = None
+    ai_reviewed_at: Optional[str] = None
+
 
 class QuestionDocument(BaseModel):
     """Output of the segmentation stage for one SourceDocument."""
