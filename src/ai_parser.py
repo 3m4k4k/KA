@@ -26,6 +26,9 @@ Routing (computed fresh every run, never stored as its own field):
     None -- not yet run, or every attempt failed/was unparsable) also
     routes to needs_review. Silence from the model is never treated
     as confidence.
+  - a question with a non-empty ai_concerns list always routes to
+    needs_review, regardless of ai_confidence. See the fourth item in
+    the fix history below for why confidence alone isn't sufficient.
   - otherwise: ai_confidence >= --threshold -> auto_import,
     ai_confidence < --threshold -> needs_review.
 
@@ -100,6 +103,24 @@ runs on every question after the model's own review and can only push
 ai_confidence down / add concerns, never suppress or override them.
 This is a backstop for duplication specifically, not a replacement for
 the LLM's broader structural judgment.
+
+That same real-output inspection also surfaced a FOURTH issue, this
+time in route() rather than SYSTEM_PROMPT: DOC-2c9ba7d2333e-mcq-35 has
+ai_confidence=1.0 but its own ai_concerns list contains "source_answer
+does not match any option label" -- a false claim, since source_answer
+'b' does match option label 'b' in that record. phi4-mini's confidence
+score and its own concerns list can be internally inconsistent, and
+route() was only checking anomalies and the confidence threshold, so
+this record would have gone to auto_import despite the model itself
+flagging something. Fixed by having route() also force needs_review
+whenever ai_concerns is non-empty, regardless of confidence. Checked
+across all 160 auto_import questions from the previous run: mcq-35 was
+the only one with a non-empty ai_concerns list, so this was an
+isolated inconsistency, not a systemic pattern of low-stakes concerns
+riding along with justified high confidence -- gating unconditionally
+does not meaningfully shrink auto_import. If a future document set
+shows the opposite pattern, narrow this to specific concern categories
+instead of reverting to confidence-only routing.
 """
 
 from __future__ import annotations
@@ -392,12 +413,30 @@ def review_document(
 def route(q: QuestionRecord, threshold: float) -> str:
     """Returns "auto_import" or "needs_review". A structural anomaly
     from segmentation always wins over AI confidence; an unreviewed or
-    unparsable question is never treated as confident."""
+    unparsable question is never treated as confident.
+
+    A non-empty `ai_concerns` also forces needs_review, regardless of
+    `ai_confidence`. Real-output inspection (DOC-2c9ba7d2333e-mcq-35)
+    found phi4-mini raising a concern ("source_answer does not match
+    any option label") while still scoring ai_confidence=1.0 -- the
+    confidence score and the model's own concerns list can disagree
+    with each other. Trusting confidence alone in that case would have
+    silently put an internally-inconsistent record into auto_import.
+    Checked across all 174 real questions: this was a single isolated
+    case, not a systemic pattern of low-stakes concerns riding along
+    with high confidence, so gating unconditionally on "any concern"
+    doesn't meaningfully dilute the auto_import bucket. If a future
+    batch shows the opposite -- lots of routine/informational concerns
+    alongside justified high confidence -- narrow this to specific
+    concern categories instead of loosening it back to confidence-only.
+    """
     if q.anomalies:
         return "needs_review"
     if q.ai_confidence is None:
         return "needs_review"
     if q.ai_confidence < threshold:
+        return "needs_review"
+    if q.ai_concerns:
         return "needs_review"
     return "auto_import"
 
