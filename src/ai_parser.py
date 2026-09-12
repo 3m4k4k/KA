@@ -48,17 +48,64 @@ reviewed (ai_reviewed_at set) on a successful, parseable response. A
 failed or garbled response leaves it untouched, so it's automatically
 retried on the next run without needing --force.
 
-NOT YET TESTED AGAINST REAL OLLAMA OUTPUT -- built and self-tested
-with a mocked model response only (no Ollama available in the build
-sandbox). Same situation ollama_vision_fill.py was in originally: run
-this against your real ../questions output and spot-check a sample of
-both buckets' confidence/concerns against the source questions before
-trusting a large run.
+Ran once against both real documents (174 questions, phi4-mini). Real-
+output inspection surfaced two problems, both traced to SYSTEM_PROMPT,
+not to phi4-mini being unusably bad:
+
+  1. The original prompt's "does source_answer correspond to an option
+     label" check was written MCQ-first and applied uniformly to every
+     section_type -- every fill_in_blank (no options, by design) and
+     matching (matching_pairs + a compound-key source_answer, not flat
+     options) question was getting wrongly zeroed to confidence 0.0.
+     Fixed by branching the validity criteria by section_type in the
+     prompt below.
+  2. On at least one mcq, the model scored confidence 0.0 and
+     explained itself with an anatomical correctness argument, despite
+     the prompt explicitly saying confidence is NOT about whether the
+     medical content is correct. That's the model overriding an
+     explicit instruction boundary, not a wording gap -- the prompt
+     below repeats and emphasizes the "not a medical opinion" boundary
+     several times as a mitigation, but this should be re-checked
+     against real output rather than assumed fixed. If phi4-mini keeps
+     doing this after the re-run, the next move is trying a different
+     --model, not further prompt tweaking.
+
+Both failure modes routed to needs_review, not auto_import (the safe
+direction -- see routing rule above), but that means until this is
+re-verified, needs_review can't yet be trusted as "these specifically
+need human attention for the stated reason" -- some entries in it may
+be there because of these prompt bugs rather than a real issue with
+the question.
+
+RE-RUN AGAINST REAL OUTPUT (both documents, 174 questions) confirmed
+both fixes: fill_in_blank/matching are no longer wrongly zeroed
+(auto_import went 148->160, needs_review 26->14, and every remaining
+needs_review entry traces to a real, pre-existing segmentation
+anomaly), and no medical-correctness language turned up anywhere in
+ai_notes/ai_concerns across either document, including on mcq-47
+(the record that originally triggered Bug 2).
+
+That same real-output inspection surfaced a THIRD, narrower issue:
+DOC-2c9ba7d2333e-mcq-50 has an obviously duplicated question_text
+("X: X:") and 3 repeated option labels -- a vision-transcription-loop
+artifact, the same failure mode text_quality.detect_repeated_block()
+exists to catch at the page level -- but phi4-mini scored it
+ai_confidence=1.0 with no concerns. It was still correctly routed to
+needs_review because the segmentation-time anomaly
+(unexpected_option_count:7) wins regardless of AI confidence, so
+nothing slipped into auto_import -- but it means the AI pass alone is
+not a reliable independent check for this failure mode. Fix: added
+detect_structural_duplication(), a deterministic (non-LLM) check that
+runs on every question after the model's own review and can only push
+ai_confidence down / add concerns, never suppress or override them.
+This is a backstop for duplication specifically, not a replacement for
+the LLM's broader structural judgment.
 """
 
 from __future__ import annotations
 
 import argparse
+import difflib
 import json
 import re
 import sys
@@ -76,27 +123,63 @@ OLLAMA_CHAT_URL = "http://localhost:11434/api/chat"
 OLLAMA_TAGS_URL = "http://localhost:11434/api/tags"
 
 SYSTEM_PROMPT = (
-    "You are reviewing ALREADY-PARSED exam question records for quality -- "
-    "you are not parsing raw text and you are not answering the question. "
-    "You will be given a question's text, its options or matching pairs "
-    "(if any), and the answer key value already extracted for it. Judge "
-    "only whether this record looks complete, coherent, and correctly "
-    "structured -- do not try to solve the question, and do not suggest a "
-    "different answer.\n\n"
+    "You are reviewing ALREADY-PARSED exam question records for STRUCTURAL "
+    "quality only -- you are not parsing raw text and you are not answering "
+    "the question. You will be given a question's section_type, its text, "
+    "its options or matching pairs (if any), and the answer key value "
+    "already extracted for it.\n\n"
+    "HARD BOUNDARY, repeated because it is the single most important rule "
+    "here: you are NOT a medical or anatomy expert for this task, and you "
+    "must not act like one. Do not evaluate whether the answer is "
+    "medically/anatomically/factually correct. Do not reason about what the "
+    "right answer would be. Do not lower confidence, add a concern, or "
+    "write a note because you believe the stated answer is medically wrong "
+    "or because you personally would have picked a different option. A "
+    "record with a medically debatable or even medically wrong answer, but "
+    "with clean structure, gets HIGH confidence and NO concerns -- medical "
+    "correctness is entirely out of scope for you and belongs to a "
+    "separate verification stage you are not part of. If you notice "
+    "yourself forming an opinion about which answer is medically correct, "
+    "discard that thought -- it is not relevant to this task.\n\n"
+    "What you DO judge is structural completeness, and the criteria depend "
+    "on section_type -- do not apply MCQ-style checks to a type they don't "
+    "fit:\n\n"
+    "- section_type == mcq: the question should have options, and "
+    "source_answer should correspond to one of the option labels shown. "
+    "Lower confidence if source_answer doesn't match any option label, "
+    "options look cut off/duplicated/missing, or the stem is truncated or "
+    "nonsensical.\n"
+    "- section_type == fill_in_blank: there are NO options, by design -- "
+    "never flag missing/no options for this type, that is expected and "
+    "correct. source_answer is free-text (the blank's answer), not a "
+    "label -- do not check it against any option list. Judge only whether "
+    "question_text reads as a complete, coherent sentence with a sensible "
+    "blank, and whether source_answer looks like a plausible short "
+    "answer/fill-in value (not empty, not truncated, not obviously the "
+    "wrong data type e.g. a whole sentence dumped where a word is "
+    "expected).\n"
+    "- section_type == matching: there are matching_pairs, not flat "
+    "options -- never check source_answer against option labels for this "
+    "type. source_answer here is a compound key like \"1-B,2-C,3-A\" "
+    "referencing left_label-right_label pairs. Judge whether every "
+    "left_label referenced in source_answer has a corresponding entry in "
+    "matching_pairs, whether the compound key's format looks well-formed "
+    "and complete (not missing entries, not malformed), and whether the "
+    "pairs themselves look complete/uncut.\n\n"
     "Respond with ONLY a JSON object, no other text, no markdown fences, "
     "in exactly this shape:\n"
     '{"confidence": <float 0.0-1.0>, "concerns": [<short strings>], '
     '"notes": <short string, or empty string>}\n\n'
-    "confidence reflects how likely this record is a clean, complete, "
-    "correctly-structured question -- NOT whether the medical content is "
-    "correct. Lower it for: truncated or nonsensical question text, "
-    "options that look cut off, duplicated, or missing, an answer key "
-    "value that doesn't correspond to any option label shown, or anything "
-    "else structurally off. concerns should be short machine-readable-ish "
-    "phrases (e.g. \"answer_not_in_options\", \"truncated_stem\"), not full "
-    "sentences -- leave the list empty if there are none. notes is for "
-    "one short human-readable sentence if something needs explaining, "
-    "otherwise leave it as an empty string."
+    "confidence reflects ONLY how likely this record is a clean, complete, "
+    "correctly-structured record for its section_type, using the "
+    "type-specific criteria above -- never medical/factual correctness. "
+    "concerns should be short machine-readable-ish phrases appropriate to "
+    "the section_type (e.g. \"answer_not_in_options\" for mcq, "
+    "\"answer_key_missing_left_label\" for matching, \"truncated_stem\"), "
+    "not full sentences -- leave the list empty if there are none. notes "
+    "is for one short human-readable sentence if something structural "
+    "needs explaining, otherwise leave it as an empty string. Never put a "
+    "medical-correctness opinion in notes."
 )
 
 
@@ -150,6 +233,70 @@ def parse_model_response(raw: str) -> dict | None:
 
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def _self_repeat_ratio(text: str, min_len: int = 20) -> float:
+    """Heuristic: does `text` say the same thing twice back-to-back?
+
+    This is the question-level counterpart to
+    text_quality.detect_repeated_block(), which catches a vision model
+    looping and re-emitting a whole *page* it already transcribed.
+    That same artifact can also land inside a single question_text
+    field once segmentation has chopped a page into questions (e.g.
+    "The segments of the spinal cord are: The segments of the spinal
+    cord are:"). detect_repeated_block() operates on blank-line-
+    separated blocks and doesn't apply to a single short string, so
+    this is a simpler, purpose-built check: split the text at its
+    midpoint and compare the two halves. A near-exact match on a
+    string of meaningful length means the whole thing repeated, not
+    that it coincidentally started the same way -- real question
+    stems tested well under 0.4 (see module tests), the real
+    duplicate case scored 0.99.
+    """
+    stripped = text.strip()
+    if len(stripped) < min_len * 2:
+        return 0.0
+    mid = len(stripped) // 2
+    a, b = stripped[:mid], stripped[mid:]
+    return difflib.SequenceMatcher(None, a, b).ratio()
+
+
+_DUPLICATION_RATIO_THRESHOLD = 0.85
+
+
+def detect_structural_duplication(q: QuestionRecord) -> list[str]:
+    """Deterministic, model-independent backstop for a specific known
+    failure mode: a vision-transcription loop (see
+    ollama_vision_fill.py) re-emitting content it already produced.
+    Confirmed against real output that phi4-mini's judgment pass does
+    NOT reliably catch this on its own even when structurally obvious
+    (DOC-2c9ba7d2333e-mcq-50: duplicated question_text plus 3 repeated
+    option labels, scored ai_confidence=1.0 with no concerns) -- so
+    this check runs independently of what the LLM says, and its
+    findings are never suppressed by a high ai_confidence. This is a
+    backstop specifically for duplication, not a replacement for the
+    LLM's broader judgment; it doesn't try to catch everything the
+    prompt asks the model to judge.
+    """
+    found: list[str] = []
+
+    if q.question_text and _self_repeat_ratio(q.question_text) >= _DUPLICATION_RATIO_THRESHOLD:
+        found.append("duplicated_question_text")
+
+    if q.options:
+        labels = [opt.label for opt in q.options]
+        if len(set(labels)) < len(labels):
+            found.append("duplicate_option_labels")
+
+    if q.matching_pairs:
+        left_labels = [mp.left_label for mp in q.matching_pairs]
+        right_labels = [mp.right_label for mp in q.matching_pairs]
+        if len(set(left_labels)) < len(left_labels):
+            found.append("duplicate_matching_left_labels")
+        if len(set(right_labels)) < len(right_labels):
+            found.append("duplicate_matching_right_labels")
+
+    return found
 
 
 def review_question(
@@ -211,6 +358,23 @@ def review_document(
             # future run (even without --force) retries it. Silence
             # from the model must never be recorded as confidence.
             continue
+
+        # Deterministic backstop, independent of the model's own
+        # judgment -- see detect_structural_duplication(). Merged in
+        # rather than trusted alone: the model's concerns/notes are
+        # kept, this only ever adds to them and can only push
+        # confidence down, never up.
+        dup_concerns = detect_structural_duplication(q)
+        if dup_concerns:
+            for c in dup_concerns:
+                if c not in result["concerns"]:
+                    result["concerns"].append(c)
+            result["confidence"] = min(result["confidence"], 0.2)
+            if not result["notes"]:
+                result["notes"] = (
+                    "Flagged by deterministic duplication check "
+                    "(independent of AI judgment)."
+                )
 
         q.ai_confidence = result["confidence"]
         q.ai_concerns = result["concerns"]
