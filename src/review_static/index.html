@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KA review</title>
+<style>
+  :root {
+    --paper: #eeebe3;
+    --panel: #ffffff;
+    --ink: #23261f;
+    --ink-soft: #5c6259;
+    --line: #d8d3c4;
+    --green: #3f6b4f;
+    --green-soft: #e3ece4;
+    --rust: #a84e28;
+    --rust-soft: #f3e2d6;
+    --focus: #2f6fed;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+
+  button {
+    font-family: var(--sans);
+    cursor: pointer;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--line);
+    flex-shrink: 0;
+  }
+
+  header .title {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+  }
+
+  header .context {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+  }
+
+  header .progress {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  #layout {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+  }
+
+  /* -- queue rail -------------------------------------------------- */
+
+  #rail {
+    width: 220px;
+    flex-shrink: 0;
+    border-right: 1px solid var(--line);
+    overflow-y: auto;
+    background: var(--paper);
+  }
+
+  .rail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    text-align: left;
+    padding: 9px 14px;
+    border: none;
+    border-bottom: 1px solid var(--line);
+    background: transparent;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+
+  .rail-item:hover { background: rgba(0,0,0,0.03); }
+
+  .rail-item.active {
+    background: var(--panel);
+    color: var(--ink);
+    box-shadow: inset 3px 0 0 var(--green);
+  }
+
+  .rail-item .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--rust);
+    flex-shrink: 0;
+    visibility: hidden;
+  }
+
+  .rail-item.flagged .dot { visibility: visible; }
+
+  /* -- image panel --------------------------------------------------- */
+
+  #imagePanel {
+    flex: 1.2;
+    overflow-y: auto;
+    background: #d9d5c8;
+    padding: 20px;
+    min-width: 0;
+  }
+
+  #imagePanel img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 16px;
+    background: var(--panel);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .page-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-soft);
+    text-align: center;
+    margin: 0 auto 4px;
+    max-width: 900px;
+  }
+
+  .no-image {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 24px;
+    background: var(--panel);
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* -- detail panel ---------------------------------------------------- */
+
+  #detailPanel {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px 28px 40px;
+    min-width: 340px;
+  }
+
+  .meta-line {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+  }
+
+  .question-text {
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.5;
+    max-width: 62ch;
+    margin: 0 0 18px;
+  }
+
+  .field {
+    margin-bottom: 16px;
+  }
+
+  .field-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  .options-list, .pairs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 16px;
+  }
+
+  .options-list li, .pairs-list li {
+    padding: 4px 0;
+    border-bottom: 1px dotted var(--line);
+  }
+
+  .options-list li.is-source {
+    color: var(--green);
+  }
+
+  .source-answer {
+    font-family: var(--mono);
+    font-size: 15px;
+    background: var(--panel);
+    padding: 6px 10px;
+    display: inline-block;
+    border: 1px solid var(--line);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 3px 8px;
+    background: var(--rust-soft);
+    color: var(--rust);
+    border: 1px solid var(--rust);
+  }
+
+  .tag.clean {
+    background: var(--green-soft);
+    color: var(--green);
+    border-color: var(--green);
+  }
+
+  .ai-notes {
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-top: 6px;
+  }
+
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 22px 0;
+  }
+
+  /* -- verify form --------------------------------------------------- */
+
+  .verify-form label {
+    display: block;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+
+  .verify-form input[type="text"],
+  .verify-form textarea {
+    width: 100%;
+    max-width: 480px;
+    font-family: var(--serif);
+    font-size: 15px;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+
+  .verify-form textarea {
+    min-height: 64px;
+    resize: vertical;
+    font-family: var(--sans);
+    font-size: 14px;
+  }
+
+  .verify-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn {
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  .btn:hover { background: rgba(0,0,0,0.05); }
+
+  .btn.primary {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+  }
+
+  .btn.primary:hover { background: #365e44; }
+
+  .already-verified {
+    margin-top: 14px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--green);
+  }
+
+  /* -- empty state --------------------------------------------------- */
+
+  #emptyState {
+    max-width: 480px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  #emptyState h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  #emptyState p {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="title">KA review</div>
+      <div class="context" id="ctx"></div>
+      <div class="progress" id="progress"></div>
+    </header>
+    <div id="layout">
+      <nav id="rail"></nav>
+      <main id="imagePanel"></main>
+      <aside id="detailPanel"></aside>
+    </div>
+    <div id="emptyState" class="hidden">
+      <h1>Nothing left to review</h1>
+      <p>Every question routed to needs_review has a verified_answer now.
+      Run ai_parser.py again after any pipeline change to refresh the queue,
+      or start this tool with --force to review a second time.</p>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

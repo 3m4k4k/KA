@@ -1,0 +1,790 @@
+[
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-1",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "1",
+    "question_text": "The following statement describes the anatomical position:",
+    "options": [
+      {
+        "label": "a",
+        "text": "The eyes are looking backwards."
+      },
+      {
+        "label": "b",
+        "text": "The upper limbs are hanging by the sides."
+      },
+      {
+        "label": "c",
+        "text": "The palms are facing backwards."
+      },
+      {
+        "label": "d",
+        "text": "The thumbs are directed medially."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:09.924867+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-2",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "2",
+    "question_text": "Anatomical position is: the sides. arms hanging at the sides with the palms facing forward. arms hanging at the sides with palms facing backwards.",
+    "options": [
+      {
+        "label": "a",
+        "text": "A term used referring to the body facing forwards and sitting down."
+      },
+      {
+        "label": "b",
+        "text": "The position in which the body is lying down with feet parallel and arms by"
+      },
+      {
+        "label": "c",
+        "text": "The position in which the body is erect, facing front with feet parallel and"
+      },
+      {
+        "label": "d",
+        "text": "The position in which the body is erect, facing forward with feet parallel and"
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "c",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_number_conflict:sim_0.76"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:11.399169+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-3",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "3",
+    "question_text": "The plane which divides the body into 2 equal halves right and left is:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Median plane"
+      },
+      {
+        "label": "b",
+        "text": "Coronal plane"
+      },
+      {
+        "label": "c",
+        "text": "Paramedian plane"
+      },
+      {
+        "label": "d",
+        "text": "Horizontal plane"
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "a",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:12.668861+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-4",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "4",
+    "question_text": "Which of the following is true about the coronal plane?",
+    "options": [
+      {
+        "label": "a",
+        "text": "It is a horizontal plane."
+      },
+      {
+        "label": "b",
+        "text": "It divides the body into anterior and posterior halves."
+      },
+      {
+        "label": "c",
+        "text": "It cuts the body Into upper and lower halves."
+      },
+      {
+        "label": "d",
+        "text": "It is a vertical plane that divides the body Into 2 equal right and left halves."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_0.99"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:13.903032+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-5",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "5",
+    "question_text": "The anatomical term that means \"away from the median plane\" is: ```markdown",
+    "options": [
+      {
+        "label": "b",
+        "text": "Medial."
+      },
+      {
+        "label": "c",
+        "text": "Distal."
+      },
+      {
+        "label": "d",
+        "text": "Proximal."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "a",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "unexpected_option_count:3",
+      "duplicate_question_merged:sim_0.91"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:15.143594+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-6",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "6",
+    "question_text": "The anatomical term that means \"nearer to the root of the limb\" is:",
+    "options": [
+      {
+        "label": "b",
+        "text": "Medial."
+      },
+      {
+        "label": "c",
+        "text": "Distal."
+      },
+      {
+        "label": "d",
+        "text": "Proximal."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "d",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          2
+        ]
+      }
+    ],
+    "anomalies": [
+      "unexpected_option_count:3"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:16.254325+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-26",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "26",
+    "question_text": "What is the type of joint that connects the roots of the teeth to their sockets?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Gomphosis."
+      },
+      {
+        "label": "b",
+        "text": "Sutures."
+      },
+      {
+        "label": "c",
+        "text": "Cartilagenous."
+      },
+      {
+        "label": "d",
+        "text": "Synovial."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "a",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:39.476663+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-27",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "27",
+    "question_text": "What is the type of joint that connects the bones of the skull?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Gomphosis."
+      },
+      {
+        "label": "b",
+        "text": "Sutures."
+      },
+      {
+        "label": "c",
+        "text": "Cartilaginous."
+      },
+      {
+        "label": "d",
+        "text": "Synovial."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:40.612332+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-28",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "28",
+    "question_text": "What is the type of joint present at the ends of the growing long bones?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Fibrous."
+      },
+      {
+        "label": "b",
+        "text": "Primary cartilaginous."
+      },
+      {
+        "label": "c",
+        "text": "Secondary cartilaginous."
+      },
+      {
+        "label": "d",
+        "text": "Synovial."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:41.725849+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-29",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "29",
+    "question_text": "What is the type of joint of the intervertebral discs?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Fibrous."
+      },
+      {
+        "label": "b",
+        "text": "Primary cartilaginous."
+      },
+      {
+        "label": "c",
+        "text": "Secondary cartilaginous."
+      },
+      {
+        "label": "d",
+        "text": "Synovial."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "c",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:42.837995+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-30",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "30",
+    "question_text": "One of the following joints is uniaxial:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Shoulder."
+      },
+      {
+        "label": "b",
+        "text": "Wrist."
+      },
+      {
+        "label": "c",
+        "text": "Elbow."
+      },
+      {
+        "label": "d",
+        "text": "Knee."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "c",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:43.943028+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-31",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "31",
+    "question_text": "One of the following is biaxial joint:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Shoulder."
+      },
+      {
+        "label": "b",
+        "text": "Hip."
+      },
+      {
+        "label": "c",
+        "text": "Elbow."
+      },
+      {
+        "label": "d",
+        "text": "Knee."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "d",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:45.039008+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-35",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "35",
+    "question_text": "The wrist joint is:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Hinge."
+      },
+      {
+        "label": "b",
+        "text": "Ellipsold."
+      },
+      {
+        "label": "c",
+        "text": "Bicondylar."
+      },
+      {
+        "label": "d",
+        "text": "Ballandsocket."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          6
+        ]
+      }
+    ],
+    "anomalies": [],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [
+      "source_answer does not match any option label"
+    ],
+    "ai_notes": "The correct answer for the wrist joint is not listed among the options.",
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:25:50.636688+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-50",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "50",
+    "question_text": "The segments of the spinal cord are: The segments of the spinal cord are:",
+    "options": [
+      {
+        "label": "a",
+        "text": "8 cervical,10thoracic,5lumbar,5sacralandone coccygeal."
+      },
+      {
+        "label": "b",
+        "text": "10cervical,12thoracic,5lumbar,5sacral and one coccygeal."
+      },
+      {
+        "label": "c",
+        "text": "8cervical,12thoracic,5lumbar,onesacralandone coccygeal\u3002"
+      },
+      {
+        "label": "d",
+        "text": "8 cervical,12thoracic,5lumbar,5sacral\u548cone coccygeal\u3002"
+      },
+      {
+        "label": "a",
+        "text": "8 cervical, 10 thoracic, 5 lumbar, 5 sacral and one coccygeal."
+      },
+      {
+        "label": "b",
+        "text": "10 cervical, 12 thoracic, 5 lumbar, 5 sacral and one coccygeal\u3002"
+      },
+      {
+        "label": "c",
+        "text": "8 cervical, 12 thoracic, 5 lumbar, onesacralandone coccygeal\u3002"
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "d",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          8
+        ]
+      }
+    ],
+    "anomalies": [
+      "unexpected_option_count:7"
+    ],
+    "suggestions": [],
+    "ai_confidence": 0.2,
+    "ai_concerns": [
+      "duplicated_question_text",
+      "duplicate_option_labels"
+    ],
+    "ai_notes": "Flagged by deterministic duplication check (independent of AI judgment).",
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:26:08.626042+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-52",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "52",
+    "question_text": "Near to the median plane is:",
+    "options": [
+      {
+        "label": "b",
+        "text": "proximal."
+      },
+      {
+        "label": "c",
+        "text": "medial."
+      },
+      {
+        "label": "d",
+        "text": "inferior."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "c",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          9
+        ]
+      }
+    ],
+    "anomalies": [
+      "unexpected_option_count:3"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:26:10.960437+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-55",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "55",
+    "question_text": "Appendicular skeleton includes:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Skull and mandible."
+      },
+      {
+        "label": "b",
+        "text": "Bones of the limbs."
+      },
+      {
+        "label": "c",
+        "text": "Ribs and sternum."
+      },
+      {
+        "label": "d",
+        "text": "Vertebral column."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": null,
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "source_spans": [
+      {
+        "pages": [
+          9
+        ]
+      }
+    ],
+    "anomalies": [],
+    "suggestions": [],
+    "ai_confidence": 0.0,
+    "ai_concerns": [
+      "source_answer_missing"
+    ],
+    "ai_notes": "The source answer is missing, which is required for this section type.",
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-13T01:26:15.296997+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  }
+]

@@ -120,6 +120,18 @@ class QuestionRecord(BaseModel):
     # this layer has no way to verify anything and must not pretend to.
     verified_answer: Optional[str] = None
 
+    # ---- Human verification stage (Layer 4) -- additive, optional ----
+    # Set only by review_server.py when a human reviewer submits a
+    # decision for this record. verified_at is None means "not yet
+    # reviewed by a human" -- same "silence is never confidence"
+    # convention as ai_reviewed_at. verification_note is free text for
+    # whatever the reviewer wants to record (why they changed the
+    # answer, that they couldn't resolve it and are escalating it,
+    # etc.) -- never parsed or acted on by code, purely for a human
+    # reading it later.
+    verified_at: Optional[str] = None
+    verification_note: Optional[str] = None
+
     source_spans: list[SourceSpan] = Field(default_factory=list)
 
     # Structured anomalies (e.g. "multi_block_answer_conflict",

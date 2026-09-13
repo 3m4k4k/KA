@@ -1,9 +1,9 @@
 {
-  "51fef9b6234c5d381f5961aa30d0582fae2a42d44745dcb32cdf80a67fcf84a6": {
-    "file_hash": "51fef9b6234c5d381f5961aa30d0582fae2a42d44745dcb32cdf80a67fcf84a6",
-    "original_path": "/Users/salaheldin/Desktop/question-bank-pipeline/input/Anatomy Question [Basis].pdf",
-    "document_id": "DOC-51fef9b6234c",
+  "56eb58bdf25284a9f8404b7d73ddeedaf02bb958ed154d32f914d83a512125e9": {
+    "file_hash": "56eb58bdf25284a9f8404b7d73ddeedaf02bb958ed154d32f914d83a512125e9",
+    "original_path": "/Users/salaheldin/Desktop/question-bank-pipeline/input/Basis MCQ by Dr.Jalal.pdf",
+    "document_id": "DOC-56eb58bdf252",
     "pipeline_version": "0.1.0",
-    "processed_at": "2026-09-08T01:48:02.097781+00:00"
+    "processed_at": "2026-09-13T01:13:46.855206+00:00"
   }
 }

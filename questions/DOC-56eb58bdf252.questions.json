@@ -1,0 +1,2525 @@
+{
+  "document_id": "DOC-56eb58bdf252",
+  "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+  "subject": null,
+  "topic": null,
+  "subtopic": null,
+  "questions": [
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-1",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "1",
+      "question_text": "The following statement describes the anatomical position:",
+      "options": [
+        {
+          "label": "a",
+          "text": "The eyes are looking backwards."
+        },
+        {
+          "label": "b",
+          "text": "The upper limbs are hanging by the sides."
+        },
+        {
+          "label": "c",
+          "text": "The palms are facing backwards."
+        },
+        {
+          "label": "d",
+          "text": "The thumbs are directed medially."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_1.00"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-2",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "2",
+      "question_text": "Anatomical position is: the sides. arms hanging at the sides with the palms facing forward. arms hanging at the sides with palms facing backwards.",
+      "options": [
+        {
+          "label": "a",
+          "text": "A term used referring to the body facing forwards and sitting down."
+        },
+        {
+          "label": "b",
+          "text": "The position in which the body is lying down with feet parallel and arms by"
+        },
+        {
+          "label": "c",
+          "text": "The position in which the body is erect, facing front with feet parallel and"
+        },
+        {
+          "label": "d",
+          "text": "The position in which the body is erect, facing forward with feet parallel and"
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_number_conflict:sim_0.76"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-3",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "3",
+      "question_text": "The plane which divides the body into 2 equal halves right and left is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Median plane"
+        },
+        {
+          "label": "b",
+          "text": "Coronal plane"
+        },
+        {
+          "label": "c",
+          "text": "Paramedian plane"
+        },
+        {
+          "label": "d",
+          "text": "Horizontal plane"
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_1.00"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-4",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "4",
+      "question_text": "Which of the following is true about the coronal plane?",
+      "options": [
+        {
+          "label": "a",
+          "text": "It is a horizontal plane."
+        },
+        {
+          "label": "b",
+          "text": "It divides the body into anterior and posterior halves."
+        },
+        {
+          "label": "c",
+          "text": "It cuts the body Into upper and lower halves."
+        },
+        {
+          "label": "d",
+          "text": "It is a vertical plane that divides the body Into 2 equal right and left halves."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_0.99"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-5",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "5",
+      "question_text": "The anatomical term that means \"away from the median plane\" is: ```markdown",
+      "options": [
+        {
+          "label": "b",
+          "text": "Medial."
+        },
+        {
+          "label": "c",
+          "text": "Distal."
+        },
+        {
+          "label": "d",
+          "text": "Proximal."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            1
+          ]
+        }
+      ],
+      "anomalies": [
+        "unexpected_option_count:3",
+        "duplicate_question_merged:sim_0.91"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-6",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "6",
+      "question_text": "The anatomical term that means \"nearer to the root of the limb\" is:",
+      "options": [
+        {
+          "label": "b",
+          "text": "Medial."
+        },
+        {
+          "label": "c",
+          "text": "Distal."
+        },
+        {
+          "label": "d",
+          "text": "Proximal."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "anomalies": [
+        "unexpected_option_count:3"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-7",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "7",
+      "question_text": "The superficial layer of the skin is composed of which type of tissues:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Simple columnar epithelium."
+        },
+        {
+          "label": "b",
+          "text": "Stratified squamous epithelium."
+        },
+        {
+          "label": "c",
+          "text": "Dense fibrous tissue."
+        },
+        {
+          "label": "d",
+          "text": "Stratified columnary epithelium."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-8",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "8",
+      "question_text": "The type of tissue that makes up the bulk of the dermis is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Collagen."
+        },
+        {
+          "label": "b",
+          "text": "Melanin."
+        },
+        {
+          "label": "c",
+          "text": "Keratin."
+        },
+        {
+          "label": "d",
+          "text": "Fibroplastin."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-9",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "9",
+      "question_text": "One of the functions of superficial fascia is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Presence of skin muscles."
+        },
+        {
+          "label": "b",
+          "text": "Formation of aponeurosis."
+        },
+        {
+          "label": "c",
+          "text": "Formation of broad sheets."
+        },
+        {
+          "label": "d",
+          "text": "Formation of interosseous membranes."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-10",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "10",
+      "question_text": "One of the functions of deep fascia is that it:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Facilitates the movement of the skin."
+        },
+        {
+          "label": "b",
+          "text": "Prevents heat loss from the body."
+        },
+        {
+          "label": "c",
+          "text": "Contains many types of glands."
+        },
+        {
+          "label": "d",
+          "text": "Forms the interosseous membranes."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-11",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "11",
+      "question_text": "The intermuscular septa and interosseous membranes:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Surround the muscles of the upper and lower limbs."
+        },
+        {
+          "label": "b",
+          "text": "Separate different groups of muscles which have different actions."
+        },
+        {
+          "label": "c",
+          "text": "Are transverse thickened bands of deep fascia present at wrist joint."
+        },
+        {
+          "label": "d",
+          "text": "Form tough sheaths around big blood vessels."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-12",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "12",
+      "question_text": "The retinacula:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Surround the muscles of the upper and lower limbs."
+        },
+        {
+          "label": "b",
+          "text": "Separate different groups of muscles which have different actions."
+        },
+        {
+          "label": "c",
+          "text": "Are transverse thickened bands of deep fascia present at wrist joint."
+        },
+        {
+          "label": "d",
+          "text": "Form tough sheaths around big blood vessels."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-13",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "13",
+      "question_text": "Yellow elastic fibrocartilage is present in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Developing bone of the fetus."
+        },
+        {
+          "label": "b",
+          "text": "Auricle of the ear."
+        },
+        {
+          "label": "c",
+          "text": "Articular cartilage of joints."
+        },
+        {
+          "label": "d",
+          "text": "Symphysis pubis."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-14",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "14",
+      "question_text": "White fibrocartilage is present in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Epiglottis."
+        },
+        {
+          "label": "b",
+          "text": "Auricle of the\u8033\u3002"
+        },
+        {
+          "label": "c",
+          "text": "Articular cartilage of joints\u3002"
+        },
+        {
+          "label": "d",
+          "text": "Intervertebral disc\u3002"
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-15",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "15",
+      "question_text": "Hyaline cartilage is present in\uff1a",
+      "options": [
+        {
+          "label": "a",
+          "text": "Epiglottis\u3002"
+        },
+        {
+          "label": "b",
+          "text": "Auricle of the\u8033\u3002"
+        },
+        {
+          "label": "c",
+          "text": "Artificial cartilage of joints\u3002"
+        },
+        {
+          "label": "d",
+          "text": "Intervertebral disc."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-16",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "16",
+      "question_text": "Appendicular skeleton is formed of:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Skull and mandible."
+        },
+        {
+          "label": "b",
+          "text": "Bones of the upper and lower limbs\u3002"
+        },
+        {
+          "label": "c",
+          "text": "Ribs and sternum\u3002"
+        },
+        {
+          "label": "d",
+          "text": "Vertebral column\u3002"
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-17",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "17",
+      "question_text": "Intra-membranous ossification occurs in\uff1a",
+      "options": [
+        {
+          "label": "a",
+          "text": "Clavicle\u3002"
+        },
+        {
+          "label": "b",
+          "text": "Vertebrae\u3002"
+        },
+        {
+          "label": "c",
+          "text": "Ribs\u3002"
+        },
+        {
+          "label": "d",
+          "text": "Base of the skull."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-18",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "18",
+      "question_text": "Intra-cartilagenous ossification occurs in:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Roof of the skull\u3002"
+        },
+        {
+          "label": "b",
+          "text": "Clavicle\u3002"
+        },
+        {
+          "label": "c",
+          "text": "Skull cap\u3002"
+        },
+        {
+          "label": "d",
+          "text": "Vertebrae\u3002"
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-19",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "19",
+      "question_text": "The expanded upper and lower ends of the long bone are called\uff1a Basis of Human Anatomy 3",
+      "options": [
+        {
+          "label": "a",
+          "text": "Epiphysis\u3002"
+        },
+        {
+          "label": "b",
+          "text": "Epiphyseal plate\u3002"
+        },
+        {
+          "label": "c",
+          "text": "Diaphysis\u3002"
+        },
+        {
+          "label": "d",
+          "text": "Metaphysis\u3002"
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-20",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "20",
+      "question_text": "The compact bone with a central medullary cavity is called:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Epiphysis."
+        },
+        {
+          "label": "b",
+          "text": "Epiphyseal plate."
+        },
+        {
+          "label": "c",
+          "text": "Dlaphysis."
+        },
+        {
+          "label": "d",
+          "text": "Metaphysis."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-21",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "21",
+      "question_text": "The part which is responsible for the growth of long bones in length is called:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Epiphysis."
+        },
+        {
+          "label": "b",
+          "text": "Epiphyseal plate."
+        },
+        {
+          "label": "c",
+          "text": "Dlaphysis."
+        },
+        {
+          "label": "d",
+          "text": "Metaphysis."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-22",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "22",
+      "question_text": "The scapula is a:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Short bone."
+        },
+        {
+          "label": "b",
+          "text": "Long bone."
+        },
+        {
+          "label": "c",
+          "text": "Flat bone."
+        },
+        {
+          "label": "d",
+          "text": "Seasamoid bone."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-23",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "23",
+      "question_text": "The ribs are:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Shortbone."
+        },
+        {
+          "label": "b",
+          "text": "Longbone."
+        },
+        {
+          "label": "c",
+          "text": "Flatbone."
+        },
+        {
+          "label": "d",
+          "text": "Seasamoidbone."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-24",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "24",
+      "question_text": "The Paranasal sinuses are:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Shorthone."
+        },
+        {
+          "label": "b",
+          "text": "Longbone."
+        },
+        {
+          "label": "c",
+          "text": "Flatbone."
+        },
+        {
+          "label": "d",
+          "text": "Pneumatic bones."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-25",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "25",
+      "question_text": "The patella is a:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Short bone."
+        },
+        {
+          "label": "b",
+          "text": "Longbone."
+        },
+        {
+          "label": "c",
+          "text": "Flatbone."
+        },
+        {
+          "label": "d",
+          "text": "Seasamoidbone."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-26",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "26",
+      "question_text": "What is the type of joint that connects the roots of the teeth to their sockets?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Gomphosis."
+        },
+        {
+          "label": "b",
+          "text": "Sutures."
+        },
+        {
+          "label": "c",
+          "text": "Cartilagenous."
+        },
+        {
+          "label": "d",
+          "text": "Synovial."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_1.00"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-27",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "27",
+      "question_text": "What is the type of joint that connects the bones of the skull?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Gomphosis."
+        },
+        {
+          "label": "b",
+          "text": "Sutures."
+        },
+        {
+          "label": "c",
+          "text": "Cartilaginous."
+        },
+        {
+          "label": "d",
+          "text": "Synovial."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_1.00"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-28",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "28",
+      "question_text": "What is the type of joint present at the ends of the growing long bones?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Fibrous."
+        },
+        {
+          "label": "b",
+          "text": "Primary cartilaginous."
+        },
+        {
+          "label": "c",
+          "text": "Secondary cartilaginous."
+        },
+        {
+          "label": "d",
+          "text": "Synovial."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_1.00"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-29",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "29",
+      "question_text": "What is the type of joint of the intervertebral discs?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Fibrous."
+        },
+        {
+          "label": "b",
+          "text": "Primary cartilaginous."
+        },
+        {
+          "label": "c",
+          "text": "Secondary cartilaginous."
+        },
+        {
+          "label": "d",
+          "text": "Synovial."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_1.00"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-30",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "30",
+      "question_text": "One of the following joints is uniaxial:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Shoulder."
+        },
+        {
+          "label": "b",
+          "text": "Wrist."
+        },
+        {
+          "label": "c",
+          "text": "Elbow."
+        },
+        {
+          "label": "d",
+          "text": "Knee."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_1.00"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-31",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "31",
+      "question_text": "One of the following is biaxial joint:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Shoulder."
+        },
+        {
+          "label": "b",
+          "text": "Hip."
+        },
+        {
+          "label": "c",
+          "text": "Elbow."
+        },
+        {
+          "label": "d",
+          "text": "Knee."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "anomalies": [
+        "duplicate_question_merged:sim_1.00"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-32",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "32",
+      "question_text": "One of the following is a polyaxial joint:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hip."
+        },
+        {
+          "label": "b",
+          "text": "Knee."
+        },
+        {
+          "label": "c",
+          "text": "Wrist."
+        },
+        {
+          "label": "d",
+          "text": "Superior radioulnar."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-33",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "33",
+      "question_text": "The shoulder joint is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hinge."
+        },
+        {
+          "label": "b",
+          "text": "Ellipsoid."
+        },
+        {
+          "label": "c",
+          "text": "Bicondylar."
+        },
+        {
+          "label": "d",
+          "text": "Ball and socket."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-34",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "34",
+      "question_text": "The elbow joint is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hinge."
+        },
+        {
+          "label": "b",
+          "text": "Ellipsold."
+        },
+        {
+          "label": "c",
+          "text": "Bicondylar."
+        },
+        {
+          "label": "d",
+          "text": "Ball andocket."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-35",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "35",
+      "question_text": "The wrist joint is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hinge."
+        },
+        {
+          "label": "b",
+          "text": "Ellipsold."
+        },
+        {
+          "label": "c",
+          "text": "Bicondylar."
+        },
+        {
+          "label": "d",
+          "text": "Ballandsocket."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-36",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "36",
+      "question_text": "The hip joint is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Hinge."
+        },
+        {
+          "label": "b",
+          "text": "Ellipsold."
+        },
+        {
+          "label": "c",
+          "text": "Bicondylar."
+        },
+        {
+          "label": "d",
+          "text": "Ball andocket."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-37",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "37",
+      "question_text": "The skeletal muscles are:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Involuntary."
+        },
+        {
+          "label": "b",
+          "text": "Present in the heart."
+        },
+        {
+          "label": "c",
+          "text": "Present in the wall of blood vessels."
+        },
+        {
+          "label": "d",
+          "text": "Attached tothe bones."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-38",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "38",
+      "question_text": "The smooth muscles are:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Voluntary."
+        },
+        {
+          "label": "b",
+          "text": "Presentinheart."
+        },
+        {
+          "label": "c",
+          "text": "PresentInthewallofbloodvessels."
+        },
+        {
+          "label": "d",
+          "text": "Attachedtothebone."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-39",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "39",
+      "question_text": "An example of strap-like muscle is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Rectus abdominis."
+        },
+        {
+          "label": "b",
+          "text": "Sartorius."
+        },
+        {
+          "label": "c",
+          "text": "Deltold."
+        },
+        {
+          "label": "d",
+          "text": "Supinator."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-40",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "40",
+      "question_text": "An example of strap-like muscle with tendinous intersections is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Sartorius."
+        },
+        {
+          "label": "b",
+          "text": "Deltoid."
+        },
+        {
+          "label": "c",
+          "text": "Rectus abdominis."
+        },
+        {
+          "label": "d",
+          "text": "Tibialis anterior."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-41",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "41",
+      "question_text": "An example of multipennate muscle is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Deltold."
+        },
+        {
+          "label": "b",
+          "text": "Tibialis anterior."
+        },
+        {
+          "label": "c",
+          "text": "Rectus anterior."
+        },
+        {
+          "label": "d",
+          "text": "Supinator."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-42",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "42",
+      "question_text": "An example of bipennate muscle is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Rectus abdominis."
+        },
+        {
+          "label": "b",
+          "text": "Rectus femoris."
+        },
+        {
+          "label": "c",
+          "text": "Sartorius."
+        },
+        {
+          "label": "d",
+          "text": "Deltold."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-43",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "43",
+      "question_text": "The right atrium receives blood from:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Superior and inferior vena cava."
+        },
+        {
+          "label": "b",
+          "text": "Pulmonary artery."
+        },
+        {
+          "label": "c",
+          "text": "Aorta."
+        },
+        {
+          "label": "d",
+          "text": "Pulmonary veins."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-44",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "44",
+      "question_text": "Regarding the systemic circulation, which of the following statements is true?",
+      "options": [
+        {
+          "label": "a",
+          "text": "The blood passes from the right ventricle to the right atrium."
+        },
+        {
+          "label": "b",
+          "text": "Oxygenated blood is collected by the velns into the right atrium."
+        },
+        {
+          "label": "c",
+          "text": "Deoxygenated blood passes through the aorta to all tissues of the body."
+        },
+        {
+          "label": "d",
+          "text": "Oxygenated blood passes through the aorta to all tissues of the body."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-45",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "45",
+      "question_text": "Regarding the pulmonary circulation, which of the following statements is true?",
+      "options": [
+        {
+          "label": "a",
+          "text": "The blood passes from the right ventricle to the right atrium."
+        },
+        {
+          "label": "b",
+          "text": "Oxygenated blood is collected by the veins into the right atrium."
+        },
+        {
+          "label": "c",
+          "text": "Oxygenated blood returns from the lung to the left atrium."
+        },
+        {
+          "label": "d",
+          "text": "Deoxygenated blood passes through the aorta to all tissues of the body."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-46",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "46",
+      "question_text": "Regarding the portal circulation, which of the following statements is true?",
+      "options": [
+        {
+          "label": "a",
+          "text": "The venous blood from the digestive system enters the liver through the portal vein."
+        },
+        {
+          "label": "b",
+          "text": "The venous blood leaves the liver through theportalvein."
+        },
+        {
+          "label": "c",
+          "text": "Thevenousbloodfromthedigestivesystementersliverthroughthehepaticvein."
+        },
+        {
+          "label": "d",
+          "text": "Thevenousbloodentersliverthroughtheinflerlorvena cava."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-47",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "47",
+      "question_text": "The thoracic duct drains:",
+      "options": [
+        {
+          "label": "a",
+          "text": "The right side of the head and neck."
+        },
+        {
+          "label": "b",
+          "text": "Therightlowerlimb."
+        },
+        {
+          "label": "c",
+          "text": "Therightupperlimb."
+        },
+        {
+          "label": "d",
+          "text": "Therighthalfofthethorax."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "b",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-48",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "48",
+      "question_text": "The right lymphatic duct drains:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Thewholebodybelowthediaphragm."
+        },
+        {
+          "label": "b",
+          "text": "Therightlowerlimb."
+        },
+        {
+          "label": "c",
+          "text": "Therightupperlimb."
+        },
+        {
+          "label": "d",
+          "text": "Therighthalfof theabdomen."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-49",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "49",
+      "question_text": "The brain stem consists of:",
+      "options": [
+        {
+          "label": "a",
+          "text": "2 cerebral hemispheres."
+        },
+        {
+          "label": "b",
+          "text": "Midbrain,pons,cerebellum."
+        },
+        {
+          "label": "c",
+          "text": "Midbrain,medullaoblongata."
+        },
+        {
+          "label": "d",
+          "text": "Mid brain,pons&medulla oblongata."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-50",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "50",
+      "question_text": "The segments of the spinal cord are: The segments of the spinal cord are:",
+      "options": [
+        {
+          "label": "a",
+          "text": "8 cervical,10thoracic,5lumbar,5sacralandone coccygeal."
+        },
+        {
+          "label": "b",
+          "text": "10cervical,12thoracic,5lumbar,5sacral and one coccygeal."
+        },
+        {
+          "label": "c",
+          "text": "8cervical,12thoracic,5lumbar,onesacralandone coccygeal\u3002"
+        },
+        {
+          "label": "d",
+          "text": "8 cervical,12thoracic,5lumbar,5sacral\u548cone coccygeal\u3002"
+        },
+        {
+          "label": "a",
+          "text": "8 cervical, 10 thoracic, 5 lumbar, 5 sacral and one coccygeal."
+        },
+        {
+          "label": "b",
+          "text": "10 cervical, 12 thoracic, 5 lumbar, 5 sacral and one coccygeal\u3002"
+        },
+        {
+          "label": "c",
+          "text": "8 cervical, 12 thoracic, 5 lumbar, onesacralandone coccygeal\u3002"
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "anomalies": [
+        "unexpected_option_count:7"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-51",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "51",
+      "question_text": "If you are asked to draw a section through the human body that demonstrates the heart and both lungs, which of the following planes would be appropriate for your section?",
+      "options": [
+        {
+          "label": "a",
+          "text": "Horizontal plane."
+        },
+        {
+          "label": "b",
+          "text": "Lateral sagittal plane."
+        },
+        {
+          "label": "c",
+          "text": "Paramedian plane."
+        },
+        {
+          "label": "d",
+          "text": "Median plane."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "a",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-52",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "52",
+      "question_text": "Near to the median plane is:",
+      "options": [
+        {
+          "label": "b",
+          "text": "proximal."
+        },
+        {
+          "label": "c",
+          "text": "medial."
+        },
+        {
+          "label": "d",
+          "text": "inferior."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "anomalies": [
+        "unexpected_option_count:3"
+      ],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-53",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "53",
+      "question_text": "Deep fascia :",
+      "options": [
+        {
+          "label": "a",
+          "text": "Strong and thick in the anterior abdominal wall."
+        },
+        {
+          "label": "b",
+          "text": "More thickened in females than in males."
+        },
+        {
+          "label": "c",
+          "text": "Contains small amount of fat."
+        },
+        {
+          "label": "d",
+          "text": "Absent in the face."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "d",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-54",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "54",
+      "question_text": "The retinacula:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Expand the origin of muscles."
+        },
+        {
+          "label": "b",
+          "text": "Separate different compartments of the limbs."
+        },
+        {
+          "label": "c",
+          "text": "Keep the underlying tendons in position"
+        },
+        {
+          "label": "d",
+          "text": "Are found around the knee."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-55",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "55",
+      "question_text": "Appendicular skeleton includes:",
+      "options": [
+        {
+          "label": "a",
+          "text": "Skull and mandible."
+        },
+        {
+          "label": "b",
+          "text": "Bones of the limbs."
+        },
+        {
+          "label": "c",
+          "text": "Ribs and sternum."
+        },
+        {
+          "label": "d",
+          "text": "Vertebral column."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": null,
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-56",
+      "document_id": "DOC-56eb58bdf252",
+      "section_type": "mcq",
+      "question_number": "56",
+      "question_text": "The type of cartilage in the tip of the nose is:",
+      "options": [
+        {
+          "label": "a",
+          "text": "hyaline cartilage."
+        },
+        {
+          "label": "b",
+          "text": "white fibrocartilage."
+        },
+        {
+          "label": "c",
+          "text": "yellow elastic fibrocartilage."
+        },
+        {
+          "label": "d",
+          "text": "no cartilage at all."
+        }
+      ],
+      "matching_pairs": [],
+      "source_answer": "c",
+      "verified_answer": null,
+      "verified_at": null,
+      "verification_note": null,
+      "source_spans": [
+        {
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "anomalies": [],
+      "suggestions": [],
+      "ai_confidence": null,
+      "ai_concerns": [],
+      "ai_notes": null,
+      "ai_model_used": null,
+      "ai_reviewed_at": null
+    }
+  ],
+  "unmatched_answer_key_entries": [],
+  "document_anomalies": [
+    "mcq_q2_conflicting_duplicates"
+  ],
+  "needs_review": true,
+  "review_reasons": [
+    "mcq_q2_conflicting_duplicates",
+    "DOC-56eb58bdf252-mcq-1:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-2:duplicate_question_number_conflict:sim_0.76",
+    "DOC-56eb58bdf252-mcq-3:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-4:duplicate_question_merged:sim_0.99",
+    "DOC-56eb58bdf252-mcq-5:unexpected_option_count:3",
+    "DOC-56eb58bdf252-mcq-5:duplicate_question_merged:sim_0.91",
+    "DOC-56eb58bdf252-mcq-6:unexpected_option_count:3",
+    "DOC-56eb58bdf252-mcq-26:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-27:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-28:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-29:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-30:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-31:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-50:unexpected_option_count:7",
+    "DOC-56eb58bdf252-mcq-52:unexpected_option_count:3"
+  ]
+}
