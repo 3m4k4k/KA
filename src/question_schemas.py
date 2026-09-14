@@ -132,6 +132,52 @@ class QuestionRecord(BaseModel):
     verified_at: Optional[str] = None
     verification_note: Optional[str] = None
 
+    # ---- Structural review (Layer 4 addition) -- additive, optional ----
+    # These exist alongside verified_answer, not instead of it: a
+    # question can be answer-correct but structurally broken (garbled
+    # question text) or structurally fine but answer-uncertain, and a
+    # reviewer needs to be able to record either independently. Same
+    # "never overwrite the original" discipline as everywhere else --
+    # question_text/options/matching_pairs above stay exactly what
+    # segmentation produced, so a reviewer (or anyone auditing later)
+    # can always see what was originally parsed and what a human
+    # corrected it to.
+    #
+    # duplicate_of_question_id: set when a reviewer recognizes this
+    # question as a repeat of another one elsewhere -- possibly in a
+    # different document (e.g. the same exam bank reused across files).
+    # Points at the OTHER question's question_id. This is deliberately
+    # not a count -- storing a manually-maintained duplicate count
+    # invites drift the moment a third copy turns up. The count is
+    # always computed fresh (by whatever reads this field, e.g.
+    # review_server.py) by asking "how many questions in the whole
+    # corpus have duplicate_of_question_id pointing at the same root
+    # question, plus the root itself" -- so it can never go stale.
+    # Marking a question as a duplicate does NOT excuse it from also
+    # needing verified_answer -- each copy may have independently
+    # correct or incorrect source_answer/verified_answer, so both are
+    # still tracked per-record.
+    duplicate_of_question_id: Optional[str] = None
+
+    # verified_question_text / verified_options / verified_matching_pairs:
+    # a reviewer's corrected version of a structurally broken field
+    # (e.g. question_text that looped/duplicated itself, or an option
+    # list with repeated labels). None means "reviewer hasn't supplied
+    # a correction" -- a later stage reads the verified_* value if
+    # present, otherwise falls back to the original. The original
+    # field is NEVER edited in place.
+    verified_question_text: Optional[str] = None
+    verified_options: Optional[list[Option]] = None
+    verified_matching_pairs: Optional[list[MatchingPair]] = None
+
+    # Stamped whenever a reviewer touches any of the structural fields
+    # above (duplicate_of_question_id, verified_question_text,
+    # verified_options, verified_matching_pairs). Independent of
+    # verified_at -- a reviewer might fix structure without yet having
+    # an opinion on the answer, or vice versa. Same "silence is never
+    # confidence" convention as verified_at/ai_reviewed_at.
+    structural_reviewed_at: Optional[str] = None
+
     source_spans: list[SourceSpan] = Field(default_factory=list)
 
     # Structured anomalies (e.g. "multi_block_answer_conflict",

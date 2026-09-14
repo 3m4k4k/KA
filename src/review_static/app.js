@@ -158,16 +158,34 @@
     }${item.topic ? " / " + item.topic : ""}`;
     el.detailPanel.appendChild(meta);
 
+    if (item.duplicate_count > 0) {
+      const dupBanner = document.createElement("div");
+      dupBanner.className = "duplicate-banner";
+      const others = item.duplicate_group
+        .map((m) => `${m.document_id.replace("DOC-", "")}\u00b7${m.section_type}-${m.question_number}`)
+        .join(", ");
+      dupBanner.textContent = `Duplicated \u2014 appears ${item.duplicate_count}\u00d7 total (also: ${others})`;
+      el.detailPanel.appendChild(dupBanner);
+    }
+
     const qtext = document.createElement("p");
     qtext.className = "question-text";
-    qtext.textContent = item.question_text || "(empty question text)";
+    qtext.textContent = item.verified_question_text || item.question_text || "(empty question text)";
+    if (item.verified_question_text) {
+      const editedTag = document.createElement("span");
+      editedTag.className = "edited-marker";
+      editedTag.textContent = "edited";
+      qtext.appendChild(document.createTextNode(" "));
+      qtext.appendChild(editedTag);
+    }
     el.detailPanel.appendChild(qtext);
 
     if (item.options.length) {
       el.detailPanel.appendChild(fieldLabel("Options"));
       const ul = document.createElement("ul");
       ul.className = "options-list";
-      for (const opt of item.options) {
+      const displayOptions = item.verified_options || item.options;
+      displayOptions.forEach((opt, i) => {
         const li = document.createElement("li");
         const isSource =
           item.source_answer &&
@@ -175,7 +193,7 @@
         if (isSource) li.classList.add("is-source");
         li.textContent = `${opt.label}) ${opt.text}`;
         ul.appendChild(li);
-      }
+      });
       el.detailPanel.appendChild(ul);
     }
 
@@ -183,7 +201,8 @@
       el.detailPanel.appendChild(fieldLabel("Matching pairs"));
       const ul = document.createElement("ul");
       ul.className = "pairs-list";
-      for (const mp of item.matching_pairs) {
+      const displayPairs = item.verified_matching_pairs || item.matching_pairs;
+      for (const mp of displayPairs) {
         const li = document.createElement("li");
         li.textContent = `${mp.left_label}) ${mp.left_text}  \u2194  ${mp.right_label}) ${mp.right_text}`;
         ul.appendChild(li);
@@ -239,6 +258,62 @@
     const form = document.createElement("form");
     form.className = "verify-form";
 
+    // -- structural correction section (independent of answer verification) --
+
+    const structuralHeading = document.createElement("div");
+    structuralHeading.className = "field-label structural-heading";
+    structuralHeading.textContent = "Structural correction (optional)";
+    form.appendChild(structuralHeading);
+
+    const dupLabel = document.createElement("label");
+    dupLabel.textContent = "Mark as duplicate of question_id";
+    dupLabel.setAttribute("for", "duplicateOf");
+    const dupInput = document.createElement("input");
+    dupInput.type = "text";
+    dupInput.id = "duplicateOf";
+    dupInput.placeholder = "e.g. DOC-56eb58bdf252-mcq-12";
+    dupInput.value = item.duplicate_of_question_id || "";
+    form.appendChild(dupLabel);
+    form.appendChild(dupInput);
+
+    const editTextLabel = document.createElement("label");
+    editTextLabel.textContent = "Question text (edit only if the text itself is broken)";
+    editTextLabel.setAttribute("for", "verifiedQuestionText");
+    const editTextInput = document.createElement("textarea");
+    editTextInput.id = "verifiedQuestionText";
+    editTextInput.value = item.verified_question_text || item.question_text || "";
+    form.appendChild(editTextLabel);
+    form.appendChild(editTextInput);
+
+    const optionInputs = [];
+    const sourceOptions = item.verified_options || item.options;
+    if (sourceOptions.length) {
+      const optsLabel = document.createElement("div");
+      optsLabel.className = "field-label";
+      optsLabel.textContent = "Options (edit only if labels/text are broken)";
+      form.appendChild(optsLabel);
+      const optsWrap = document.createElement("div");
+      optsWrap.className = "option-edit-list";
+      for (const opt of sourceOptions) {
+        const row = document.createElement("div");
+        row.className = "option-edit-row";
+        const labelSpan = document.createElement("span");
+        labelSpan.className = "option-edit-label";
+        labelSpan.textContent = opt.label + ")";
+        const textInput = document.createElement("input");
+        textInput.type = "text";
+        textInput.value = opt.text;
+        textInput.dataset.label = opt.label;
+        row.appendChild(labelSpan);
+        row.appendChild(textInput);
+        optsWrap.appendChild(row);
+        optionInputs.push(textInput);
+      }
+      form.appendChild(optsWrap);
+    }
+
+    form.appendChild(document.createElement("hr")).className = "rule";
+
     const answerLabel = document.createElement("label");
     answerLabel.textContent = "Verified answer";
     answerLabel.setAttribute("for", "verifiedAnswer");
@@ -287,12 +362,41 @@
       already.textContent = `Verified ${item.verified_at}`;
       form.appendChild(already);
     }
+    if (item.structural_reviewed_at) {
+      const already = document.createElement("div");
+      already.className = "already-verified";
+      already.textContent = `Structural review ${item.structural_reviewed_at}`;
+      form.appendChild(already);
+    }
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       saveBtn.disabled = true;
       saveBtn.textContent = "Saving\u2026";
       try {
+        // Question text: only counts as an override if it actually
+        // differs from the original segmentation output -- typing the
+        // same text back in shouldn't create a spurious "edited" tag.
+        const trimmedText = editTextInput.value.trim();
+        const verifiedQuestionText = trimmedText !== item.question_text.trim() ? trimmedText : "";
+
+        // Options: same idea -- only send a replacement list if at
+        // least one option's text actually changed from the original
+        // (or from a prior edit), otherwise send null so the record
+        // keeps reflecting "no override".
+        let verifiedOptions = null;
+        if (optionInputs.length) {
+          const edited = optionInputs.some(
+            (inp, i) => inp.value.trim() !== sourceOptions[i].text.trim()
+          );
+          if (edited) {
+            verifiedOptions = optionInputs.map((inp) => ({
+              label: inp.dataset.label,
+              text: inp.value.trim(),
+            }));
+          }
+        }
+
         const res = await fetch("/api/verify", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -301,6 +405,9 @@
             document_id: item.document_id,
             verified_answer: answerInput.value.trim(),
             verification_note: noteInput.value.trim(),
+            duplicate_of_question_id: dupInput.value.trim(),
+            verified_question_text: verifiedQuestionText,
+            verified_options: verifiedOptions,
           }),
         });
         if (!res.ok) {
