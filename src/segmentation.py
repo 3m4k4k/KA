@@ -538,9 +538,24 @@ def _dedupe_or_flag_questions(
     detector doesn't always catch it). Two questions with the same
     section_type + question_number are a duplication, not two
     different questions -- but WHICH copy is correct isn't something
-    text structure alone can decide, so this only merges near-identical
-    duplicates (keeping one, flagging it) and otherwise surfaces a
-    conflict rather than silently picking one.
+    text structure alone can decide.
+
+    Two outcomes, gated on text similarity:
+      - ratio >= 0.85 (near-exact): safe to merge. This is the same
+        content re-emitted, not two different questions -- keep one,
+        fold the other's page span in, flag it. Nothing meaningful is
+        lost at this similarity level.
+      - ratio < 0.85 (genuinely different content sharing a printed
+        number): NOT safe to silently pick one. Both are kept as
+        separate output records -- the conflicting one gets a
+        synthesized question_number/question_id so it doesn't collide
+        with the original, and each side's anomaly cross-references
+        the other's question_id so a human reviewing either one can
+        find and compare against the other. Earlier versions of this
+        function discarded the second copy here, keeping only a
+        similarity float as a trace -- that silently lost real
+        question content with no way to recover it; this function no
+        longer does that.
     """
     by_key: dict[tuple[QuestionType, str], list[QuestionRecord]] = {}
     for r in records:
@@ -554,26 +569,49 @@ def _dedupe_or_flag_questions(
             continue
 
         base = group[0]
+        out.append(base)
+        conflict_index = 0
+
         for other in group[1:]:
             ratio = difflib.SequenceMatcher(
                 None, base.question_text, other.question_text
             ).ratio()
-            merged_pages = sorted(
-                {p for span in base.source_spans + other.source_spans for p in span.pages}
-            )
+
             if ratio >= 0.85:
+                merged_pages = sorted(
+                    {p for span in base.source_spans + other.source_spans for p in span.pages}
+                )
+                base.source_spans = [SourceSpan(pages=merged_pages)]
                 base.anomalies.append(
                     f"duplicate_question_merged:sim_{ratio:.2f}"
                 )
-            else:
-                base.anomalies.append(
-                    f"duplicate_question_number_conflict:sim_{ratio:.2f}"
-                )
-                doc_anomalies.append(
-                    f"{qtype.value}_q{number}_conflicting_duplicates"
-                )
-            base.source_spans = [SourceSpan(pages=merged_pages)]
-        out.append(base)
+                continue
+
+            # Conflict: keep BOTH. `other` was parsed with the same
+            # printed number as `base`, so it currently shares base's
+            # question_number/question_id -- re-mint both so it's an
+            # independently addressable record a reviewer can actually
+            # see and act on (compare against base, mark one a
+            # duplicate of the other via the review tool, or recognize
+            # it as a genuinely different question mislabeled with a
+            # repeated number).
+            conflict_index += 1
+            other.question_number = f"{number}~conflict{conflict_index}"
+            other.question_id = (
+                f"{other.document_id}-{qtype.value}-{other.question_number}"
+            )
+            base.anomalies.append(
+                f"duplicate_question_number_conflict:sim_{ratio:.2f}:"
+                f"conflicts_with={other.question_id}"
+            )
+            other.anomalies.append(
+                f"duplicate_question_number_conflict:sim_{ratio:.2f}:"
+                f"conflicts_with={base.question_id}"
+            )
+            doc_anomalies.append(
+                f"{qtype.value}_q{number}_conflicting_duplicates"
+            )
+            out.append(other)
 
     out.sort(key=lambda r: (r.section_type.value, _numeric_sort_key(r.question_number)))
     return out, doc_anomalies

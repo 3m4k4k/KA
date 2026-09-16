@@ -410,10 +410,37 @@ def review_document(
     return changed
 
 
+# Anomalies that segmentation records purely as a trace of something
+# it ALREADY resolved with confidence, not as something a human needs
+# to act on. A `duplicate_question_merged` entry means segmentation
+# found a near-exact duplicate (similarity >= 0.85, see
+# _dedupe_or_flag_questions in segmentation.py) and merged it itself
+# -- the record a human would see is already the correct outcome, so
+# forcing review here gives the reviewer nothing to do. This is
+# distinct from `duplicate_question_number_conflict`, which means two
+# genuinely DIFFERENT questions shared a printed number and segmentation
+# could NOT resolve it -- that one still forces review, because there
+# a human's judgment is the only thing that can settle it.
+_INFORMATIONAL_ANOMALY_PREFIXES = ("duplicate_question_merged",)
+
+
+def _is_actionable_anomaly(anomaly: str) -> bool:
+    return not anomaly.startswith(_INFORMATIONAL_ANOMALY_PREFIXES)
+
+
 def route(q: QuestionRecord, threshold: float) -> str:
-    """Returns "auto_import" or "needs_review". A structural anomaly
-    from segmentation always wins over AI confidence; an unreviewed or
-    unparsable question is never treated as confident.
+    """Returns "auto_import" or "needs_review". An actionable structural
+    anomaly from segmentation always wins over AI confidence; an
+    unreviewed or unparsable question is never treated as confident.
+
+    "Actionable" excludes anomalies segmentation already resolved on
+    its own with high confidence (see _INFORMATIONAL_ANOMALY_PREFIXES)
+    -- those stay recorded on the question for audit, they just don't
+    by themselves force a human into a queue with nothing to decide.
+    Any OTHER anomaly on the same question (e.g. unexpected_option_count
+    alongside a duplicate_question_merged entry) still forces review as
+    before -- this only changes routing for questions whose anomalies
+    list is informational-only.
 
     A non-empty `ai_concerns` also forces needs_review, regardless of
     `ai_confidence`. Real-output inspection (DOC-2c9ba7d2333e-mcq-35)
@@ -430,7 +457,7 @@ def route(q: QuestionRecord, threshold: float) -> str:
     alongside justified high confidence -- narrow this to specific
     concern categories instead of loosening it back to confidence-only.
     """
-    if q.anomalies:
+    if any(_is_actionable_anomaly(a) for a in q.anomalies):
         return "needs_review"
     if q.ai_confidence is None:
         return "needs_review"

@@ -285,32 +285,58 @@
     form.appendChild(editTextLabel);
     form.appendChild(editTextInput);
 
-    const optionInputs = [];
     const sourceOptions = item.verified_options || item.options;
-    if (sourceOptions.length) {
-      const optsLabel = document.createElement("div");
-      optsLabel.className = "field-label";
-      optsLabel.textContent = "Options (edit only if labels/text are broken)";
-      form.appendChild(optsLabel);
-      const optsWrap = document.createElement("div");
-      optsWrap.className = "option-edit-list";
-      for (const opt of sourceOptions) {
-        const row = document.createElement("div");
-        row.className = "option-edit-row";
-        const labelSpan = document.createElement("span");
-        labelSpan.className = "option-edit-label";
-        labelSpan.textContent = opt.label + ")";
-        const textInput = document.createElement("input");
-        textInput.type = "text";
-        textInput.value = opt.text;
-        textInput.dataset.label = opt.label;
-        row.appendChild(labelSpan);
-        row.appendChild(textInput);
-        optsWrap.appendChild(row);
-        optionInputs.push(textInput);
-      }
-      form.appendChild(optsWrap);
+    const optionRows = []; // { labelInput, textInput }
+
+    const optsLabel = document.createElement("div");
+    optsLabel.className = "field-label";
+    optsLabel.textContent = "Options (edit text/labels, or add/remove rows if the count is wrong)";
+    form.appendChild(optsLabel);
+
+    const optsWrap = document.createElement("div");
+    optsWrap.className = "option-edit-list";
+    form.appendChild(optsWrap);
+
+    function addOptionRow(label, text) {
+      const row = document.createElement("div");
+      row.className = "option-edit-row";
+
+      const labelInput = document.createElement("input");
+      labelInput.type = "text";
+      labelInput.className = "option-edit-label-input";
+      labelInput.maxLength = 3;
+      labelInput.value = label;
+
+      const textInput = document.createElement("input");
+      textInput.type = "text";
+      textInput.value = text;
+
+      const removeBtn = document.createElement("button");
+      removeBtn.type = "button";
+      removeBtn.className = "option-remove-btn";
+      removeBtn.title = "Remove this option";
+      removeBtn.textContent = "\u2715";
+      removeBtn.addEventListener("click", () => {
+        row.remove();
+        const idx = optionRows.findIndex((r) => r.row === row);
+        if (idx !== -1) optionRows.splice(idx, 1);
+      });
+
+      row.appendChild(labelInput);
+      row.appendChild(textInput);
+      row.appendChild(removeBtn);
+      optsWrap.appendChild(row);
+      optionRows.push({ labelInput, textInput, row });
     }
+
+    for (const opt of sourceOptions) addOptionRow(opt.label, opt.text);
+
+    const addOptionBtn = document.createElement("button");
+    addOptionBtn.type = "button";
+    addOptionBtn.className = "btn option-add-btn";
+    addOptionBtn.textContent = "+ Add option";
+    addOptionBtn.addEventListener("click", () => addOptionRow("", ""));
+    form.appendChild(addOptionBtn);
 
     form.appendChild(document.createElement("hr")).className = "rule";
 
@@ -380,21 +406,28 @@
         const trimmedText = editTextInput.value.trim();
         const verifiedQuestionText = trimmedText !== item.question_text.trim() ? trimmedText : "";
 
-        // Options: same idea -- only send a replacement list if at
-        // least one option's text actually changed from the original
-        // (or from a prior edit), otherwise send null so the record
-        // keeps reflecting "no override".
+        // Options: rows can now be added, removed, or have their
+        // label/text edited -- a blank leftover row (never touched)
+        // is dropped rather than sent as an empty option. "changed"
+        // means either the count differs from the original or any
+        // surviving row's label/text differs positionally -- either
+        // case means the reviewer actually touched the option set, so
+        // send the full replacement list; otherwise send null so the
+        // record keeps reflecting "no override".
         let verifiedOptions = null;
-        if (optionInputs.length) {
-          const edited = optionInputs.some(
-            (inp, i) => inp.value.trim() !== sourceOptions[i].text.trim()
+        const currentOptions = optionRows
+          .map((r) => ({
+            label: r.labelInput.value.trim(),
+            text: r.textInput.value.trim(),
+          }))
+          .filter((o) => o.label !== "" || o.text !== "");
+        const optionsChanged =
+          currentOptions.length !== sourceOptions.length ||
+          currentOptions.some(
+            (o, i) => o.label !== sourceOptions[i].label || o.text !== sourceOptions[i].text
           );
-          if (edited) {
-            verifiedOptions = optionInputs.map((inp) => ({
-              label: inp.dataset.label,
-              text: inp.value.trim(),
-            }));
-          }
+        if (optionsChanged) {
+          verifiedOptions = currentOptions;
         }
 
         const res = await fetch("/api/verify", {
