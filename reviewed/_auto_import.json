@@ -1,5 +1,221 @@
 [
   {
+    "question_id": "DOC-56eb58bdf252-mcq-1",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "1",
+    "question_text": "The following statement describes the anatomical position:",
+    "options": [
+      {
+        "label": "a",
+        "text": "The eyes are looking backwards."
+      },
+      {
+        "label": "b",
+        "text": "The upper limbs are hanging by the sides."
+      },
+      {
+        "label": "c",
+        "text": "The palms are facing backwards."
+      },
+      {
+        "label": "d",
+        "text": "The thumbs are directed medially."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:01.313274+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-2",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "2",
+    "question_text": "Anatomical position is: the sides. arms hanging at the sides with the palms facing forward. arms\u60ac\u6302\u5728\u4fa7\u9762\u7684\u4e24\u4fa7\u3002",
+    "options": [
+      {
+        "label": "a",
+        "text": "A term used referring to the body facing forwards and sitting down."
+      },
+      {
+        "label": "b",
+        "text": "The position in which the body is lying down with feet parallel and arms by"
+      },
+      {
+        "label": "c",
+        "text": "The position in which the body is erect, facing front with feet parallel and"
+      },
+      {
+        "label": "d",
+        "text": "The position in which the body is erect, facing forward with feet\u5e73\u884c\u548c"
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "c",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_0.99"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:02.745148+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-3",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "3",
+    "question_text": "The plane which divides the body into 2 equal halves right and left is:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Median plane"
+      },
+      {
+        "label": "b",
+        "text": "Coronal plane"
+      },
+      {
+        "label": "c",
+        "text": "Paramedian plane"
+      },
+      {
+        "label": "d",
+        "text": "Horizontal plane"
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "a",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:03.994178+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-4",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "4",
+    "question_text": "Which of the following is true about the coronal plane?",
+    "options": [
+      {
+        "label": "a",
+        "text": "It is a horizontal plane."
+      },
+      {
+        "label": "b",
+        "text": "It divides the body into anterior and posterior halves."
+      },
+      {
+        "label": "c",
+        "text": "It cuts the body into upper and lower halves."
+      },
+      {
+        "label": "d",
+        "text": "It is a vertical plane that divides the body into 2 equal right and left halves."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          1
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_0.99"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:05.359773+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
     "question_id": "DOC-56eb58bdf252-mcq-7",
     "document_id": "DOC-56eb58bdf252",
     "section_type": "mcq",
@@ -28,6 +244,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -41,7 +262,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:17.605567+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:09.074216+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -75,6 +296,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -88,7 +314,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:18.864852+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:10.183790+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -122,6 +348,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -135,7 +366,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:19.974978+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:11.292517+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -169,6 +400,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -182,7 +418,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:21.222344+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:12.414614+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -216,6 +452,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -229,7 +470,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:22.472530+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:13.645263+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -263,6 +504,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -276,7 +522,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:23.719669+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:14.875026+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -310,6 +556,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -323,7 +574,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:24.957695+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:16.145511+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -357,6 +608,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -370,7 +626,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:26.064664+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:17.262296+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -404,6 +660,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -417,7 +678,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:27.171157+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:18.362088+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -451,6 +712,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -464,7 +730,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:28.280045+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:19.784733+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -498,6 +764,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -511,7 +782,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:29.406922+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:21.065321+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -545,6 +816,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -558,7 +834,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:30.508694+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:22.281276+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -592,6 +868,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -605,7 +886,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:31.616195+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:23.453414+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -627,7 +908,7 @@
       },
       {
         "label": "c",
-        "text": "Dlaphysis."
+        "text": "Diaphysis."
       },
       {
         "label": "d",
@@ -639,6 +920,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -652,7 +938,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:32.720157+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:24.644850+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -674,7 +960,7 @@
       },
       {
         "label": "c",
-        "text": "Dlaphysis."
+        "text": "Diaphysis."
       },
       {
         "label": "d",
@@ -686,6 +972,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -699,7 +990,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:33.960687+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:25.960060+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -733,6 +1024,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -746,7 +1042,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:35.075935+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:27.129741+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -764,15 +1060,15 @@
       },
       {
         "label": "b",
-        "text": "Longbone."
+        "text": "Long bone."
       },
       {
         "label": "c",
-        "text": "Flatbone."
+        "text": "Flat\u9aa8\u3002"
       },
       {
         "label": "d",
-        "text": "Seasamoidbone."
+        "text": "Seasamoid\u9aa8\u3002"
       }
     ],
     "matching_pairs": [],
@@ -780,6 +1076,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -791,9 +1092,9 @@
     "suggestions": [],
     "ai_confidence": 1.0,
     "ai_concerns": [],
-    "ai_notes": null,
+    "ai_notes": "The options are in different languages, but the structure is correct.",
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:36.173613+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:28.981985+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -807,15 +1108,15 @@
     "options": [
       {
         "label": "a",
-        "text": "Shorthone."
+        "text": "Short bone."
       },
       {
         "label": "b",
-        "text": "Longbone."
+        "text": "Long bone."
       },
       {
         "label": "c",
-        "text": "Flatbone."
+        "text": "Flat\u9aa8\u3002"
       },
       {
         "label": "d",
@@ -827,6 +1128,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -840,7 +1146,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:37.272327+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:30.186198+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -862,11 +1168,11 @@
       },
       {
         "label": "c",
-        "text": "Flatbone."
+        "text": "Flat\u9aa8\u3002"
       },
       {
         "label": "d",
-        "text": "Seasamoidbone."
+        "text": "Seasamoid bone."
       }
     ],
     "matching_pairs": [],
@@ -874,6 +1180,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -887,7 +1198,331 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:38.370290+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:31.422413+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-26",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "26",
+    "question_text": "What is the type of joint that connects the roots of the teeth to their sockets?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Gomphosis."
+      },
+      {
+        "label": "b",
+        "text": "Sutures."
+      },
+      {
+        "label": "c",
+        "text": "Cartilagenous."
+      },
+      {
+        "label": "d",
+        "text": "Synovial."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "a",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:32.746103+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-27",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "27",
+    "question_text": "What is the type of joint that connects the bones of the skull?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Gomphosis."
+      },
+      {
+        "label": "b",
+        "text": "Sutures."
+      },
+      {
+        "label": "c",
+        "text": "Cartilaginous."
+      },
+      {
+        "label": "d",
+        "text": "Synovial."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:33.861490+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-28",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "28",
+    "question_text": "What is the type of joint present at the ends of the growing long bones?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Fibrous."
+      },
+      {
+        "label": "b",
+        "text": "Primary cartilaginous."
+      },
+      {
+        "label": "c",
+        "text": "Secondary cartilaginous."
+      },
+      {
+        "label": "d",
+        "text": "Synovial."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "b",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_0.99"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:34.974744+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-29",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "29",
+    "question_text": "What is the type of joint of the intervertebral discs?",
+    "options": [
+      {
+        "label": "a",
+        "text": "Fibrous."
+      },
+      {
+        "label": "b",
+        "text": "Primary cartilaginous."
+      },
+      {
+        "label": "c",
+        "text": "Secondary cartilaginous."
+      },
+      {
+        "label": "d",
+        "text": "Synovial."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "c",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:36.217651+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-30",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "30",
+    "question_text": "One of the following joints is uniaxial:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Shoulder."
+      },
+      {
+        "label": "b",
+        "text": "Wrist."
+      },
+      {
+        "label": "c",
+        "text": "Elbow."
+      },
+      {
+        "label": "d",
+        "text": "Knee."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "c",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:37.334038+00:00",
+    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-31",
+    "document_id": "DOC-56eb58bdf252",
+    "section_type": "mcq",
+    "question_number": "31",
+    "question_text": "One of the following is biaxial joint:",
+    "options": [
+      {
+        "label": "a",
+        "text": "Shoulder."
+      },
+      {
+        "label": "b",
+        "text": "Hip."
+      },
+      {
+        "label": "c",
+        "text": "Elbow."
+      },
+      {
+        "label": "d",
+        "text": "Knee."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "d",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          5
+        ]
+      }
+    ],
+    "anomalies": [
+      "duplicate_question_merged:sim_1.00"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-09-16T04:50:38.433258+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -921,6 +1556,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -934,7 +1574,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:46.303091+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:39.675188+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -968,6 +1608,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -981,7 +1626,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:47.404086+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:40.779878+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1015,6 +1660,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1028,7 +1678,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:48.500961+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:41.881907+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1062,6 +1712,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1075,7 +1730,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:51.757297+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:45.311561+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1109,6 +1764,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1122,7 +1782,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:52.860596+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:46.433218+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1148,7 +1808,7 @@
       },
       {
         "label": "d",
-        "text": "Attachedtothebone."
+        "text": "Attachetdothebone."
       }
     ],
     "matching_pairs": [],
@@ -1156,6 +1816,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1169,7 +1834,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:53.960739+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:47.538247+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1203,6 +1868,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1216,7 +1886,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:55.060781+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:48.642154+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1250,6 +1920,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1263,7 +1938,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:56.160666+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:49.750170+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1297,6 +1972,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1310,7 +1990,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:57.282109+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:50.861441+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1344,6 +2024,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1357,7 +2042,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:58.429236+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:51.977116+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1391,6 +2076,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1404,7 +2094,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:25:59.534218+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:53.079480+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1438,6 +2128,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1451,7 +2146,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:00.779305+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:54.319505+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1485,6 +2180,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1498,7 +2198,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:02.016278+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:55.559916+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1532,6 +2232,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1545,7 +2250,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:03.374346+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:56.916711+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1579,6 +2284,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1592,7 +2302,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:04.480420+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:58.026475+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1626,6 +2336,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1639,7 +2354,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:05.605869+00:00",
+    "ai_reviewed_at": "2026-09-16T04:50:59.274115+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1665,7 +2380,7 @@
       },
       {
         "label": "d",
-        "text": "Mid brain,pons&medulla oblongata."
+        "text": "Midbrain,pons&medullaoblongata."
       }
     ],
     "matching_pairs": [],
@@ -1673,6 +2388,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1686,7 +2406,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:06.712280+00:00",
+    "ai_reviewed_at": "2026-09-16T04:51:00.394147+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1720,6 +2440,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1733,7 +2458,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:09.982577+00:00",
+    "ai_reviewed_at": "2026-09-16T04:51:03.643466+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1767,6 +2492,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1778,9 +2508,9 @@
     "suggestions": [],
     "ai_confidence": 1.0,
     "ai_concerns": [],
-    "ai_notes": null,
+    "ai_notes": "The answer key 'd' correctly corresponds to one of the option labels.",
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:12.064149+00:00",
+    "ai_reviewed_at": "2026-09-16T04:51:06.524587+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1814,6 +2544,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1827,7 +2562,7 @@
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:13.169637+00:00",
+    "ai_reviewed_at": "2026-09-16T04:51:07.767414+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null
@@ -1861,6 +2596,11 @@
     "verified_answer": null,
     "verified_at": null,
     "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
     "source_spans": [
       {
         "pages": [
@@ -1872,9 +2612,9 @@
     "suggestions": [],
     "ai_confidence": 1.0,
     "ai_concerns": [],
-    "ai_notes": "The source_answer 'c' does not match any option label.",
+    "ai_notes": "The answer key 'c' does not match any option label in the provided options.",
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-13T01:26:16.990898+00:00",
+    "ai_reviewed_at": "2026-09-16T04:51:12.038592+00:00",
     "original_filename": "Basis MCQ by Dr.Jalal.pdf",
     "subject": null,
     "topic": null

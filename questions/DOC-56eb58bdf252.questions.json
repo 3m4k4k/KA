@@ -34,6 +34,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -56,7 +61,7 @@
       "document_id": "DOC-56eb58bdf252",
       "section_type": "mcq",
       "question_number": "2",
-      "question_text": "Anatomical position is: the sides. arms hanging at the sides with the palms facing forward. arms hanging at the sides with palms facing backwards.",
+      "question_text": "Anatomical position is: the sides. arms hanging at the sides with the palms facing forward. arms\u60ac\u6302\u5728\u4fa7\u9762\u7684\u4e24\u4fa7\u3002",
       "options": [
         {
           "label": "a",
@@ -72,7 +77,7 @@
         },
         {
           "label": "d",
-          "text": "The position in which the body is erect, facing forward with feet parallel and"
+          "text": "The position in which the body is erect, facing forward with feet\u5e73\u884c\u548c"
         }
       ],
       "matching_pairs": [],
@@ -80,6 +85,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -88,7 +98,7 @@
         }
       ],
       "anomalies": [
-        "duplicate_question_number_conflict:sim_0.76"
+        "duplicate_question_merged:sim_0.99"
       ],
       "suggestions": [],
       "ai_confidence": null,
@@ -126,6 +136,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -160,11 +175,11 @@
         },
         {
           "label": "c",
-          "text": "It cuts the body Into upper and lower halves."
+          "text": "It cuts the body into upper and lower halves."
         },
         {
           "label": "d",
-          "text": "It is a vertical plane that divides the body Into 2 equal right and left halves."
+          "text": "It is a vertical plane that divides the body into 2 equal right and left halves."
         }
       ],
       "matching_pairs": [],
@@ -172,6 +187,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -214,6 +234,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -223,7 +248,7 @@
       ],
       "anomalies": [
         "unexpected_option_count:3",
-        "duplicate_question_merged:sim_0.91"
+        "duplicate_question_merged:sim_0.94"
       ],
       "suggestions": [],
       "ai_confidence": null,
@@ -257,6 +282,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -303,6 +333,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -347,6 +382,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -391,6 +431,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -435,6 +480,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -479,6 +529,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -523,6 +578,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -567,6 +627,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -611,6 +676,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -655,6 +725,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -699,6 +774,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -743,6 +823,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -787,6 +872,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -831,6 +921,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -863,7 +958,7 @@
         },
         {
           "label": "c",
-          "text": "Dlaphysis."
+          "text": "Diaphysis."
         },
         {
           "label": "d",
@@ -875,6 +970,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -907,7 +1007,7 @@
         },
         {
           "label": "c",
-          "text": "Dlaphysis."
+          "text": "Diaphysis."
         },
         {
           "label": "d",
@@ -919,6 +1019,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -963,6 +1068,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -991,15 +1101,15 @@
         },
         {
           "label": "b",
-          "text": "Longbone."
+          "text": "Long bone."
         },
         {
           "label": "c",
-          "text": "Flatbone."
+          "text": "Flat\u9aa8\u3002"
         },
         {
           "label": "d",
-          "text": "Seasamoidbone."
+          "text": "Seasamoid\u9aa8\u3002"
         }
       ],
       "matching_pairs": [],
@@ -1007,6 +1117,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1031,15 +1146,15 @@
       "options": [
         {
           "label": "a",
-          "text": "Shorthone."
+          "text": "Short bone."
         },
         {
           "label": "b",
-          "text": "Longbone."
+          "text": "Long bone."
         },
         {
           "label": "c",
-          "text": "Flatbone."
+          "text": "Flat\u9aa8\u3002"
         },
         {
           "label": "d",
@@ -1051,6 +1166,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1083,11 +1203,11 @@
         },
         {
           "label": "c",
-          "text": "Flatbone."
+          "text": "Flat\u9aa8\u3002"
         },
         {
           "label": "d",
-          "text": "Seasamoidbone."
+          "text": "Seasamoid bone."
         }
       ],
       "matching_pairs": [],
@@ -1095,6 +1215,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1139,6 +1264,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1185,6 +1315,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1231,6 +1366,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1239,7 +1379,7 @@
         }
       ],
       "anomalies": [
-        "duplicate_question_merged:sim_1.00"
+        "duplicate_question_merged:sim_0.99"
       ],
       "suggestions": [],
       "ai_confidence": null,
@@ -1277,6 +1417,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1323,6 +1468,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1369,6 +1519,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1415,6 +1570,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1459,6 +1619,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1503,6 +1668,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1547,6 +1717,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1591,6 +1766,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1635,6 +1815,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1671,7 +1856,7 @@
         },
         {
           "label": "d",
-          "text": "Attachedtothebone."
+          "text": "Attachetdothebone."
         }
       ],
       "matching_pairs": [],
@@ -1679,6 +1864,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1723,6 +1913,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1767,6 +1962,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1811,6 +2011,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1855,6 +2060,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1899,6 +2109,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1943,6 +2158,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1987,6 +2207,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2031,6 +2256,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2075,6 +2305,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2119,6 +2354,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2155,7 +2395,7 @@
         },
         {
           "label": "d",
-          "text": "Mid brain,pons&medulla oblongata."
+          "text": "Midbrain,pons&medullaoblongata."
         }
       ],
       "matching_pairs": [],
@@ -2163,6 +2403,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2219,6 +2464,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2265,6 +2515,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2305,6 +2560,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2351,6 +2611,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2395,6 +2660,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2439,6 +2709,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2483,6 +2758,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2500,22 +2780,19 @@
     }
   ],
   "unmatched_answer_key_entries": [],
-  "document_anomalies": [
-    "mcq_q2_conflicting_duplicates"
-  ],
+  "document_anomalies": [],
   "needs_review": true,
   "review_reasons": [
-    "mcq_q2_conflicting_duplicates",
     "DOC-56eb58bdf252-mcq-1:duplicate_question_merged:sim_1.00",
-    "DOC-56eb58bdf252-mcq-2:duplicate_question_number_conflict:sim_0.76",
+    "DOC-56eb58bdf252-mcq-2:duplicate_question_merged:sim_0.99",
     "DOC-56eb58bdf252-mcq-3:duplicate_question_merged:sim_1.00",
     "DOC-56eb58bdf252-mcq-4:duplicate_question_merged:sim_0.99",
     "DOC-56eb58bdf252-mcq-5:unexpected_option_count:3",
-    "DOC-56eb58bdf252-mcq-5:duplicate_question_merged:sim_0.91",
+    "DOC-56eb58bdf252-mcq-5:duplicate_question_merged:sim_0.94",
     "DOC-56eb58bdf252-mcq-6:unexpected_option_count:3",
     "DOC-56eb58bdf252-mcq-26:duplicate_question_merged:sim_1.00",
     "DOC-56eb58bdf252-mcq-27:duplicate_question_merged:sim_1.00",
-    "DOC-56eb58bdf252-mcq-28:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-28:duplicate_question_merged:sim_0.99",
     "DOC-56eb58bdf252-mcq-29:duplicate_question_merged:sim_1.00",
     "DOC-56eb58bdf252-mcq-30:duplicate_question_merged:sim_1.00",
     "DOC-56eb58bdf252-mcq-31:duplicate_question_merged:sim_1.00",

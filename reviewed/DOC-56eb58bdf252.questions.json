@@ -34,6 +34,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -49,14 +54,14 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:09.924867+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:01.313274+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-2",
       "document_id": "DOC-56eb58bdf252",
       "section_type": "mcq",
       "question_number": "2",
-      "question_text": "Anatomical position is: the sides. arms hanging at the sides with the palms facing forward. arms hanging at the sides with palms facing backwards.",
+      "question_text": "Anatomical position is: the sides. arms hanging at the sides with the palms facing forward. arms\u60ac\u6302\u5728\u4fa7\u9762\u7684\u4e24\u4fa7\u3002",
       "options": [
         {
           "label": "a",
@@ -72,7 +77,7 @@
         },
         {
           "label": "d",
-          "text": "The position in which the body is erect, facing forward with feet parallel and"
+          "text": "The position in which the body is erect, facing forward with feet\u5e73\u884c\u548c"
         }
       ],
       "matching_pairs": [],
@@ -80,6 +85,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -88,14 +98,14 @@
         }
       ],
       "anomalies": [
-        "duplicate_question_number_conflict:sim_0.76"
+        "duplicate_question_merged:sim_0.99"
       ],
       "suggestions": [],
       "ai_confidence": 1.0,
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:11.399169+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:02.745148+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-3",
@@ -126,6 +136,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -141,7 +156,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:12.668861+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:03.994178+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-4",
@@ -160,11 +175,11 @@
         },
         {
           "label": "c",
-          "text": "It cuts the body Into upper and lower halves."
+          "text": "It cuts the body into upper and lower halves."
         },
         {
           "label": "d",
-          "text": "It is a vertical plane that divides the body Into 2 equal right and left halves."
+          "text": "It is a vertical plane that divides the body into 2 equal right and left halves."
         }
       ],
       "matching_pairs": [],
@@ -172,6 +187,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -187,7 +207,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:13.903032+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:05.359773+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-5",
@@ -211,9 +231,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "a",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "a",
+      "verified_at": "2026-09-16T04:56:05.346842+00:00",
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "Lateral."
+        },
+        {
+          "label": "b",
+          "text": "Medial."
+        },
+        {
+          "label": "c",
+          "text": "Distal."
+        },
+        {
+          "label": "d",
+          "text": "Proximal."
+        }
+      ],
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": "2026-09-16T04:56:05.350537+00:00",
       "source_spans": [
         {
           "pages": [
@@ -223,14 +265,14 @@
       ],
       "anomalies": [
         "unexpected_option_count:3",
-        "duplicate_question_merged:sim_0.91"
+        "duplicate_question_merged:sim_0.94"
       ],
       "suggestions": [],
       "ai_confidence": 1.0,
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:15.143594+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:06.601845+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-6",
@@ -254,9 +296,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "d",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "d",
+      "verified_at": "2026-09-16T04:56:45.157687+00:00",
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "Lateral."
+        },
+        {
+          "label": "b",
+          "text": "Medial."
+        },
+        {
+          "label": "c",
+          "text": "Distal."
+        },
+        {
+          "label": "d",
+          "text": "Proximal."
+        }
+      ],
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": "2026-09-16T04:56:45.157951+00:00",
       "source_spans": [
         {
           "pages": [
@@ -272,7 +336,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:16.254325+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:07.846166+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-7",
@@ -303,6 +367,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -316,7 +385,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:17.605567+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:09.074216+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-8",
@@ -347,6 +416,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -360,7 +434,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:18.864852+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:10.183790+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-9",
@@ -391,6 +465,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -404,7 +483,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:19.974978+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:11.292517+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-10",
@@ -435,6 +514,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -448,7 +532,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:21.222344+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:12.414614+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-11",
@@ -479,6 +563,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -492,7 +581,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:22.472530+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:13.645263+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-12",
@@ -523,6 +612,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -536,7 +630,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:23.719669+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:14.875026+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-13",
@@ -567,6 +661,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -580,7 +679,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:24.957695+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:16.145511+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-14",
@@ -611,6 +710,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -624,7 +728,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:26.064664+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:17.262296+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-15",
@@ -655,6 +759,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -668,7 +777,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:27.171157+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:18.362088+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-16",
@@ -699,6 +808,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -712,7 +826,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:28.280045+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:19.784733+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-17",
@@ -743,6 +857,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -756,7 +875,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:29.406922+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:21.065321+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-18",
@@ -787,6 +906,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -800,7 +924,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:30.508694+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:22.281276+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-19",
@@ -831,6 +955,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -844,7 +973,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:31.616195+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:23.453414+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-20",
@@ -863,7 +992,7 @@
         },
         {
           "label": "c",
-          "text": "Dlaphysis."
+          "text": "Diaphysis."
         },
         {
           "label": "d",
@@ -875,6 +1004,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -888,7 +1022,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:32.720157+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:24.644850+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-21",
@@ -907,7 +1041,7 @@
         },
         {
           "label": "c",
-          "text": "Dlaphysis."
+          "text": "Diaphysis."
         },
         {
           "label": "d",
@@ -919,6 +1053,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -932,7 +1071,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:33.960687+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:25.960060+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-22",
@@ -963,6 +1102,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -976,7 +1120,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:35.075935+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:27.129741+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-23",
@@ -991,15 +1135,15 @@
         },
         {
           "label": "b",
-          "text": "Longbone."
+          "text": "Long bone."
         },
         {
           "label": "c",
-          "text": "Flatbone."
+          "text": "Flat\u9aa8\u3002"
         },
         {
           "label": "d",
-          "text": "Seasamoidbone."
+          "text": "Seasamoid\u9aa8\u3002"
         }
       ],
       "matching_pairs": [],
@@ -1007,6 +1151,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1018,9 +1167,9 @@
       "suggestions": [],
       "ai_confidence": 1.0,
       "ai_concerns": [],
-      "ai_notes": null,
+      "ai_notes": "The options are in different languages, but the structure is correct.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:36.173613+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:28.981985+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-24",
@@ -1031,15 +1180,15 @@
       "options": [
         {
           "label": "a",
-          "text": "Shorthone."
+          "text": "Short bone."
         },
         {
           "label": "b",
-          "text": "Longbone."
+          "text": "Long bone."
         },
         {
           "label": "c",
-          "text": "Flatbone."
+          "text": "Flat\u9aa8\u3002"
         },
         {
           "label": "d",
@@ -1051,6 +1200,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1064,7 +1218,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:37.272327+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:30.186198+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-25",
@@ -1083,11 +1237,11 @@
         },
         {
           "label": "c",
-          "text": "Flatbone."
+          "text": "Flat\u9aa8\u3002"
         },
         {
           "label": "d",
-          "text": "Seasamoidbone."
+          "text": "Seasamoid bone."
         }
       ],
       "matching_pairs": [],
@@ -1095,6 +1249,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1108,7 +1267,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:38.370290+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:31.422413+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-26",
@@ -1139,6 +1298,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1154,7 +1318,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:39.476663+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:32.746103+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-27",
@@ -1185,6 +1349,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1200,7 +1369,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:40.612332+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:33.861490+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-28",
@@ -1231,6 +1400,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1239,14 +1413,14 @@
         }
       ],
       "anomalies": [
-        "duplicate_question_merged:sim_1.00"
+        "duplicate_question_merged:sim_0.99"
       ],
       "suggestions": [],
       "ai_confidence": 1.0,
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:41.725849+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:34.974744+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-29",
@@ -1277,6 +1451,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1292,7 +1471,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:42.837995+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:36.217651+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-30",
@@ -1323,6 +1502,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1338,7 +1522,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:43.943028+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:37.334038+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-31",
@@ -1369,6 +1553,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1384,7 +1573,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:45.039008+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:38.433258+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-32",
@@ -1415,6 +1604,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1428,7 +1622,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:46.303091+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:39.675188+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-33",
@@ -1459,6 +1653,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1472,7 +1671,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:47.404086+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:40.779878+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-34",
@@ -1503,6 +1702,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1516,7 +1720,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:48.500961+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:41.881907+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-35",
@@ -1544,9 +1748,14 @@
       ],
       "matching_pairs": [],
       "source_answer": "b",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "b",
+      "verified_at": "2026-09-16T04:57:22.184333+00:00",
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1560,9 +1769,9 @@
       "ai_concerns": [
         "source_answer does not match any option label"
       ],
-      "ai_notes": "The correct answer for the wrist joint is not listed among the options.",
+      "ai_notes": "The answer key value 'b' does not correspond to any of the provided option labels.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:50.636688+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:44.199112+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-36",
@@ -1593,6 +1802,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1606,7 +1820,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:51.757297+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:45.311561+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-37",
@@ -1637,6 +1851,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1650,7 +1869,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:52.860596+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:46.433218+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-38",
@@ -1673,7 +1892,7 @@
         },
         {
           "label": "d",
-          "text": "Attachedtothebone."
+          "text": "Attachetdothebone."
         }
       ],
       "matching_pairs": [],
@@ -1681,6 +1900,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1694,7 +1918,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:53.960739+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:47.538247+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-39",
@@ -1725,6 +1949,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1738,7 +1967,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:55.060781+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:48.642154+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-40",
@@ -1769,6 +1998,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1782,7 +2016,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:56.160666+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:49.750170+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-41",
@@ -1813,6 +2047,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1826,7 +2065,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:57.282109+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:50.861441+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-42",
@@ -1857,6 +2096,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1870,7 +2114,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:58.429236+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:51.977116+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-43",
@@ -1901,6 +2145,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1914,7 +2163,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:25:59.534218+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:53.079480+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-44",
@@ -1945,6 +2194,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -1958,7 +2212,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:00.779305+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:54.319505+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-45",
@@ -1989,6 +2243,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2002,7 +2261,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:02.016278+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:55.559916+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-46",
@@ -2033,6 +2292,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2046,7 +2310,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:03.374346+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:56.916711+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-47",
@@ -2077,6 +2341,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2090,7 +2359,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:04.480420+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:58.026475+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-48",
@@ -2121,6 +2390,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2134,7 +2408,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:05.605869+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:59.274115+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-49",
@@ -2157,7 +2431,7 @@
         },
         {
           "label": "d",
-          "text": "Mid brain,pons&medulla oblongata."
+          "text": "Midbrain,pons&medullaoblongata."
         }
       ],
       "matching_pairs": [],
@@ -2165,6 +2439,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2178,7 +2457,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:06.712280+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:00.394147+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-50",
@@ -2218,9 +2497,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "d",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "d",
+      "verified_at": "2026-09-16T05:02:21.114625+00:00",
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": "The segments of the spinal cord are:",
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "8 cervical,10 thoracic, 5 lumbar, 5 sacral and one coccygeal."
+        },
+        {
+          "label": "b",
+          "text": "10 cervical,12 thoracic, 5 lumbar, 5 sacral and one coccygeal."
+        },
+        {
+          "label": "c",
+          "text": "8 cervical,12 thoracic, 5 lumbar, one sacral and one coccygeal."
+        },
+        {
+          "label": "d",
+          "text": "8 cervical, 12 thoracic, 5 lumbar, 5 sacral and one coccygeal."
+        }
+      ],
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": "2026-09-16T05:02:21.119707+00:00",
       "source_spans": [
         {
           "pages": [
@@ -2239,7 +2540,7 @@
       ],
       "ai_notes": "Flagged by deterministic duplication check (independent of AI judgment).",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:08.626042+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:02.281736+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-51",
@@ -2270,6 +2571,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2283,7 +2589,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:09.982577+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:03.643466+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-52",
@@ -2307,9 +2613,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "c",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "c",
+      "verified_at": "2026-09-16T05:02:58.738873+00:00",
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "lateral."
+        },
+        {
+          "label": "b",
+          "text": "proximal."
+        },
+        {
+          "label": "c",
+          "text": "medial."
+        },
+        {
+          "label": "d",
+          "text": "inferior."
+        }
+      ],
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": "2026-09-16T05:02:58.739068+00:00",
       "source_spans": [
         {
           "pages": [
@@ -2325,7 +2653,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:10.960437+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:04.741749+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-53",
@@ -2356,6 +2684,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2367,9 +2700,9 @@
       "suggestions": [],
       "ai_confidence": 1.0,
       "ai_concerns": [],
-      "ai_notes": null,
+      "ai_notes": "The answer key 'd' correctly corresponds to one of the option labels.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:12.064149+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:06.524587+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-54",
@@ -2400,6 +2733,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2413,7 +2751,7 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:13.169637+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:07.767414+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-55",
@@ -2441,9 +2779,14 @@
       ],
       "matching_pairs": [],
       "source_answer": null,
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "b",
+      "verified_at": "2026-09-16T05:05:50.595110+00:00",
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2455,11 +2798,11 @@
       "suggestions": [],
       "ai_confidence": 0.0,
       "ai_concerns": [
-        "source_answer_missing"
+        "answer_key_missing_left_label"
       ],
-      "ai_notes": "The source answer is missing, which is required for this section type.",
+      "ai_notes": "The source answer is missing, so it cannot be evaluated for structural completeness.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:15.296997+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:10.168305+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-56",
@@ -2490,6 +2833,11 @@
       "verified_answer": null,
       "verified_at": null,
       "verification_note": null,
+      "duplicate_of_question_id": null,
+      "verified_question_text": null,
+      "verified_options": null,
+      "verified_matching_pairs": null,
+      "structural_reviewed_at": null,
       "source_spans": [
         {
           "pages": [
@@ -2501,28 +2849,25 @@
       "suggestions": [],
       "ai_confidence": 1.0,
       "ai_concerns": [],
-      "ai_notes": "The source_answer 'c' does not match any option label.",
+      "ai_notes": "The answer key 'c' does not match any option label in the provided options.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-13T01:26:16.990898+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:12.038592+00:00"
     }
   ],
   "unmatched_answer_key_entries": [],
-  "document_anomalies": [
-    "mcq_q2_conflicting_duplicates"
-  ],
+  "document_anomalies": [],
   "needs_review": true,
   "review_reasons": [
-    "mcq_q2_conflicting_duplicates",
     "DOC-56eb58bdf252-mcq-1:duplicate_question_merged:sim_1.00",
-    "DOC-56eb58bdf252-mcq-2:duplicate_question_number_conflict:sim_0.76",
+    "DOC-56eb58bdf252-mcq-2:duplicate_question_merged:sim_0.99",
     "DOC-56eb58bdf252-mcq-3:duplicate_question_merged:sim_1.00",
     "DOC-56eb58bdf252-mcq-4:duplicate_question_merged:sim_0.99",
     "DOC-56eb58bdf252-mcq-5:unexpected_option_count:3",
-    "DOC-56eb58bdf252-mcq-5:duplicate_question_merged:sim_0.91",
+    "DOC-56eb58bdf252-mcq-5:duplicate_question_merged:sim_0.94",
     "DOC-56eb58bdf252-mcq-6:unexpected_option_count:3",
     "DOC-56eb58bdf252-mcq-26:duplicate_question_merged:sim_1.00",
     "DOC-56eb58bdf252-mcq-27:duplicate_question_merged:sim_1.00",
-    "DOC-56eb58bdf252-mcq-28:duplicate_question_merged:sim_1.00",
+    "DOC-56eb58bdf252-mcq-28:duplicate_question_merged:sim_0.99",
     "DOC-56eb58bdf252-mcq-29:duplicate_question_merged:sim_1.00",
     "DOC-56eb58bdf252-mcq-30:duplicate_question_merged:sim_1.00",
     "DOC-56eb58bdf252-mcq-31:duplicate_question_merged:sim_1.00",
