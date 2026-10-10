@@ -1,0 +1,167 @@
+[
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-1",
+    "search_query_count": 0,
+    "search_queries": [],
+    "raw_text": "{\"agrees\": true, \"confidence\": 0.95, \"suggested_answer\": \"b\", \"evidence_notes\": \"Standard anatomical position definition consistently states that the upper limbs hang by the sides.\"}",
+    "usage": {
+      "prompt_tokens": 3196,
+      "completion_tokens": 786,
+      "total_tokens": 3982,
+      "cost": 0.007,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 843,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "server_tool_use_details": {
+        "web_search_requests": 1,
+        "tool_calls_requested": 1,
+        "tool_calls_executed": 1
+      }
+    }
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-2",
+    "search_query_count": 0,
+    "search_queries": [],
+    "raw_text": "\n\n{\"agrees\": true, \"confidence\": 0.95, \"suggested_answer\": \"c\", \"evidence_notes\": \"Multiple authoritative sources (NCBI, OpenStax, Wikipedia, LibreTexts, Pearson) define anatomical position as the body standing upright/erect, facing forward/front, with feet parallel. Option c matches this definition exactly.\"}",
+    "usage": {
+      "prompt_tokens": 5720,
+      "completion_tokens": 928,
+      "total_tokens": 6648,
+      "cost": 0.014,
+      "prompt_tokens_details": {
+        "cached_tokens": 16,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 947,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "server_tool_use_details": {
+        "web_search_requests": 2,
+        "tool_calls_requested": 2,
+        "tool_calls_executed": 2
+      }
+    }
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-3",
+    "search_query_count": 0,
+    "search_queries": [],
+    "raw_text": "\n\n{\"agrees\": true, \"confidence\": 0.98, \"suggested_answer\": \"a\", \"evidence_notes\": \"Multiple authoritative sources (Pearson, Wikipedia, clinanat.com, KSU anatomy atlas) confirm the median/midsagittal plane divides the body into equal right and left halves. Coronal divides anterior/posterior, horizontal divides superior/inferior, paramedian is off-midline and unequal.\"}",
+    "usage": {
+      "prompt_tokens": 2620,
+      "completion_tokens": 330,
+      "total_tokens": 2950,
+      "cost": 0.007,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 228,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "server_tool_use_details": {
+        "web_search_requests": 1,
+        "tool_calls_requested": 1,
+        "tool_calls_executed": 1
+      }
+    }
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-4",
+    "search_query_count": 0,
+    "search_queries": [],
+    "raw_text": "{\"agrees\": true, \"confidence\": 0.96, \"suggested_answer\": \"b\", \"evidence_notes\": \"Coronal (frontal) plane divides the body into anterior and posterior halves.\"}",
+    "usage": {
+      "prompt_tokens": 3325,
+      "completion_tokens": 520,
+      "total_tokens": 3845,
+      "cost": 0.007,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 498,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "server_tool_use_details": {
+        "web_search_requests": 1,
+        "tool_calls_requested": 1,
+        "tool_calls_executed": 1
+      }
+    }
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-5",
+    "search_query_count": 0,
+    "search_queries": [],
+    "raw_text": "{\"agrees\": false, \"confidence\": 0.99, \"suggested_answer\": \"a\", \"evidence_notes\": \"Web search confirms 'lateral' is the correct anatomical term meaning 'away from the median plane,' while 'medial' means 'toward the median plane.' None of the listed options (medial, distal, proximal) are correct for this definition. The given answer 'a' likely corresponds to 'lateral' which was omitted from the visible options.\"}",
+    "usage": {
+      "prompt_tokens": 3107,
+      "completion_tokens": 1089,
+      "total_tokens": 4196,
+      "cost": 0.007,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1093,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "server_tool_use_details": {
+        "web_search_requests": 1,
+        "tool_calls_requested": 1,
+        "tool_calls_executed": 1
+      }
+    }
+  }
+]

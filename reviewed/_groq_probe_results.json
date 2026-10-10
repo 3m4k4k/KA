@@ -1,0 +1,200 @@
+{
+  "real": [
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-1",
+      "given_answer": "b",
+      "agrees": true,
+      "suggested_answer": "b",
+      "explanation": "In the anatomical position the body stands upright with the arms at the sides, palms facing forward and thumbs pointing laterally.",
+      "why_others_wrong": {
+        "a": "Eyes face forward, not backwards.",
+        "c": "Palms face anterior (forward), not backwards.",
+        "d": "Thumbs point laterally (away from the midline), not medially."
+      },
+      "concerns": [],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 1.17,
+      "total_tokens": 594,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": true, \"suggested_answer\": \"b\", \"explanation\": \"In the anatomical position the body stands upright with the arms at the sides, palms facing forward and thumbs pointing laterally.\", \"why_others_wrong\": {\"a\": \"Eyes face forward, not backwards.\", \"c\": \"Palms face anterior (forward), not backwards.\", \"d\": \"Thumbs point laterally (away from the midline), not medially.\"}, \"concerns\": []}"
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-2",
+      "given_answer": "c",
+      "agrees": true,
+      "suggested_answer": "c",
+      "explanation": "The anatomical position is defined as the body standing erect, facing forward, arms at the sides with palms forward, and feet parallel (and usually together).",
+      "why_others_wrong": {
+        "a": "Describes a seated posture, not the standard anatomical position.",
+        "b": "Describes a supine position, not standing.",
+        "d": "Option is truncated/contains mixed language and does not clearly state the full definition."
+      },
+      "concerns": [
+        "garbled_option"
+      ],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 1.15,
+      "total_tokens": 785,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": true, \"suggested_answer\": \"c\", \"explanation\": \"The anatomical position is defined as the body standing erect, facing forward, arms at the sides with palms forward, and feet parallel (and usually together).\", \"why_others_wrong\": {\"a\": \"Describes a seated posture, not the standard anatomical position.\", \"b\": \"Describes a supine position, not standing.\", \"d\": \"Option is truncated/contains mixed language and does not clearly state the full definition.\"}, \"concerns\": [\"garbled_option\"]}"
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-3",
+      "given_answer": "a",
+      "agrees": true,
+      "suggested_answer": "a",
+      "explanation": "The median (midsagittal) plane passes through the midline and divides the body into equal right and left halves.",
+      "why_others_wrong": {
+        "b": "Coronal (frontal) plane divides anterior and posterior sections.",
+        "c": "Paramedian plane is parallel to the median plane but does not bisect the body equally.",
+        "d": "Horizontal (transverse) plane divides superior and inferior parts."
+      },
+      "concerns": [],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 0.87,
+      "total_tokens": 566,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": true, \"suggested_answer\": \"a\", \"explanation\": \"The median (midsagittal) plane passes through the midline and divides the body into equal right and left halves.\", \"why_others_wrong\": {\"b\": \"Coronal (frontal) plane divides anterior and posterior sections.\", \"c\": \"Paramedian plane is parallel to the median plane but does not bisect the body equally.\", \"d\": \"Horizontal (transverse) plane divides superior and inferior parts.\"}, \"concerns\": []}"
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-4",
+      "given_answer": "b",
+      "agrees": true,
+      "suggested_answer": "b",
+      "explanation": "The coronal (frontal) plane is a vertical plane that separates the body into anterior (ventral) and posterior (dorsal) sections.",
+      "why_others_wrong": {
+        "a": "Horizontal planes are transverse/axial, not coronal.",
+        "c": "Upper and lower division is done by the transverse plane.",
+        "d": "Division into right and left halves is the midsagittal (median) plane."
+      },
+      "concerns": [],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 1.07,
+      "total_tokens": 683,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": true, \"suggested_answer\": \"b\", \"explanation\": \"The coronal (frontal) plane is a vertical plane that separates the body into anterior (ventral) and posterior (dorsal) sections.\", \"why_others_wrong\": {\"a\": \"Horizontal planes are transverse/axial, not coronal.\", \"c\": \"Upper and lower division is done by the transverse plane.\", \"d\": \"Division into right and left halves is the midsagittal (median) plane.\"}, \"concerns\": []}"
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-5",
+      "given_answer": "a",
+      "agrees": true,
+      "suggested_answer": "a",
+      "explanation": "Lateral describes a position away from the median (mid) plane, opposite of medial.",
+      "why_others_wrong": {
+        "b": "Medial means toward the median plane.",
+        "c": "Distal refers to distance from the point of attachment, not the median plane.",
+        "d": "Proximal refers to closeness to the point of attachment, not the median plane."
+      },
+      "concerns": [],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 0.96,
+      "total_tokens": 512,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": true, \"suggested_answer\": \"a\", \"explanation\": \"Lateral describes a position away from the median (mid) plane, opposite of medial.\", \"why_others_wrong\": {\"b\": \"Medial means toward the median plane.\", \"c\": \"Distal refers to distance from the point of attachment, not the median plane.\", \"d\": \"Proximal refers to closeness to the point of attachment, not the median plane.\"}, \"concerns\": []}"
+    }
+  ],
+  "corrupt": [
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-1",
+      "given_answer": "c",
+      "agrees": false,
+      "suggested_answer": "b",
+      "explanation": "In the anatomical position the person stands upright with arms at the sides, palms facing forward and thumbs pointing laterally.",
+      "why_others_wrong": {
+        "a": "Eyes face forward, not backwards.",
+        "c": "Palms face anteriorly, not backwards.",
+        "d": "Thumbs point laterally, not medially."
+      },
+      "concerns": [],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 1.52,
+      "total_tokens": 703,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": false, \"suggested_answer\": \"b\", \"explanation\": \"In the anatomical position the person stands upright with arms at the sides, palms facing forward and thumbs pointing laterally.\", \"why_others_wrong\": {\"a\": \"Eyes face forward, not backwards.\", \"c\": \"Palms face anteriorly, not backwards.\", \"d\": \"Thumbs point laterally, not medially.\"}, \"concerns\": []}"
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-2",
+      "given_answer": "d",
+      "agrees": false,
+      "suggested_answer": "c",
+      "explanation": "Anatomical position is standing erect, facing forward, arms at the sides with palms forward, and feet parallel.",
+      "why_others_wrong": {
+        "a": "Describes a seated posture, not anatomical position.",
+        "b": "Describes a supine position, not anatomical position.",
+        "d": "Option is garbled/incomplete and does not clearly state the definition."
+      },
+      "concerns": [
+        "garbled_option"
+      ],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 1.15,
+      "total_tokens": 785,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": false, \"suggested_answer\": \"c\", \"explanation\": \"Anatomical position is standing erect, facing forward, arms at the sides with palms forward, and feet parallel.\", \"why_others_wrong\": {\"a\": \"Describes a seated posture, not anatomical position.\", \"b\": \"Describes a supine position, not anatomical position.\", \"d\": \"Option is garbled/incomplete and does not clearly state the definition.\"}, \"concerns\": [\"garbled_option\"]}"
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-3",
+      "given_answer": "b",
+      "agrees": false,
+      "suggested_answer": "a",
+      "explanation": "The median (mid\u2011sagittal) plane runs vertically through the midline and splits the body into equal right and left halves.",
+      "why_others_wrong": {
+        "b": "Coronal (frontal) plane divides the body into anterior and posterior sections.",
+        "c": "Paramedian plane is parallel to the median plane but does not bisect the body into equal halves.",
+        "d": "Horizontal (transverse) plane divides the body into superior and inferior parts."
+      },
+      "concerns": [],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 1.27,
+      "total_tokens": 596,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": false, \"suggested_answer\": \"a\", \"explanation\": \"The median (mid\u2011sagittal) plane runs vertically through the midline and splits the body into equal right and left halves.\", \"why_others_wrong\": {\"b\": \"Coronal (frontal) plane divides the body into anterior and posterior sections.\", \"c\": \"Paramedian plane is parallel to the median plane but does not bisect the body into equal halves.\", \"d\": \"Horizontal (transverse) plane divides the body into superior and inferior parts.\"}, \"concerns\": []}"
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-4",
+      "given_answer": "c",
+      "agrees": false,
+      "suggested_answer": "b",
+      "explanation": "The coronal (frontal) plane is a vertical plane that separates the body into anterior (ventral) and posterior (dorsal) sections.",
+      "why_others_wrong": {
+        "a": "Horizontal planes are transverse/axial, not coronal.",
+        "c": "Upper and lower division describes the transverse plane.",
+        "d": "Dividing the body into right and left halves describes the midsagittal plane."
+      },
+      "concerns": [],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 2.3,
+      "total_tokens": 684,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": false, \"suggested_answer\": \"b\", \"explanation\": \"The coronal (frontal) plane is a vertical plane that separates the body into anterior (ventral) and posterior (dorsal) sections.\", \"why_others_wrong\": {\"a\": \"Horizontal planes are transverse/axial, not coronal.\", \"c\": \"Upper and lower division describes the transverse plane.\", \"d\": \"Dividing the body into right and left halves describes the midsagittal plane.\"}, \"concerns\": []}"
+    },
+    {
+      "question_id": "DOC-56eb58bdf252-mcq-5",
+      "given_answer": "b",
+      "agrees": false,
+      "suggested_answer": "a",
+      "explanation": "Lateral denotes a direction away from the median (mid) plane, whereas medial is toward it.",
+      "why_others_wrong": {
+        "b": "Medial means toward the median plane.",
+        "c": "Distal refers to a point farther from the trunk or point of origin.",
+        "d": "Proximal refers to a point nearer to the trunk or point of origin."
+      },
+      "concerns": [],
+      "parsed_ok": true,
+      "error": null,
+      "latency_s": 1.27,
+      "total_tokens": 597,
+      "retries_429": 0,
+      "raw_text": "{\"agrees\": false, \"suggested_answer\": \"a\", \"explanation\": \"Lateral denotes a direction away from the median (mid) plane, whereas medial is toward it.\", \"why_others_wrong\": {\"b\": \"Medial means toward the median plane.\", \"c\": \"Distal refers to a point farther from the trunk or point of origin.\", \"d\": \"Proximal refers to a point nearer to the trunk or point of origin.\"}, \"concerns\": []}"
+    }
+  ]
+}

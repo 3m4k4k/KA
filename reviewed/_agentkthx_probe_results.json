@@ -1,0 +1,57 @@
+[
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-1",
+    "parsed_response": {
+      "agrees": true,
+      "confidence": 0.99,
+      "suggested_answer": null,
+      "evidence_notes": "Upper limbs are described as hanging by the sides with palms forward in the standard anatomical position.",
+      "source_url": "https://en.wikipedia.org/wiki/Standard_anatomical_position"
+    },
+    "raw_text": "{\"agrees\": true, \"confidence\": 0.99, \"suggested_answer\": null, \"evidence_notes\": \"Upper limbs are described as hanging by the sides with palms forward in the standard anatomical position.\", \"source_url\": \"https://en.wikipedia.org/wiki/Standard_anatomical_position\"}"
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-2",
+    "parsed_response": {
+      "agrees": true,
+      "confidence": 0.95,
+      "suggested_answer": "c",
+      "evidence_notes": "Standard anatomical position is standing erect, facing forward, feet together, arms at sides with palms forward.",
+      "source_url": "https://en.wikipedia.org/wiki/Standard_anatomical_position"
+    },
+    "raw_text": "{\"agrees\": true, \"confidence\": 0.95, \"suggested_answer\": \"c\", \"evidence_notes\": \"Standard anatomical position is standing erect, facing forward, feet together, arms at sides with palms forward.\", \"source_url\": \"https://en.wikipedia.org/wiki/Standard_anatomical_position\"}"
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-3",
+    "parsed_response": {
+      "agrees": true,
+      "confidence": 0.99,
+      "suggested_answer": "a",
+      "evidence_notes": "Median plane bisects the body into equal right and left halves.",
+      "source_url": "https://en.wikipedia.org/wiki/Median_plane"
+    },
+    "raw_text": "{\"agrees\": true, \"confidence\": 0.99, \"suggested_answer\": \"a\", \"evidence_notes\": \"Median plane bisects the body into equal right and left halves.\", \"source_url\": \"https://en.wikipedia.org/wiki/Median_plane\"}"
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-4",
+    "parsed_response": {
+      "agrees": true,
+      "confidence": 0.99,
+      "suggested_answer": "b",
+      "evidence_notes": "Coronal (frontal) plane divides the body into dorsal/ventral (anterior/posterior) halves",
+      "source_url": "https://en.wikipedia.org/wiki/Coronal_plane"
+    },
+    "raw_text": "{\"agrees\": true, \"confidence\": 0.99, \"suggested_answer\": \"b\", \"evidence_notes\": \"Coronal (frontal) plane divides the body into dorsal/ventral (anterior/posterior) halves\", \"source_url\": \"https://en.wikipedia.org/wiki/Coronal_plane\"}"
+  },
+  {
+    "question_id": "DOC-56eb58bdf252-mcq-5",
+    "parsed_response": {
+      "agrees": true,
+      "confidence": 0.99,
+      "suggested_answer": "a",
+      "evidence_notes": "Lateral means away from the median plane",
+      "source_url": "https://en.wikipedia.org/wiki/Anatomical_terms_of_location"
+    },
+    "raw_text": "{\"agrees\": true, \"confidence\": 0.99, \"suggested_answer\": \"a\", \"evidence_notes\": \"Lateral means away from the median plane\", \"source_url\": \"https://en.wikipedia.org/wiki/Anatomical_terms_of_location\"}"
+  }
+]
