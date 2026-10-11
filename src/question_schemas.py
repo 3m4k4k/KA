@@ -202,6 +202,33 @@ class QuestionRecord(BaseModel):
     ai_model_used: Optional[str] = None
     ai_reviewed_at: Optional[str] = None
 
+    # ---- Answer-correctness stage (answer_check.py) -- additive, optional ----
+    # A SECOND-OPINION from a hosted LLM on whether the answer key is
+    # factually right, plus an explanation. Entirely separate from the
+    # ai_* fields above (those judge parse STRUCTURE only) and from
+    # source_answer / verified_answer (never touched by this stage).
+    # None / empty means "not checked yet", never "checked and fine".
+    #
+    # check_given_answer: the answer that was actually checked
+    #   (verified_answer if a human set one, else source_answer).
+    # check_agrees: derived deterministically in answer_check.py by
+    #   comparing check_suggested_answer to check_given_answer -- the
+    #   model's own "agrees" flag is not trusted over that comparison.
+    # check_suggested_answer: the option label the model believes is
+    #   correct. check_explanation and check_why_others_wrong describe
+    #   THAT option, so they explain the key only when check_agrees.
+    # check_input_hash: fingerprint of (text, options, answer) at check
+    #   time; if a reviewer edits any of them the check is redone.
+    check_given_answer: Optional[str] = None
+    check_agrees: Optional[bool] = None
+    check_suggested_answer: Optional[str] = None
+    check_explanation: Optional[str] = None
+    check_why_others_wrong: Optional[dict[str, str]] = None
+    check_concerns: list[str] = Field(default_factory=list)
+    check_model_used: Optional[str] = None
+    check_input_hash: Optional[str] = None
+    check_reviewed_at: Optional[str] = None
+
 
 class QuestionDocument(BaseModel):
     """Output of the segmentation stage for one SourceDocument."""

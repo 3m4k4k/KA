@@ -89,7 +89,7 @@
     for (const it of state.items) {
       const btn = document.createElement("button");
       btn.className = "rail-item" + (it.question_id === current.question_id ? " active" : "");
-      if (it.anomalies.length || it.ai_concerns.length) btn.classList.add("flagged");
+      if (it.anomalies.length || it.ai_concerns.length || it.check_agrees === false || (it.check_concerns || []).length) btn.classList.add("flagged");
       const dot = document.createElement("span");
       dot.className = "dot";
       const label = document.createElement("span");
@@ -221,11 +221,18 @@
     flagWrap.appendChild(fieldLabel("Flags"));
     const tags = document.createElement("div");
     tags.className = "tags";
-    if (!item.anomalies.length && !item.ai_concerns.length) {
+    const checkConcerns = item.check_concerns || [];
+    if (!item.anomalies.length && !item.ai_concerns.length && item.check_agrees !== false && !checkConcerns.length) {
       tags.appendChild(tag("no flags", true));
     }
     for (const a of item.anomalies) tags.appendChild(tag("anomaly: " + a));
     for (const c of item.ai_concerns) tags.appendChild(tag("ai: " + c));
+    if (item.check_agrees === false) {
+      tags.appendChild(
+        tag("check: model disagrees with key" + (item.check_suggested_answer ? " (suggests " + item.check_suggested_answer + ")" : ""))
+      );
+    }
+    for (const c of checkConcerns) tags.appendChild(tag("check: " + c));
     flagWrap.appendChild(tags);
     if (item.ai_confidence !== null && item.ai_confidence !== undefined) {
       const conf = document.createElement("div");
@@ -241,6 +248,36 @@
       flagWrap.appendChild(notes);
     }
     el.detailPanel.appendChild(flagWrap);
+
+    if (item.check_model_used) {
+      const box = document.createElement("div");
+      box.className = "field";
+      box.appendChild(fieldLabel("Model check \u00b7 " + item.check_model_used));
+      const verdict = document.createElement("div");
+      verdict.className = "meta-line";
+      verdict.textContent =
+        (item.check_agrees ? "agrees with key " : "DISAGREES with key ") +
+        item.check_given_answer +
+        (item.check_suggested_answer ? " \u00b7 model picks " + item.check_suggested_answer : "");
+      box.appendChild(verdict);
+      if (item.check_explanation) {
+        const ex = document.createElement("div");
+        ex.className = "ai-notes";
+        ex.textContent = item.check_explanation;
+        box.appendChild(ex);
+      }
+      if (item.check_why_others_wrong) {
+        const ul = document.createElement("ul");
+        ul.className = "pairs-list";
+        for (const [label, why] of Object.entries(item.check_why_others_wrong)) {
+          const li = document.createElement("li");
+          li.textContent = label + ") " + why;
+          ul.appendChild(li);
+        }
+        box.appendChild(ul);
+      }
+      el.detailPanel.appendChild(box);
+    }
 
     el.detailPanel.appendChild(document.createElement("hr")).className = "rule";
 

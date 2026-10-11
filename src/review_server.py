@@ -301,6 +301,13 @@ class ReviewStore:
             "ai_confidence": q.ai_confidence,
             "ai_concerns": q.ai_concerns,
             "ai_notes": q.ai_notes,
+            "check_given_answer": q.check_given_answer,
+            "check_agrees": q.check_agrees,
+            "check_suggested_answer": q.check_suggested_answer,
+            "check_explanation": q.check_explanation,
+            "check_why_others_wrong": q.check_why_others_wrong,
+            "check_concerns": q.check_concerns,
+            "check_model_used": q.check_model_used,
             "pages": pages,
             "image_urls": image_urls,
             # -- structural review (Layer 4 addition) --

@@ -465,6 +465,15 @@ def route(q: QuestionRecord, threshold: float) -> str:
         return "needs_review"
     if q.ai_concerns:
         return "needs_review"
+    # Answer-correctness stage (answer_check.py). Only acts once a check
+    # has actually run -- an UNCHECKED question is not blocked by this,
+    # so adding the stage doesn't flood the queue before it's been run.
+    # A completed check that disagrees with the key, or that raised any
+    # concern, always needs a human (same "any concern gates" rule as
+    # ai_concerns above).
+    if q.check_reviewed_at is not None:
+        if q.check_agrees is False or q.check_concerns:
+            return "needs_review"
     return "auto_import"
 
 
