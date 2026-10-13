@@ -1,22 +1,107 @@
 [
   {
-    "question_id": "DOC-56eb58bdf252-mcq-5",
-    "document_id": "DOC-56eb58bdf252",
+    "question_id": "DOC-dbaa2cb7a206-mcq-brain-stem-7",
+    "document_id": "DOC-dbaa2cb7a206",
     "section_type": "mcq",
-    "question_number": "5",
-    "question_text": "The anatomical term that means \"away from the median plane\" is: ```markdown",
+    "question_number": "7",
+    "group_label": "Brain stem",
+    "question_text": "Which of the following cranial nerves exits the posterior aspect of the brainstem? One of the following cranial nerves is attached to the posterior aspect of the brain stem: (DEP BOOK - 2024).",
     "options": [
       {
+        "label": "a",
+        "text": "Abducens (VI)."
+      },
+      {
         "label": "b",
-        "text": "Medial."
+        "text": "Hypoglossal (XII)."
       },
       {
         "label": "c",
-        "text": "Distal."
+        "text": "Trigeminal (V)."
       },
       {
         "label": "d",
-        "text": "Proximal."
+        "text": "Trochlear (IV)."
+      },
+      {
+        "label": "e",
+        "text": "Oculomotor (III)."
+      },
+      {
+        "label": "f",
+        "text": "Vagus (X)."
+      }
+    ],
+    "matching_pairs": [],
+    "source_answer": "d",
+    "verified_answer": null,
+    "verified_at": null,
+    "verification_note": null,
+    "duplicate_of_question_id": null,
+    "verified_question_text": null,
+    "verified_options": null,
+    "verified_matching_pairs": null,
+    "structural_reviewed_at": null,
+    "source_spans": [
+      {
+        "pages": [
+          7
+        ]
+      }
+    ],
+    "anomalies": [
+      "unexpected_option_count:6"
+    ],
+    "suggestions": [],
+    "ai_confidence": 1.0,
+    "ai_concerns": [],
+    "ai_notes": null,
+    "ai_model_used": "ollama:phi4-mini",
+    "ai_reviewed_at": "2026-10-11T20:13:27.686696+00:00",
+    "check_given_answer": null,
+    "check_agrees": null,
+    "check_suggested_answer": null,
+    "check_explanation": null,
+    "check_why_others_wrong": null,
+    "check_concerns": [],
+    "check_model_used": null,
+    "check_input_hash": null,
+    "check_reviewed_at": null,
+    "original_filename": "Neuro mcq jalal new .pdf",
+    "subject": null,
+    "topic": null
+  },
+  {
+    "question_id": "DOC-dbaa2cb7a206-mcq-arterial-and-venous-supply-of-brain-12",
+    "document_id": "DOC-dbaa2cb7a206",
+    "section_type": "mcq",
+    "question_number": "12",
+    "group_label": "Arterial and venous supply of brain",
+    "question_text": "One of the following is a branch of the basilar artery: (2021 - 2023).",
+    "options": [
+      {
+        "label": "a",
+        "text": "Anterior inferior cerebellar artery."
+      },
+      {
+        "label": "b",
+        "text": "Posterior inferior cerebellar artery."
+      },
+      {
+        "label": "c",
+        "text": "Anterior spinal artery."
+      },
+      {
+        "label": "d",
+        "text": "Posterior spinal artery."
+      },
+      {
+        "label": "e",
+        "text": "Anterior cerebral artery."
+      },
+      {
+        "label": "f",
+        "text": "Middle cerebral artery."
       }
     ],
     "matching_pairs": [],
@@ -32,298 +117,29 @@
     "source_spans": [
       {
         "pages": [
-          1
+          30
         ]
       }
     ],
     "anomalies": [
-      "unexpected_option_count:3",
-      "duplicate_question_merged:sim_0.94"
+      "unexpected_option_count:6"
     ],
     "suggestions": [],
     "ai_confidence": 1.0,
     "ai_concerns": [],
     "ai_notes": null,
     "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-16T04:50:06.601845+00:00",
-    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
-    "subject": null,
-    "topic": null
-  },
-  {
-    "question_id": "DOC-56eb58bdf252-mcq-6",
-    "document_id": "DOC-56eb58bdf252",
-    "section_type": "mcq",
-    "question_number": "6",
-    "question_text": "The anatomical term that means \"nearer to the root of the limb\" is:",
-    "options": [
-      {
-        "label": "b",
-        "text": "Medial."
-      },
-      {
-        "label": "c",
-        "text": "Distal."
-      },
-      {
-        "label": "d",
-        "text": "Proximal."
-      }
-    ],
-    "matching_pairs": [],
-    "source_answer": "d",
-    "verified_answer": null,
-    "verified_at": null,
-    "verification_note": null,
-    "duplicate_of_question_id": null,
-    "verified_question_text": null,
-    "verified_options": null,
-    "verified_matching_pairs": null,
-    "structural_reviewed_at": null,
-    "source_spans": [
-      {
-        "pages": [
-          2
-        ]
-      }
-    ],
-    "anomalies": [
-      "unexpected_option_count:3"
-    ],
-    "suggestions": [],
-    "ai_confidence": 1.0,
-    "ai_concerns": [],
-    "ai_notes": null,
-    "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-16T04:50:07.846166+00:00",
-    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
-    "subject": null,
-    "topic": null
-  },
-  {
-    "question_id": "DOC-56eb58bdf252-mcq-35",
-    "document_id": "DOC-56eb58bdf252",
-    "section_type": "mcq",
-    "question_number": "35",
-    "question_text": "The wrist joint is:",
-    "options": [
-      {
-        "label": "a",
-        "text": "Hinge."
-      },
-      {
-        "label": "b",
-        "text": "Ellipsold."
-      },
-      {
-        "label": "c",
-        "text": "Bicondylar."
-      },
-      {
-        "label": "d",
-        "text": "Ballandsocket."
-      }
-    ],
-    "matching_pairs": [],
-    "source_answer": "b",
-    "verified_answer": null,
-    "verified_at": null,
-    "verification_note": null,
-    "duplicate_of_question_id": null,
-    "verified_question_text": null,
-    "verified_options": null,
-    "verified_matching_pairs": null,
-    "structural_reviewed_at": null,
-    "source_spans": [
-      {
-        "pages": [
-          6
-        ]
-      }
-    ],
-    "anomalies": [],
-    "suggestions": [],
-    "ai_confidence": 1.0,
-    "ai_concerns": [
-      "source_answer does not match any option label"
-    ],
-    "ai_notes": "The answer key value 'b' does not correspond to any of the provided option labels.",
-    "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-16T04:50:44.199112+00:00",
-    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
-    "subject": null,
-    "topic": null
-  },
-  {
-    "question_id": "DOC-56eb58bdf252-mcq-50",
-    "document_id": "DOC-56eb58bdf252",
-    "section_type": "mcq",
-    "question_number": "50",
-    "question_text": "The segments of the spinal cord are: The segments of the spinal cord are:",
-    "options": [
-      {
-        "label": "a",
-        "text": "8 cervical,10thoracic,5lumbar,5sacralandone coccygeal."
-      },
-      {
-        "label": "b",
-        "text": "10cervical,12thoracic,5lumbar,5sacral and one coccygeal."
-      },
-      {
-        "label": "c",
-        "text": "8cervical,12thoracic,5lumbar,onesacralandone coccygeal\u3002"
-      },
-      {
-        "label": "d",
-        "text": "8 cervical,12thoracic,5lumbar,5sacral\u548cone coccygeal\u3002"
-      },
-      {
-        "label": "a",
-        "text": "8 cervical, 10 thoracic, 5 lumbar, 5 sacral and one coccygeal."
-      },
-      {
-        "label": "b",
-        "text": "10 cervical, 12 thoracic, 5 lumbar, 5 sacral and one coccygeal\u3002"
-      },
-      {
-        "label": "c",
-        "text": "8 cervical, 12 thoracic, 5 lumbar, onesacralandone coccygeal\u3002"
-      }
-    ],
-    "matching_pairs": [],
-    "source_answer": "d",
-    "verified_answer": null,
-    "verified_at": null,
-    "verification_note": null,
-    "duplicate_of_question_id": null,
-    "verified_question_text": null,
-    "verified_options": null,
-    "verified_matching_pairs": null,
-    "structural_reviewed_at": null,
-    "source_spans": [
-      {
-        "pages": [
-          8
-        ]
-      }
-    ],
-    "anomalies": [
-      "unexpected_option_count:7"
-    ],
-    "suggestions": [],
-    "ai_confidence": 0.2,
-    "ai_concerns": [
-      "duplicated_question_text",
-      "duplicate_option_labels"
-    ],
-    "ai_notes": "Flagged by deterministic duplication check (independent of AI judgment).",
-    "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-16T04:51:02.281736+00:00",
-    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
-    "subject": null,
-    "topic": null
-  },
-  {
-    "question_id": "DOC-56eb58bdf252-mcq-52",
-    "document_id": "DOC-56eb58bdf252",
-    "section_type": "mcq",
-    "question_number": "52",
-    "question_text": "Near to the median plane is:",
-    "options": [
-      {
-        "label": "b",
-        "text": "proximal."
-      },
-      {
-        "label": "c",
-        "text": "medial."
-      },
-      {
-        "label": "d",
-        "text": "inferior."
-      }
-    ],
-    "matching_pairs": [],
-    "source_answer": "c",
-    "verified_answer": null,
-    "verified_at": null,
-    "verification_note": null,
-    "duplicate_of_question_id": null,
-    "verified_question_text": null,
-    "verified_options": null,
-    "verified_matching_pairs": null,
-    "structural_reviewed_at": null,
-    "source_spans": [
-      {
-        "pages": [
-          9
-        ]
-      }
-    ],
-    "anomalies": [
-      "unexpected_option_count:3"
-    ],
-    "suggestions": [],
-    "ai_confidence": 1.0,
-    "ai_concerns": [],
-    "ai_notes": null,
-    "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-16T04:51:04.741749+00:00",
-    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
-    "subject": null,
-    "topic": null
-  },
-  {
-    "question_id": "DOC-56eb58bdf252-mcq-55",
-    "document_id": "DOC-56eb58bdf252",
-    "section_type": "mcq",
-    "question_number": "55",
-    "question_text": "Appendicular skeleton includes:",
-    "options": [
-      {
-        "label": "a",
-        "text": "Skull and mandible."
-      },
-      {
-        "label": "b",
-        "text": "Bones of the limbs."
-      },
-      {
-        "label": "c",
-        "text": "Ribs and sternum."
-      },
-      {
-        "label": "d",
-        "text": "Vertebral column."
-      }
-    ],
-    "matching_pairs": [],
-    "source_answer": null,
-    "verified_answer": null,
-    "verified_at": null,
-    "verification_note": null,
-    "duplicate_of_question_id": null,
-    "verified_question_text": null,
-    "verified_options": null,
-    "verified_matching_pairs": null,
-    "structural_reviewed_at": null,
-    "source_spans": [
-      {
-        "pages": [
-          9
-        ]
-      }
-    ],
-    "anomalies": [],
-    "suggestions": [],
-    "ai_confidence": 0.0,
-    "ai_concerns": [
-      "answer_key_missing_left_label"
-    ],
-    "ai_notes": "The source answer is missing, so it cannot be evaluated for structural completeness.",
-    "ai_model_used": "ollama:phi4-mini",
-    "ai_reviewed_at": "2026-09-16T04:51:10.168305+00:00",
-    "original_filename": "Basis MCQ by Dr.Jalal.pdf",
+    "ai_reviewed_at": "2026-10-11T20:17:51.977711+00:00",
+    "check_given_answer": null,
+    "check_agrees": null,
+    "check_suggested_answer": null,
+    "check_explanation": null,
+    "check_why_others_wrong": null,
+    "check_concerns": [],
+    "check_model_used": null,
+    "check_input_hash": null,
+    "check_reviewed_at": null,
+    "original_filename": "Neuro mcq jalal new .pdf",
     "subject": null,
     "topic": null
   }

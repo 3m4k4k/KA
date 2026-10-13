@@ -107,6 +107,13 @@ class QuestionRecord(BaseModel):
     # glitches like "so-" belong in UnmatchedAnswerKeyEntry, not here).
     question_number: str
 
+    # Chapter/section heading this question sits under, for documents
+    # where numbering restarts per chapter ("Spinal cord", "Brain stem",
+    # ...). Pure provenance read from the source -- NOT the project's
+    # subtopic (that stays a human-assigned null). None when the
+    # document has no such grouping, or the heading couldn't be found.
+    group_label: Optional[str] = None
+
     question_text: str
     options: list[Option] = Field(default_factory=list)
     matching_pairs: list[MatchingPair] = Field(default_factory=list)

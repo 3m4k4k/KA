@@ -5,5 +5,12 @@
     "document_id": "DOC-56eb58bdf252",
     "pipeline_version": "0.1.0",
     "processed_at": "2026-09-16T04:35:38.423197+00:00"
+  },
+  "dbaa2cb7a2069d58530c0fb723d0e1d1f2d1d0bcf527861b223a9cf01953e806": {
+    "file_hash": "dbaa2cb7a2069d58530c0fb723d0e1d1f2d1d0bcf527861b223a9cf01953e806",
+    "original_path": "/Users/salaheldin/Desktop/question-bank-pipeline/input/Neuro mcq jalal new .pdf",
+    "document_id": "DOC-dbaa2cb7a206",
+    "pipeline_version": "0.1.0",
+    "processed_at": "2026-10-11T19:39:55.045448+00:00"
   }
 }

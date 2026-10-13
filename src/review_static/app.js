@@ -94,7 +94,9 @@
       dot.className = "dot";
       const label = document.createElement("span");
       const shortDoc = it.document_id.replace("DOC-", "");
-      label.textContent = `${shortDoc} \u00b7 ${it.section_type}-${it.question_number}`;
+      label.textContent = it.group_label
+        ? `${shortDoc.slice(0, 4)} \u00b7 ${it.group_label.slice(0, 16)} #${it.question_number}`
+        : `${shortDoc} \u00b7 ${it.section_type}-${it.question_number}`;
       if (it.verified_at) {
         label.style.textDecoration = "line-through";
         label.style.opacity = "0.5";
@@ -153,7 +155,7 @@
 
     const meta = document.createElement("div");
     meta.className = "meta-line";
-    meta.textContent = `${item.section_type} \u00b7 q${item.question_number}${
+    meta.textContent = `${item.section_type} \u00b7 ${item.group_label ? item.group_label + " \u00b7 " : ""}q${item.question_number}${
       item.subject ? " \u00b7 " + item.subject : ""
     }${item.topic ? " / " + item.topic : ""}`;
     el.detailPanel.appendChild(meta);

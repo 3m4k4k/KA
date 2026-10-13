@@ -21,6 +21,7 @@ from __future__ import annotations
 import difflib
 import re
 import sys
+import unicodedata
 from collections import Counter
 from pathlib import Path
 
@@ -55,10 +56,10 @@ _ANSWER_KEY_HEADER = re.compile(r"^model\s+answers?$", re.I)
 
 # A numbered question stem, e.g. "1-", "26.", "32)", "33-)", "28:..",
 # possibly preceded by a short stray OCR token ("X 16-").
-_STEM_RE = re.compile(r"^(?:\S{1,2}\s+)?(\d{1,3})\s*[-:.)]+\.?\s*(.*)$")
+_STEM_RE = re.compile(r"^(?:[^\W\d_]{1,2}\s+)?(\d{1,3})\s*[-:.)]+\.?\s*(.*)$")
 
 # An MCQ option line: "a-", "a.", "a)", any case, optionally indented.
-_OPTION_RE = re.compile(r"^([a-eA-E])\s*[-.)]\s*(.*)$")
+_OPTION_RE = re.compile(r"^([a-fA-F])\s*[-.)\u00b7]\s*(.*)$")
 
 # A bare page-number footer line -- digits only, no trailing
 # punctuation (question stems always carry a trailing separator).
@@ -80,6 +81,19 @@ _MATCHING_STEM_RE = re.compile(r"^(\d{1,3})\s*[-.)]+\s*(match.*)$", re.I)
 # though (like the MCQ key) the number and its letter often land on
 # separate lines: either a group marker "(1)" or a "digit-letter" pair.
 _MATCHING_TOKEN_RE = re.compile(r"\((\d{1,3})\)|(\d{1,2})\s*[-.]+\s*([A-Za-z])\b")
+
+# Running page labels like "2 | P a g e" / "37 | Page". The number differs
+# on every page, so the frequency-based furniture detector can't catch them.
+_PAGE_LABEL_RE = re.compile(r"^\d{1,4}\s*\|\s*p\s*a\s*g\s*e\.?$", re.I)
+
+# Markdown fence debris from vision-model transcriptions ("```", "```markdown").
+_FENCE_RE = re.compile(r"^`{3,}\w*$")
+
+# Chapter-grouped answer keys: "1-a", "8-a & c", also inside markdown
+# table rows ("| 1-a | 2-a |"). A line made only of these characters
+# (and containing a digit) is key data, anything else short is a heading.
+_KEY_LINE_CHARS_RE = re.compile(r"^[\s|:\-.&a-eA-E0-9]+$")
+_GROUPED_KEY_TOKEN_RE = re.compile(r"(\d{1,3})\s*[-.]\s*([a-eA-E](?:\s*&\s*[a-eA-E])*)\b")
 
 
 # ---------------------------------------------------------------------------
@@ -128,7 +142,7 @@ def _clean_page_lines(doc: SourceDocument) -> dict[int, list[str]]:
             norm = re.sub(r"\s+", " ", ln.lower()).strip(" .")
             if norm in furniture:
                 continue
-            if _PAGE_NUM_RE.match(ln):
+            if _PAGE_NUM_RE.match(ln) or _PAGE_LABEL_RE.match(ln) or _FENCE_RE.match(ln):
                 continue
             kept.append(ln)
         cleaned[pg] = kept
@@ -141,12 +155,15 @@ def _clean_page_lines(doc: SourceDocument) -> dict[int, list[str]]:
 
 
 class _Section:
-    __slots__ = ("kind", "target_type", "lines")
+    __slots__ = ("kind", "target_type", "lines", "grouped")
 
     def __init__(self, kind: str, target_type: QuestionType | None):
         self.kind = kind  # "content" or "answer_key"
         self.target_type = target_type
         self.lines: list[tuple[int, str]] = []
+        # True for chapter-grouped MCQ documents (no "M.C.Q's" header;
+        # numbering restarts under each chapter heading).
+        self.grouped = False
 
 
 def _split_into_sections(cleaned: dict[int, list[str]]) -> list[_Section]:
@@ -183,7 +200,37 @@ def _split_into_sections(cleaned: dict[int, list[str]]) -> list[_Section]:
 
             current.lines.append((pg, ln))
 
+    _promote_headerless_mcq(sections)
     return sections
+
+
+def _looks_like_mcq_stream(lines: list[tuple[int, str]]) -> bool:
+    stems = sum(1 for _, ln in lines if _STEM_RE.match(ln))
+    opts = sum(1 for _, ln in lines if _OPTION_RE.match(ln))
+    return stems >= 5 and opts >= 2 * stems
+
+
+def _promote_headerless_mcq(sections: list[_Section]) -> None:
+    """Some banks have NO "M.C.Q's" header at all: questions are grouped
+    under chapter headings ("Spinal cord", "Brain stem", ...), numbering
+    restarts in each, and the answer key ("Model answer") repeats those
+    headings. If nothing else was recognized and an untyped stream
+    clearly looks like MCQs, treat it as chapter-grouped MCQ -- and the
+    answer-key section(s) as its grouped key. Documents that DO have
+    recognized headers are never touched by this."""
+    if any(s.kind == "content" and s.target_type for s in sections):
+        return
+    promoted = False
+    for s in sections:
+        if s.kind == "content" and s.target_type is None and _looks_like_mcq_stream(s.lines):
+            s.target_type = QuestionType.MCQ
+            s.grouped = True
+            promoted = True
+    if promoted:
+        for s in sections:
+            if s.kind == "answer_key" and s.target_type is None:
+                s.target_type = QuestionType.MCQ
+                s.grouped = True
 
 
 # ---------------------------------------------------------------------------
@@ -194,6 +241,7 @@ def _split_into_sections(cleaned: dict[int, list[str]]) -> list[_Section]:
 class _RawBlock:
     def __init__(self, number: str):
         self.number = number
+        self.group_idx = 0
         self.lines: list[tuple[int, str]] = []  # (page, raw line, incl. options)
 
 
@@ -222,10 +270,86 @@ def _split_numbered_blocks(
     return blocks
 
 
+def _slug(label: str) -> str:
+    norm = unicodedata.normalize("NFKC", label).lower()
+    return re.sub(r"[^a-z0-9]+", "-", norm).strip("-")[:40] or "x"
+
+
+def _norm_label(label: str) -> str:
+    """For matching a chapter heading in the questions against the same
+    heading in the answer key. NFKC folds ligatures ("\ufb02uid" -> "fluid")."""
+    return re.sub(r"[^a-z0-9]+", "", unicodedata.normalize("NFKC", label).lower())
+
+
+def _looks_like_heading(ln: str) -> bool:
+    """A short, capitalized, un-numbered line with no sentence
+    punctuation -- "Spinal cord", "Cerebrospinal fluid (CSF)". Option
+    lines, numbered stems and wrapped sentence fragments ("coccyx.",
+    "Lower border of L3.") are rejected."""
+    words = ln.split()
+    if not 1 <= len(words) <= 8:
+        return False
+    if _OPTION_RE.match(ln) or _STEM_RE.match(ln):
+        return False
+    if any(ch.isdigit() for ch in ln):
+        return False
+    if not ln[0].isupper() or ln[-1] in ".?:;,!":
+        return False
+    return True
+
+
+def _pop_heading(block: _RawBlock | None) -> str | None:
+    if block is not None and block.lines and _looks_like_heading(block.lines[-1][1]):
+        return block.lines.pop()[1].strip()
+    return None
+
+
+def _split_grouped_blocks(
+    lines: list[tuple[int, str]], stem_re: re.Pattern
+) -> tuple[list[_RawBlock], list[str | None]]:
+    """Like _split_numbered_blocks, but for chapter-grouped documents:
+    a new group starts at the first stem, and again whenever numbering
+    restarts at 1. The group's label is the heading line sitting just
+    before that stem (taken off the end of the previous question, where
+    it would otherwise be swallowed into its last option). Returns the
+    blocks (each tagged with its group_idx) and the group labels, which
+    are None where no heading could be found -- never invented."""
+    blocks: list[_RawBlock] = []
+    labels: list[str | None] = []
+    current: _RawBlock | None = None
+    group_idx = -1
+
+    for pg, ln in lines:
+        m = stem_re.match(ln)
+        if m:
+            num = m.group(1)
+            restart = group_idx == -1 or (num == "1" and current is not None and current.number not in ("0", "1"))
+            if restart:
+                labels.append(_pop_heading(current))
+                group_idx += 1
+            current = _RawBlock(number=num)
+            current.group_idx = group_idx
+            blocks.append(current)
+            rest = m.group(2).strip() if m.lastindex and m.lastindex >= 2 else ""
+            if rest:
+                current.lines.append((pg, rest))
+            continue
+        if current is None:
+            current = _RawBlock(number="0")
+            blocks.append(current)
+        current.lines.append((pg, ln))
+
+    return blocks, labels
+
+
 def _parse_mcq_blocks(
-    blocks: list[_RawBlock], document_id: str
+    blocks: list[_RawBlock], document_id: str, group_labels: list[str | None] | None = None
 ) -> list[QuestionRecord]:
     records = []
+    # Numbers restart per chapter in grouped documents, so ids must
+    # carry the group. Single-group documents keep the original
+    # "<doc>-mcq-<n>" id shape.
+    multi_group = group_labels is not None and len(group_labels) > 1
     for b in blocks:
         if b.number == "0":
             continue  # preamble noise before question 1, e.g. section title remnants
@@ -237,19 +361,32 @@ def _parse_mcq_blocks(
             om = _OPTION_RE.match(ln)
             if om:
                 options.append(Option(label=om.group(1), text=om.group(2).strip()))
+            elif options:
+                # A non-option line AFTER an option started is that
+                # option wrapping onto a second line, not more stem.
+                last = options[-1]
+                options[-1] = Option(label=last.label, text=f"{last.text} {ln}".strip())
             else:
                 text_parts.append(ln)
 
+        label = group_labels[b.group_idx] if group_labels else None
+        if multi_group:
+            qid = f"{document_id}-mcq-{_slug(label) if label else f'g{b.group_idx}'}-{b.number}"
+        else:
+            qid = f"{document_id}-mcq-{b.number}"
+
         record = QuestionRecord(
-            question_id=f"{document_id}-mcq-{b.number}",
+            question_id=qid,
             document_id=document_id,
             section_type=QuestionType.MCQ,
             question_number=b.number,
+            group_label=label,
             question_text=" ".join(text_parts).strip(),
             options=options,
             source_spans=[SourceSpan(pages=sorted(pages))],
         )
-        if len(options) != 4:
+        labels = [o.label.lower() for o in options]
+        if not (len(options) == 4 or labels == list("abcde")):
             record.anomalies.append(f"unexpected_option_count:{len(options)}")
         records.append(record)
     return records
@@ -410,6 +547,55 @@ def _parse_mcq_answer_key(
     return resolved, unmatched
 
 
+def _parse_grouped_mcq_answer_key(
+    section: _Section,
+) -> tuple[dict[str, tuple[str, dict[str, str]]], list[str]]:
+    """Chapter-grouped key: "Spinal cord / 1-a / 2-c / ..." then the next
+    heading. Returns {norm_label: (label, {number: answer})} in document
+    order plus anomaly strings. A group can continue across a page
+    boundary (the label carries over), and the same group can show up
+    twice (vision-model loops) -- repeats are merged, and a repeat that
+    DISAGREES with the first value is flagged, never silently resolved.
+    Answers like "a & c" are kept verbatim."""
+    groups: dict[str, tuple[str, dict[str, str]]] = {}
+    anomalies: list[str] = []
+    label: str | None = None
+    buf: list[str] = []
+
+    def flush() -> None:
+        if label is None or not buf:
+            return
+        key = _norm_label(label)
+        _, answers = groups.setdefault(key, (label, {}))
+        for m in _GROUPED_KEY_TOKEN_RE.finditer(" ".join(buf)):
+            num, val = m.group(1), re.sub(r"\s+", " ", m.group(2).lower())
+            if num in answers and answers[num] != val:
+                anomalies.append(f"answer_key_repeat_conflict:{label}-{num}:{answers[num]}_vs_{val}")
+            else:
+                answers.setdefault(num, val)
+
+    for _, ln in section.lines:
+        if _KEY_LINE_CHARS_RE.match(ln) and any(ch.isdigit() for ch in ln):
+            buf.append(ln)
+        elif _looks_like_heading(ln):
+            flush()
+            label, buf = ln.strip(), []
+        # anything else is noise inside the key page; ignored, not parsed
+    flush()
+    return {k: v for k, v in groups.items() if v[1]}, anomalies
+
+
+def _match_group_label(key_norm: str, content_norms: list[str]) -> str | None:
+    if key_norm in content_norms:
+        return key_norm
+    best, best_ratio = None, 0.0
+    for c in content_norms:
+        r = difflib.SequenceMatcher(None, key_norm, c).ratio()
+        if r > best_ratio:
+            best, best_ratio = c, r
+    return best if best_ratio >= 0.85 else None
+
+
 def _infer_sequence_gap(seen: list[int]) -> int | None:
     if len(seen) < 2:
         return None
@@ -530,7 +716,7 @@ def _parse_matching_answer_key(
 
 
 def _dedupe_or_flag_questions(
-    records: list[QuestionRecord],
+    records: list[QuestionRecord], keep_order: bool = False
 ) -> tuple[list[QuestionRecord], list[str]]:
     """Real vision-transcribed pages have shown the model looping and
     re-emitting a question a second time mid-page (not always
@@ -557,13 +743,17 @@ def _dedupe_or_flag_questions(
         question content with no way to recover it; this function no
         longer does that.
     """
-    by_key: dict[tuple[QuestionType, str], list[QuestionRecord]] = {}
+    # Keyed by question_id (which already encodes type, chapter group
+    # and number) so the same number in two different chapters is NOT
+    # treated as a duplicate.
+    by_key: dict[str, list[QuestionRecord]] = {}
     for r in records:
-        by_key.setdefault((r.section_type, r.question_number), []).append(r)
+        by_key.setdefault(r.question_id, []).append(r)
 
     out: list[QuestionRecord] = []
     doc_anomalies: list[str] = []
-    for (qtype, number), group in by_key.items():
+    for _qid, group in by_key.items():
+        qtype, number = group[0].section_type, group[0].question_number
         if len(group) == 1:
             out.append(group[0])
             continue
@@ -598,7 +788,7 @@ def _dedupe_or_flag_questions(
             conflict_index += 1
             other.question_number = f"{number}~conflict{conflict_index}"
             other.question_id = (
-                f"{other.document_id}-{qtype.value}-{other.question_number}"
+                base.question_id[: len(base.question_id) - len(number)] + other.question_number
             )
             base.anomalies.append(
                 f"duplicate_question_number_conflict:sim_{ratio:.2f}:"
@@ -613,7 +803,12 @@ def _dedupe_or_flag_questions(
             )
             out.append(other)
 
-    out.sort(key=lambda r: (r.section_type.value, _numeric_sort_key(r.question_number)))
+    if keep_order:
+        # Chapter-grouped: numbering restarts per chapter, so a numeric
+        # sort would interleave chapters. Keep document order.
+        out.sort(key=lambda r: r.section_type.value)
+    else:
+        out.sort(key=lambda r: (r.section_type.value, _numeric_sort_key(r.question_number)))
     return out, doc_anomalies
 
 
@@ -643,9 +838,17 @@ def segment_document(doc: SourceDocument) -> QuestionDocument:
     key_sections = [s for s in sections if s.kind == "answer_key"]
 
     matching_key_group_counter = 0
+    grouped_mode = False
 
     for section in content_sections:
-        if section.target_type == QuestionType.MCQ:
+        if section.target_type == QuestionType.MCQ and section.grouped:
+            grouped_mode = True
+            blocks, group_labels = _split_grouped_blocks(section.lines, _STEM_RE)
+            all_records.extend(_parse_mcq_blocks(blocks, doc.document_id, group_labels))
+            for i, lab in enumerate(group_labels):
+                if lab is None:
+                    doc_anomalies.append(f"group_heading_not_found:group_{i}")
+        elif section.target_type == QuestionType.MCQ:
             blocks = _split_numbered_blocks(section.lines, _STEM_RE)
             all_records.extend(_parse_mcq_blocks(blocks, doc.document_id))
         elif section.target_type == QuestionType.FILL_IN_BLANK:
@@ -654,11 +857,11 @@ def segment_document(doc: SourceDocument) -> QuestionDocument:
         elif section.target_type == QuestionType.MATCHING:
             all_records.extend(_parse_matching_blocks(section.lines, doc.document_id))
 
-    all_records, dup_anomalies = _dedupe_or_flag_questions(all_records)
+    all_records, dup_anomalies = _dedupe_or_flag_questions(all_records, keep_order=grouped_mode)
     doc_anomalies.extend(dup_anomalies)
 
     by_number: dict[tuple[QuestionType, str], QuestionRecord] = {
-        (r.section_type, r.question_number): r for r in all_records
+        (r.section_type, r.question_number): r for r in all_records if not grouped_mode
     }
 
     # Track how many MATCHING questions we've seen in document order,
@@ -673,7 +876,43 @@ def segment_document(doc: SourceDocument) -> QuestionDocument:
     )
 
     for section in key_sections:
-        if section.target_type == QuestionType.MCQ:
+        if section.target_type == QuestionType.MCQ and section.grouped:
+            key_groups, key_anoms = _parse_grouped_mcq_answer_key(section)
+            doc_anomalies.extend(key_anoms)
+            content_norms = sorted({_norm_label(r.group_label) for r in all_records if r.group_label})
+            matched_content: set[str] = set()
+            for key_norm, (key_label, answers) in key_groups.items():
+                target = _match_group_label(key_norm, content_norms)
+                if target is None:
+                    doc_anomalies.append(f"answer_key_group_unmatched:{key_label}")
+                    continue
+                matched_content.add(target)
+                recs = {
+                    r.question_number: r
+                    for r in all_records
+                    if r.group_label and _norm_label(r.group_label) == target
+                }
+                for num, ans in answers.items():
+                    rec = recs.get(num)
+                    if rec is None:
+                        unmatched_all.append(
+                            UnmatchedAnswerKeyEntry(
+                                raw_token=f"{key_label}:{num}",
+                                raw_value=ans,
+                                section_type=QuestionType.MCQ,
+                                page=section.lines[0][0] if section.lines else 0,
+                            )
+                        )
+                        continue
+                    if rec.source_answer is not None and rec.source_answer != ans:
+                        rec.anomalies.append(f"conflicting_answer_key_value:{rec.source_answer}_vs_{ans}")
+                    rec.source_answer = ans
+            for cn in content_norms:
+                if cn not in matched_content:
+                    lab = next(r.group_label for r in all_records if r.group_label and _norm_label(r.group_label) == cn)
+                    doc_anomalies.append(f"no_answer_key_for_group:{lab}")
+
+        elif section.target_type == QuestionType.MCQ:
             resolved, unmatched = _parse_mcq_answer_key(section)
             unmatched_all.extend(unmatched)
             for number, (answer, page) in resolved.items():

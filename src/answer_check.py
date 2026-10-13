@@ -303,7 +303,7 @@ def run(
                 by_model[res.model] = by_model.get(res.model, 0) + 1
                 flag = "" if v["agrees"] and not v["concerns"] else "   <-- needs a look"
                 print(
-                    f"[{doc.document_id[4:]} q{q.question_number}] key={answer} "
+                    f"[{doc.document_id[4:]} {(q.group_label + ' ') if q.group_label else ''}q{q.question_number}] key={answer} "
                     f"model={v['suggested']} {'agrees' if v['agrees'] else 'DISAGREES'} "
                     f"({res.model}){' ' + str(v['concerns']) if v['concerns'] else ''}{flag}"
                 )

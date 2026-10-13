@@ -247,7 +247,7 @@ class ReviewStore:
         def sort_key(item):
             num = item["question_number"]
             num_key = int(num) if num.isdigit() else float("inf")
-            return (item["document_id"], item["section_type"], num_key)
+            return (item["document_id"], item["section_type"], item["group_label"] or "", num_key)
 
         items.sort(key=sort_key)
         return items
@@ -290,6 +290,7 @@ class ReviewStore:
             "topic": doc.topic,
             "section_type": q.section_type.value,
             "question_number": q.question_number,
+            "group_label": q.group_label,
             "question_text": q.question_text,
             "options": [o.model_dump() for o in q.options],
             "matching_pairs": [m.model_dump() for m in q.matching_pairs],

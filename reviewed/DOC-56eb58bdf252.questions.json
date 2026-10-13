@@ -54,7 +54,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:01.313274+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:01.313274+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "In the anatomical position the person stands upright with arms at the sides, palms facing forward and thumbs pointing laterally.",
+      "check_why_others_wrong": {
+        "a": "Eyes face forward, not backwards.",
+        "c": "Palms face anterior (forward), not backwards.",
+        "d": "Thumbs point laterally, not medially."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "9a0b2796570f1559",
+      "check_reviewed_at": "2026-10-11T08:50:03.324639+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-2",
@@ -82,14 +95,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "c",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "c",
+      "verified_at": "2026-10-11T09:00:00.390943+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
-      "verified_question_text": null,
-      "verified_options": null,
+      "verified_question_text": "Anatomical position is:",
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "A term used referring to the body facing forwards and sitting down."
+        },
+        {
+          "label": "b",
+          "text": "The position in which the body is lying down with feet parallel and arms by the sides"
+        },
+        {
+          "label": "c",
+          "text": "The position in which the body is erect, facing front with feet parallel and arms hanging at the sides with the palms facing forwards."
+        },
+        {
+          "label": "d",
+          "text": "The position in which the body is erect, facing forward with feet parallel and arms hanging at the sides with palms facing backwards"
+        }
+      ],
       "verified_matching_pairs": null,
-      "structural_reviewed_at": null,
+      "structural_reviewed_at": "2026-10-11T09:00:00.391378+00:00",
       "source_spans": [
         {
           "pages": [
@@ -105,7 +135,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:02.745148+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:02.745148+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Anatomical position is standing upright, facing forward, feet parallel, arms at the sides with palms facing forward.",
+      "check_why_others_wrong": {
+        "a": "Describes a seated posture, not anatomical position.",
+        "b": "Describes supine position, not anatomical position.",
+        "d": "Palms face forward in anatomical position, not backward."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "ddecc4d848b510c2",
+      "check_reviewed_at": "2026-10-11T19:32:19.890777+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-3",
@@ -156,7 +199,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:03.994178+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:03.994178+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The median (mid\u2011sagittal) plane runs vertically through the midline and splits the body into equal right and left halves.",
+      "check_why_others_wrong": {
+        "b": "Coronal (frontal) plane divides front and back.",
+        "c": "Paramedian plane is parallel to the median but does not give equal halves.",
+        "d": "Horizontal (transverse) plane divides top and bottom."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "9286b56b2bb035f5",
+      "check_reviewed_at": "2026-10-11T08:50:06.156364+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-4",
@@ -207,7 +263,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:05.359773+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:05.359773+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "The coronal (frontal) plane separates the body into anterior (ventral) and posterior (dorsal) portions.",
+      "check_why_others_wrong": {
+        "a": "Horizontal refers to the transverse/axial plane, not coronal.",
+        "c": "Upper and lower division is the transverse plane.",
+        "d": "Division into right and left halves describes the midsagittal plane."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "13dabcbb0a00827b",
+      "check_reviewed_at": "2026-10-11T08:50:07.286171+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-5",
@@ -272,7 +341,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:06.601845+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:06.601845+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "Lateral describes a position farther from the body's midline (median plane).",
+      "check_why_others_wrong": {
+        "b": "Medial means toward the median plane.",
+        "c": "Distal refers to distance from the trunk or point of origin, not side.",
+        "d": "Proximal refers to closeness to the trunk or point of origin, not side."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "c81d15a323f553f2",
+      "check_reviewed_at": "2026-10-11T08:50:08.329711+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-6",
@@ -336,7 +418,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:07.846166+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:07.846166+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "Proximal refers to a position closer to the point of attachment or the trunk of the body, while distal refers to a position farther away.",
+      "check_why_others_wrong": {
+        "a": "Lateral means away from the midline of the body.",
+        "b": "Medial means toward the midline of the body.",
+        "c": "Distal means farther from the point of attachment or trunk."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "669a63853ee5cba0",
+      "check_reviewed_at": "2026-10-11T08:50:08.905809+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-7",
@@ -385,7 +480,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:09.074216+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:09.074216+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "The epidermis, which is the superficial layer of the skin, is composed of stratified squamous epithelium.",
+      "check_why_others_wrong": {
+        "a": "Simple columnar epithelium lines the digestive tract and other organs, not the skin surface.",
+        "c": "Dense fibrous tissue (connective tissue) makes up the dermis, which is the deeper layer of the skin.",
+        "d": "Stratified columnar epithelium is rare and found in specific locations like the conjunctiva, not the skin."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "134e832fb26202a0",
+      "check_reviewed_at": "2026-10-11T08:50:09.536567+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-8",
@@ -434,7 +542,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:10.183790+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:10.183790+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The dermis is primarily composed of dense irregular connective tissue, which is characterized by a high concentration of collagen fibers (specifically Type I and III) that provide tensile strength.",
+      "check_why_others_wrong": {
+        "b": "Melanin is a pigment produced by melanocytes, not a structural tissue component.",
+        "c": "Keratin is a structural protein found in the epidermis (keratinocytes), hair, and nails, not the dermis.",
+        "d": "Fibroplastin is not a recognized biological term; fibroblasts are the cells that produce the extracellular matrix."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "6d91f6bea6a355bb",
+      "check_reviewed_at": "2026-10-11T08:50:10.255429+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-9",
@@ -483,7 +604,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:11.292517+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:11.292517+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The superficial fascia (subcutaneous tissue) contains the platysma in the neck and the orbicularis oculi/orbicularis oris in the face, which are cutaneous muscles. The other options describe features of deep fascia.",
+      "check_why_others_wrong": {
+        "b": "Aponeuroses are thickened sheets of deep fascia, not superficial fascia.",
+        "c": "Broad sheets are a characteristic description of deep fascia.",
+        "d": "Interosseous membranes are extensions of deep fascia between bones."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "b815c3929e5f8873",
+      "check_reviewed_at": "2026-10-11T08:50:10.876868+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-10",
@@ -532,7 +666,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:12.414614+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:12.414614+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "Deep fascia is dense connective tissue that forms interosseous membranes between long bones, providing structural support.",
+      "check_why_others_wrong": {
+        "a": "facilitates skin movement is a superficial fascia function",
+        "b": "fascia does not prevent heat loss",
+        "c": "fascia does not contain many glands"
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "ca379768fbbad873",
+      "check_reviewed_at": "2026-10-11T08:50:12.201563+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-11",
@@ -581,7 +728,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:13.645263+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:13.645263+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "Intermuscular septa and interosseous membranes are sheets of connective tissue that divide muscle groups within limbs, separating muscles with different actions.",
+      "check_why_others_wrong": {
+        "a": "They do not surround muscles; that is fascia.",
+        "c": "They are not wrist bands; those are deep fascia of the wrist.",
+        "d": "They do not form sheaths around vessels; that is perivascular fascia."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "16ba01ba01fe30bc",
+      "check_reviewed_at": "2026-10-11T08:50:13.154244+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-12",
@@ -630,7 +790,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:14.875026+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:14.875026+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Retinacula are transverse thickenings of deep fascia that hold tendons in place at joints such as the wrist.",
+      "check_why_others_wrong": {
+        "a": "Retinacula are not circumferential sheaths around muscles.",
+        "b": "They do not separate muscle groups; intermuscular septa do.",
+        "d": "They are not sheaths for major blood vessels."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "64b4057b3f5e4c1b",
+      "check_reviewed_at": "2026-10-11T08:50:14.605271+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-13",
@@ -658,8 +831,8 @@
       ],
       "matching_pairs": [],
       "source_answer": "b",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "b",
+      "verified_at": "2026-10-11T09:01:39.608886+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
@@ -679,7 +852,22 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:16.145511+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:16.145511+00:00",
+      "check_given_answer": "b",
+      "check_agrees": false,
+      "check_suggested_answer": "d",
+      "check_explanation": "The pubic symphysis is a fibrocartilage that is yellowish and contains elastic fibers, whereas the auricle is purely elastic cartilage, articular cartilage is hyaline, and fetal bone growth plates are hyaline cartilage.",
+      "check_why_others_wrong": {
+        "a": "fetal bone growth plates are hyaline cartilage",
+        "b": "auricle is elastic cartilage, not fibrocartilage",
+        "c": "articular cartilage is hyaline cartilage"
+      },
+      "check_concerns": [
+        "ambiguous_question"
+      ],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "e691fd706b4a2b72",
+      "check_reviewed_at": "2026-10-11T08:50:15.684870+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-14",
@@ -707,14 +895,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "d",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "d",
+      "verified_at": "2026-10-11T09:02:47.613982+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
-      "verified_options": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "Epiglottis."
+        },
+        {
+          "label": "b",
+          "text": "Auricle of the ear"
+        },
+        {
+          "label": "c",
+          "text": "Articular cartilage of joints."
+        },
+        {
+          "label": "d",
+          "text": "Intervertebral disc."
+        }
+      ],
       "verified_matching_pairs": null,
-      "structural_reviewed_at": null,
+      "structural_reviewed_at": "2026-10-11T09:02:47.617108+00:00",
       "source_spans": [
         {
           "pages": [
@@ -728,7 +933,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:17.262296+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:17.262296+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "The annulus fibrosus of intervertebral discs is composed of dense white fibrocartilage.",
+      "check_why_others_wrong": {
+        "a": "Epiglottis is made of elastic cartilage.",
+        "b": "Auricle consists of elastic cartilage.",
+        "c": "Articular surfaces are covered by hyaline cartilage, not fibrocartilage."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "b46bf3c79ed95edf",
+      "check_reviewed_at": "2026-10-11T19:32:20.924957+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-15",
@@ -756,14 +974,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "c",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "c",
+      "verified_at": "2026-10-11T09:03:58.700786+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
-      "verified_options": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "Epiglottis."
+        },
+        {
+          "label": "b",
+          "text": "Auricle of the ear."
+        },
+        {
+          "label": "c",
+          "text": "Articular cartilage of joints."
+        },
+        {
+          "label": "d",
+          "text": "Intervertebral disc."
+        }
+      ],
       "verified_matching_pairs": null,
-      "structural_reviewed_at": null,
+      "structural_reviewed_at": "2026-10-11T09:03:58.703474+00:00",
       "source_spans": [
         {
           "pages": [
@@ -777,7 +1012,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:18.362088+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:18.362088+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Articular cartilage covering joint surfaces is composed of hyaline cartilage.",
+      "check_why_others_wrong": {
+        "a": "Epiglottis is made of elastic cartilage.",
+        "b": "Auricle of the ear consists of elastic cartilage.",
+        "d": "Intervertebral disc is fibrocartilage, not hyaline."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "98a24f10e41e721b",
+      "check_reviewed_at": "2026-10-11T19:32:22.140131+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-16",
@@ -826,7 +1074,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:19.784733+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:19.784733+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "The appendicular skeleton comprises the bones of the upper and lower limbs (and their girdles), not the skull, ribs, or vertebral column.",
+      "check_why_others_wrong": {
+        "a": "Skull and mandible belong to the axial skeleton.",
+        "c": "Ribs and sternum are part of the axial skeleton.",
+        "d": "Vertebral column is axial skeleton."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "bc85929d9cf5c905",
+      "check_reviewed_at": "2026-10-11T08:50:29.177739+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-17",
@@ -875,7 +1136,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:21.065321+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:21.065321+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The clavicle is a classic example of a bone formed by intramembranous ossification.",
+      "check_why_others_wrong": {
+        "b": "Vertebrae develop by endochondral ossification.",
+        "c": "Ribs are formed by endochondral ossification.",
+        "d": "Base of the skull bones are primarily endochondral."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "5be9400e088d3ad2",
+      "check_reviewed_at": "2026-10-11T08:50:34.707738+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-18",
@@ -924,7 +1198,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:22.281276+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:22.281276+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "Intra-cartilagenous (endochondral) ossification is the process where bone replaces a hyaline cartilage model, which is the method of development for long bones, vertebrae, and the pelvis. The skull cap and roof of the skull develop via intramembranous ossification.",
+      "check_why_others_wrong": {
+        "a": "The roof of the skull develops via intramembranous ossification.",
+        "b": "The clavicle is a unique bone that develops via both intramembranous and endochondral ossification, but it is not the primary example of purely intra-cartilagenous ossification compared to vertebrae in this context; however, vertebrae are strictly endochondral.",
+        "c": "The skull cap develops via intramembranous ossification."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "20cbe9ed4a92e15b",
+      "check_reviewed_at": "2026-10-11T08:50:43.128073+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-19",
@@ -973,7 +1260,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:23.453414+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:23.453414+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The expanded ends of a long bone are anatomically defined as the epiphyses. The diaphysis is the shaft, the metaphysis is the region between the epiphysis and diaphysis, and the epiphyseal plate is the growth plate.",
+      "check_why_others_wrong": {
+        "b": "The epiphyseal plate is the cartilaginous growth plate, not the bony end itself.",
+        "c": "The diaphysis is the tubular shaft of the long bone.",
+        "d": "The metaphysis is the transitional zone between the epiphysis and diaphysis."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "f45dc479bb724c71",
+      "check_reviewed_at": "2026-10-11T08:50:43.719953+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-20",
@@ -1001,8 +1301,8 @@
       ],
       "matching_pairs": [],
       "source_answer": "d",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "c",
+      "verified_at": "2026-10-11T09:04:35.138838+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
@@ -1022,7 +1322,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:24.644850+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:24.644850+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "The diaphysis is the shaft of a long bone, consisting of compact bone surrounding a central medullary cavity.",
+      "check_why_others_wrong": {
+        "a": "Epiphysis is the end of a long bone, not the shaft.",
+        "b": "Epiphyseal plate is the cartilage growth plate, not bone.",
+        "d": "Metaphysis is the region between diaphysis and epiphysis, not the shaft."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "052d023f69b63672",
+      "check_reviewed_at": "2026-10-11T19:32:23.239205+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-21",
@@ -1071,7 +1384,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:25.960060+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:25.960060+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "Longitudinal growth of long bones occurs at the epiphyseal (growth) plate, a cartilage layer between epiphysis and diaphysis.",
+      "check_why_others_wrong": {
+        "a": "Epiphysis is the end part of the bone, not the growth zone.",
+        "c": "Diaphysis is the shaft of the bone, not involved in lengthwise growth.",
+        "d": "Metaphysis includes the growth plate but the specific growth region is the epiphyseal plate."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "f0ec678577f5fd23",
+      "check_reviewed_at": "2026-10-11T08:50:44.704544+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-22",
@@ -1120,7 +1446,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:27.129741+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:27.129741+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "The scapula is a flat bone, characterized by its broad, thin shape that provides a large surface area for muscle attachment and protection.",
+      "check_why_others_wrong": {
+        "a": "Short bones are roughly cube-shaped, like the carpals and tarsals.",
+        "b": "Long bones are longer than they are wide, like the femur and humerus.",
+        "d": "Sesamoid bones are small bones embedded in tendons, like the patella."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "53996f246c57dc69",
+      "check_reviewed_at": "2026-10-11T08:50:45.271297+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-23",
@@ -1148,14 +1487,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "c",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "c",
+      "verified_at": "2026-10-11T09:05:27.239110+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
-      "verified_options": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "Short bone."
+        },
+        {
+          "label": "b",
+          "text": "Long bone."
+        },
+        {
+          "label": "c",
+          "text": "Flat bone."
+        },
+        {
+          "label": "d",
+          "text": "Sesamoid bone."
+        }
+      ],
       "verified_matching_pairs": null,
-      "structural_reviewed_at": null,
+      "structural_reviewed_at": "2026-10-11T09:05:27.242185+00:00",
       "source_spans": [
         {
           "pages": [
@@ -1169,7 +1525,20 @@
       "ai_concerns": [],
       "ai_notes": "The options are in different languages, but the structure is correct.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:28.981985+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:28.981985+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Ribs are thin, curved bones that serve as protective shields, classifying them as flat bones.",
+      "check_why_others_wrong": {
+        "a": "Ribs are not short, stubby bones like carpals.",
+        "b": "Ribs are not elongated with a shaft and ends like long bones.",
+        "d": "Ribs are not embedded within tendons like sesamoid bones."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "20959c3564eb8927",
+      "check_reviewed_at": "2026-10-11T19:32:24.099892+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-24",
@@ -1197,14 +1566,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "d",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "d",
+      "verified_at": "2026-10-11T09:09:13.103809+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
-      "verified_options": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "Short bone."
+        },
+        {
+          "label": "b",
+          "text": "Long bone."
+        },
+        {
+          "label": "c",
+          "text": "Flat bone"
+        },
+        {
+          "label": "d",
+          "text": "Pneumatic bones."
+        }
+      ],
       "verified_matching_pairs": null,
-      "structural_reviewed_at": null,
+      "structural_reviewed_at": "2026-10-11T09:09:13.107170+00:00",
       "source_spans": [
         {
           "pages": [
@@ -1218,7 +1604,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:30.186198+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:30.186198+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "Paranasal sinuses are air\u2011filled cavities within skull bones, classifying those bones as pneumatic.",
+      "check_why_others_wrong": {
+        "a": "Paranasal sinuses are not short bones.",
+        "b": "They are not long bones.",
+        "c": "They are not flat bones."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "67d13b743a217292",
+      "check_reviewed_at": "2026-10-11T19:32:29.676628+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-25",
@@ -1246,14 +1645,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "d",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "d",
+      "verified_at": "2026-10-11T09:11:14.458513+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
-      "verified_options": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "Short bone."
+        },
+        {
+          "label": "b",
+          "text": "Long bone."
+        },
+        {
+          "label": "c",
+          "text": "Flat bone."
+        },
+        {
+          "label": "d",
+          "text": "Sesamoid bone."
+        }
+      ],
       "verified_matching_pairs": null,
-      "structural_reviewed_at": null,
+      "structural_reviewed_at": "2026-10-11T09:11:14.458771+00:00",
       "source_spans": [
         {
           "pages": [
@@ -1267,7 +1683,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:31.422413+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:31.422413+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "The patella is the largest sesamoid bone, formed within the quadriceps tendon.",
+      "check_why_others_wrong": {
+        "a": "Patella is not a short bone.",
+        "b": "Patella is not a long bone.",
+        "c": "Patella is not a flat bone."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "08c1ba37c88c3c81",
+      "check_reviewed_at": "2026-10-11T19:32:39.766672+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-26",
@@ -1318,7 +1747,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:32.746103+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:32.746103+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "A gomphosis is a fibrous joint that anchors a tooth root into its alveolar socket via the periodontal ligament.",
+      "check_why_others_wrong": {
+        "b": "Sutures join skull bones, not teeth.",
+        "c": "Cartilaginous joints involve cartilage, not the tooth socket.",
+        "d": "Synovial joints are freely movable, unlike the fixed tooth socket."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "a22b3650ea6dce51",
+      "check_reviewed_at": "2026-10-11T08:50:54.795064+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-27",
@@ -1369,7 +1811,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:33.861490+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:33.861490+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "Skull bones are joined by fibrous sutures, which are immovable joints.",
+      "check_why_others_wrong": {
+        "a": "Gomphosis is the tooth\u2011to\u2011socket joint.",
+        "c": "Cartilaginous joints are not found in the skull.",
+        "d": "Synovial joints are movable and not present in the skull."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "5be28ff5e8272b8a",
+      "check_reviewed_at": "2026-10-11T08:50:58.615418+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-28",
@@ -1420,7 +1875,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:34.974744+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:34.974744+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "The epiphyseal plate (growth plate) is a hyaline cartilage joint that connects the epiphysis and diaphysis in growing long bones. It is classified as a primary cartilaginous joint because it is a temporary structure that ossifies and disappears after growth is complete.",
+      "check_why_others_wrong": {
+        "a": "Fibrous joints are connected by dense connective tissue (e.g., sutures), not cartilage.",
+        "c": "Secondary cartilaginous joints are permanent (e.g., intervertebral discs, pubic symphysis) and do not ossify.",
+        "d": "Synovial joints have a fluid-filled cavity and are freely movable, unlike the growth plate."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "ccbdb3bdda299fdf",
+      "check_reviewed_at": "2026-10-11T08:51:01.898439+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-29",
@@ -1471,7 +1939,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:36.217651+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:36.217651+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Intervertebral joints are symphyses, a type of secondary (true) cartilaginous joint formed by fibrocartilage discs.",
+      "check_why_others_wrong": {
+        "a": "Fibrous joints lack a cartilage disc and have no movement like intervertebral joints.",
+        "b": "Primary cartilaginous joints use hyaline cartilage, not fibrocartilage.",
+        "d": "Synovial joints have a joint cavity, which intervertebral joints do not possess."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "ab9452d2b1a75113",
+      "check_reviewed_at": "2026-10-11T08:51:05.764712+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-30",
@@ -1522,7 +2003,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:37.334038+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:37.334038+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "The elbow is a hinge (uniaxial) joint that permits only flexion and extension, whereas the shoulder is a ball\u2011and\u2011socket, the wrist is a complex multi\u2011joint, and the knee, though a hinge, also allows slight rotation.",
+      "check_why_others_wrong": {
+        "a": "ball\u2011and\u2011socket joint, multiaxial",
+        "b": "complex wrist joint, multiaxial",
+        "d": "hinge joint with slight rotation, not strictly uniaxial"
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "f81f74c83788987e",
+      "check_reviewed_at": "2026-10-11T08:51:08.775787+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-31",
@@ -1573,7 +2067,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:38.433258+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:38.433258+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "The knee joint is a modified hinge joint that allows flexion/extension and a small amount of rotation, classifying it as a biaxial joint. The shoulder and hip are ball-and-socket joints (multiaxial), and the elbow is a hinge joint (uniaxial).",
+      "check_why_others_wrong": {
+        "a": "Shoulder is a ball-and-socket joint, which is multiaxial.",
+        "b": "Hip is a ball-and-socket joint, which is multiaxial.",
+        "c": "Elbow is a hinge joint, which is uniaxial."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "075502d2d761d2ea",
+      "check_reviewed_at": "2026-10-11T08:51:11.697562+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-32",
@@ -1622,7 +2129,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:39.675188+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:39.675188+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The hip is a ball-and-socket joint, allowing movement in multiple planes (flexion/extension, abduction/adduction, rotation).",
+      "check_why_others_wrong": {
+        "b": "Knee is primarily a hinge joint (uniaxial).",
+        "c": "Wrist is a condyloid joint (biaxial).",
+        "d": "Superior radioulnar joint is a pivot joint (uniaxial)."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "24c8750e934dc5cb",
+      "check_reviewed_at": "2026-10-11T08:51:15.820891+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-33",
@@ -1671,7 +2191,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:40.779878+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:40.779878+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "The glenohumeral joint is a ball\u2011and\u2011socket joint allowing multi\u2011planar movement.",
+      "check_why_others_wrong": {
+        "a": "hinge joint, e.g., elbow",
+        "b": "ellipsoid joint, e.g., wrist",
+        "c": "bicondylar joint, e.g., knee"
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "d80b500f04854275",
+      "check_reviewed_at": "2026-10-11T08:51:19.060341+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-34",
@@ -1699,14 +2232,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "a",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "a",
+      "verified_at": "2026-10-11T09:11:32.504954+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
-      "verified_options": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "Hinge."
+        },
+        {
+          "label": "b",
+          "text": "Ellipsold."
+        },
+        {
+          "label": "c",
+          "text": "Bicondylar."
+        },
+        {
+          "label": "d",
+          "text": "Ball and socket."
+        }
+      ],
       "verified_matching_pairs": null,
-      "structural_reviewed_at": null,
+      "structural_reviewed_at": "2026-10-11T09:11:32.505339+00:00",
       "source_spans": [
         {
           "pages": [
@@ -1720,7 +2270,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:41.881907+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:41.881907+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The elbow functions as a hinge joint allowing flexion and extension.",
+      "check_why_others_wrong": {
+        "b": "Elbow is not an ellipsoid joint.",
+        "c": "Bicondylar describes bone shape, not joint type.",
+        "d": "Ball-and-socket joints are shoulder and hip, not elbow."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "dd1acafdc2e3297f",
+      "check_reviewed_at": "2026-10-11T19:32:49.975662+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-35",
@@ -1771,7 +2334,22 @@
       ],
       "ai_notes": "The answer key value 'b' does not correspond to any of the provided option labels.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:44.199112+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:44.199112+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "The radiocarpal (wrist) joint is a condyloid/ellipsoidal joint, allowing flexion\u2011extension and abduction\u2011adduction.",
+      "check_why_others_wrong": {
+        "a": "Hinge joints permit only one plane of movement.",
+        "c": "Bicondylar is not a joint classification.",
+        "d": "Ball\u2011and\u2011socket joints allow three\u2011dimensional rotation, not present in the wrist."
+      },
+      "check_concerns": [
+        "garbled_option"
+      ],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "9bb33550b8b29b8e",
+      "check_reviewed_at": "2026-10-11T08:51:25.827435+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-36",
@@ -1820,7 +2398,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:45.311561+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:45.311561+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "The hip joint is a ball\u2011and\u2011socket joint, allowing a wide range of motion.",
+      "check_why_others_wrong": {
+        "a": "hinge joint (elbow, knee)",
+        "b": "ellipsoid joint (wrist)",
+        "c": "bicondylar joint (knee)"
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "9021ec50fa3b50a9",
+      "check_reviewed_at": "2026-10-11T08:51:29.192010+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-37",
@@ -1869,7 +2460,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:46.433218+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:46.433218+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "Skeletal muscles are voluntary muscles that are attached to bones via tendons, allowing for body movement. They are distinct from cardiac and smooth muscles.",
+      "check_why_others_wrong": {
+        "a": "Skeletal muscles are voluntary, not involuntary.",
+        "b": "The heart contains cardiac muscle, not skeletal muscle.",
+        "c": "Blood vessel walls contain smooth muscle, not skeletal muscle."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "7af30ec1a17367af",
+      "check_reviewed_at": "2026-10-11T08:51:31.500380+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-38",
@@ -1918,7 +2522,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:47.538247+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:47.538247+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Smooth muscle is involuntary and lines the walls of hollow organs, including blood vessels.",
+      "check_why_others_wrong": {
+        "a": "Smooth muscle is involuntary, not voluntary.",
+        "b": "The heart contains cardiac muscle, not smooth muscle.",
+        "d": "Muscles attached to bone are skeletal muscle."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "1dd7b3ae7d7719c0",
+      "check_reviewed_at": "2026-10-11T08:51:36.096592+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-39",
@@ -1967,7 +2584,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:48.642154+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:48.642154+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "Sartorius is a long, thin, strap\u2011like muscle that runs obliquely across the thigh.",
+      "check_why_others_wrong": {
+        "a": "Rectus abdominis is vertical and not strap\u2011like.",
+        "c": "Deltoid is triangular, not strap\u2011like.",
+        "d": "Supinator is short and not strap\u2011like."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "83ed3825761a644a",
+      "check_reviewed_at": "2026-10-11T08:51:39.412301+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-40",
@@ -2016,7 +2646,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:49.750170+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:49.750170+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "The rectus abdominis is a flat, strap-like muscle characterized by three tendinous intersections that divide it into segments.",
+      "check_why_others_wrong": {
+        "a": "Sartorius is a long, thin, strap-like muscle but lacks tendinous intersections.",
+        "b": "Deltoid is a triangular, fan-shaped muscle, not strap-like with intersections.",
+        "d": "Tibialis anterior is a fusiform muscle, not strap-like with intersections."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "6a7736b724910741",
+      "check_reviewed_at": "2026-10-11T08:51:41.593989+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-41",
@@ -2065,7 +2708,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:50.861441+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:50.861441+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The deltoid has several fascicle groups attaching obliquely to a central tendon, making it a classic multipennate muscle.",
+      "check_why_others_wrong": {
+        "b": "Tibialis anterior is a parallel (fusiform) muscle.",
+        "c": "Rectus anterior (rectus femoris) is a parallel muscle.",
+        "d": "Supinator is a flat, unipennate/fusiform muscle."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "fbf46b75f87a0db6",
+      "check_reviewed_at": "2026-10-11T08:51:46.633252+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-42",
@@ -2093,8 +2749,8 @@
       ],
       "matching_pairs": [],
       "source_answer": "b",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "b",
+      "verified_at": "2026-10-11T09:12:15.265309+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
@@ -2114,7 +2770,22 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:51.977116+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:51.977116+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "Rectus femoris is a bipennate muscle of the quadriceps group.",
+      "check_why_others_wrong": {
+        "a": "Rectus abdominis is unipennate",
+        "c": "Sartorius is unipennate",
+        "d": "Deltoid is not bipennate"
+      },
+      "check_concerns": [
+        "garbled_option"
+      ],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "cd1eff50abcef243",
+      "check_reviewed_at": "2026-10-11T08:51:49.929393+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-43",
@@ -2163,7 +2834,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:53.079480+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:53.079480+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The right atrium receives deoxygenated blood from the systemic circulation via the superior and inferior venae cavae, as well as from the coronary sinus.",
+      "check_why_others_wrong": {
+        "b": "The pulmonary artery carries blood away from the right ventricle to the lungs.",
+        "c": "The aorta carries oxygenated blood away from the left ventricle to the body.",
+        "d": "The pulmonary veins carry oxygenated blood from the lungs to the left atrium."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "13b9b929a33137fe",
+      "check_reviewed_at": "2026-10-11T08:51:51.503217+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-44",
@@ -2212,7 +2896,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:54.319505+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:54.319505+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "In systemic circulation, oxygenated blood is pumped from the left ventricle into the aorta and distributed to all body tissues.",
+      "check_why_others_wrong": {
+        "a": "Blood flows from right atrium to right ventricle, not the reverse.",
+        "b": "Oxygenated blood returns to the left atrium via pulmonary veins, not the right atrium.",
+        "c": "The aorta carries oxygenated, not deoxygenated, blood."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "4e63e64f1464ea45",
+      "check_reviewed_at": "2026-10-11T08:51:58.084252+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-45",
@@ -2261,7 +2958,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:55.559916+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:55.559916+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Pulmonary circulation carries deoxygenated blood from the right ventricle to the lungs via the pulmonary artery, where it becomes oxygenated, and then returns to the left atrium through the pulmonary veins.",
+      "check_why_others_wrong": {
+        "a": "Blood goes from right ventricle to lungs, not back to right atrium.",
+        "b": "Oxygenated blood is carried by pulmonary veins to the left atrium, not the right.",
+        "d": "Deoxygenated blood travels via the pulmonary artery, not the aorta, which carries oxygenated blood."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "6907884d2f2800ae",
+      "check_reviewed_at": "2026-10-11T08:52:01.031197+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-46",
@@ -2289,14 +2999,31 @@
       ],
       "matching_pairs": [],
       "source_answer": "a",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "a",
+      "verified_at": "2026-10-11T08:58:24.317811+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
-      "verified_options": null,
+      "verified_options": [
+        {
+          "label": "a",
+          "text": "The venous blood from the digestive system enters the liver through the portal vein."
+        },
+        {
+          "label": "b",
+          "text": "The venous blood leaves the liver through the portal vein."
+        },
+        {
+          "label": "c",
+          "text": "The venous blood from the digestive system enters liver through the hepatic vein."
+        },
+        {
+          "label": "d",
+          "text": "The venous blood enters liver through the inferior vena cava."
+        }
+      ],
       "verified_matching_pairs": null,
-      "structural_reviewed_at": null,
+      "structural_reviewed_at": "2026-10-11T08:58:24.320699+00:00",
       "source_spans": [
         {
           "pages": [
@@ -2310,7 +3037,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:56.916711+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:56.916711+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "The portal vein carries venous blood from the digestive tract to the liver.",
+      "check_why_others_wrong": {
+        "b": "Blood leaves the liver via hepatic veins, not the portal vein.",
+        "c": "Hepatic veins drain the liver; they do not receive gut blood.",
+        "d": "Inferior vena cava receives blood after hepatic veins, not directly to the liver."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "8a55616940702c5f",
+      "check_reviewed_at": "2026-10-11T19:33:01.392635+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-47",
@@ -2359,7 +3099,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:58.026475+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:58.026475+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "The thoracic duct collects lymph from the entire body except the right upper quadrant, so it includes the right lower limb.",
+      "check_why_others_wrong": {
+        "a": "Right side of head and neck drains to the right lymphatic duct.",
+        "c": "Right upper limb drains to the right lymphatic duct.",
+        "d": "Right half of thorax drains to the right lymphatic duct."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "61224e1f7423f5ed",
+      "check_reviewed_at": "2026-10-11T07:58:52.369217+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-48",
@@ -2408,7 +3161,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:50:59.274115+00:00"
+      "ai_reviewed_at": "2026-09-16T04:50:59.274115+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "The right lymphatic duct collects lymph from the right upper limb, right side of thorax, head and neck.",
+      "check_why_others_wrong": {
+        "a": "Thoracic duct drains the body below the diaphragm.",
+        "b": "Right lower limb drains into the thoracic duct.",
+        "d": "Right half of abdomen drains into the thoracic duct."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "65efd5541f542760",
+      "check_reviewed_at": "2026-10-11T08:52:07.399790+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-49",
@@ -2457,7 +3223,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:51:00.394147+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:00.394147+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "The brainstem is composed of the midbrain, pons, and medulla oblongata.",
+      "check_why_others_wrong": {
+        "a": "Cerebral hemispheres are part of the cerebrum, not the brainstem.",
+        "b": "Cerebellum is a separate structure, not part of the brainstem.",
+        "c": "Missing the pons, which is a key component of the brainstem."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "fc1d19e865eb6d2a",
+      "check_reviewed_at": "2026-10-11T08:52:10.886769+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-50",
@@ -2540,7 +3319,20 @@
       ],
       "ai_notes": "Flagged by deterministic duplication check (independent of AI judgment).",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:51:02.281736+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:02.281736+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "The spinal cord consists of 31 segments: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, and 1 coccygeal.",
+      "check_why_others_wrong": {
+        "a": "Incorrect number of thoracic segments (10 instead of 12).",
+        "b": "Incorrect number of cervical segments (10 instead of 8).",
+        "c": "Incorrect number of sacral segments (1 instead of 5)."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "c0646f13b64de988",
+      "check_reviewed_at": "2026-10-11T08:52:11.998049+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-51",
@@ -2589,7 +3381,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:51:03.643466+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:03.643466+00:00",
+      "check_given_answer": "a",
+      "check_agrees": true,
+      "check_suggested_answer": "a",
+      "check_explanation": "A horizontal (transverse) plane cuts the thorax at the level of the heart, displaying both lungs and the heart in the same section.",
+      "check_why_others_wrong": {
+        "b": "Lateral sagittal plane shows only one lung.",
+        "c": "Paramedian plane also shows only one lung.",
+        "d": "Median plane bisects the body, showing only one lung and the heart."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "0e096e71157ffb5e",
+      "check_reviewed_at": "2026-10-11T08:52:18.692039+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-52",
@@ -2653,7 +3458,20 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:51:04.741749+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:04.741749+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Medial means closer to the midline (median plane).",
+      "check_why_others_wrong": {
+        "a": "lateral is opposite of medial",
+        "b": "proximal refers to closeness to origin, not midline",
+        "d": "inferior means lower, not related to midline"
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "44d851a4aa129f6b",
+      "check_reviewed_at": "2026-10-11T08:52:21.046326+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-53",
@@ -2702,7 +3520,20 @@
       "ai_concerns": [],
       "ai_notes": "The answer key 'd' correctly corresponds to one of the option labels.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:51:06.524587+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:06.524587+00:00",
+      "check_given_answer": "d",
+      "check_agrees": true,
+      "check_suggested_answer": "d",
+      "check_explanation": "Deep fascia is a dense connective tissue layer that is absent in the face, where the subcutaneous tissue (loose connective tissue) is continuous with the periosteum/periosteum of the skull. It is thin in the anterior abdominal wall, not thick, and does not contain significant fat (fat is in the superficial fascia).",
+      "check_why_others_wrong": {
+        "a": "Deep fascia in the anterior abdominal wall is relatively thin and not particularly strong/thick compared to other regions.",
+        "b": "There is no significant sexual dimorphism in the thickness of deep fascia.",
+        "c": "Deep fascia is dense connective tissue and contains little to no fat; fat is located in the superficial fascia."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:qwen/qwen3.8-27b",
+      "check_input_hash": "3982a57ac37899a5",
+      "check_reviewed_at": "2026-10-11T08:52:22.232658+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-54",
@@ -2730,8 +3561,8 @@
       ],
       "matching_pairs": [],
       "source_answer": "c",
-      "verified_answer": null,
-      "verified_at": null,
+      "verified_answer": "c",
+      "verified_at": "2026-10-11T08:56:56.952252+00:00",
       "verification_note": null,
       "duplicate_of_question_id": null,
       "verified_question_text": null,
@@ -2751,7 +3582,22 @@
       "ai_concerns": [],
       "ai_notes": null,
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:51:07.767414+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:07.767414+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "Retinacula are thickened fascia that hold underlying tendons against bone, preventing bow\u2011stringing.",
+      "check_why_others_wrong": {
+        "a": "They do not expand muscle origins.",
+        "b": "Compartmental separation is done by intermuscular septa, not retinacula.",
+        "d": "Although some knee structures are called retinacula, the classic definition refers to bands that secure tendons, not a general knee feature."
+      },
+      "check_concerns": [
+        "ambiguous_question"
+      ],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "959b328cea4ec89b",
+      "check_reviewed_at": "2026-10-11T08:52:28.904767+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-55",
@@ -2802,7 +3648,20 @@
       ],
       "ai_notes": "The source answer is missing, so it cannot be evaluated for structural completeness.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:51:10.168305+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:10.168305+00:00",
+      "check_given_answer": "b",
+      "check_agrees": true,
+      "check_suggested_answer": "b",
+      "check_explanation": "The appendicular skeleton consists of the limbs and their girdles, not the axial structures.",
+      "check_why_others_wrong": {
+        "a": "skull and mandible are axial",
+        "c": "ribs and sternum are axial",
+        "d": "vertebral column is axial"
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-20b",
+      "check_input_hash": "0594d2e35f5731c1",
+      "check_reviewed_at": "2026-10-11T08:52:31.596026+00:00"
     },
     {
       "question_id": "DOC-56eb58bdf252-mcq-56",
@@ -2851,7 +3710,20 @@
       "ai_concerns": [],
       "ai_notes": "The answer key 'c' does not match any option label in the provided options.",
       "ai_model_used": "ollama:phi4-mini",
-      "ai_reviewed_at": "2026-09-16T04:51:12.038592+00:00"
+      "ai_reviewed_at": "2026-09-16T04:51:12.038592+00:00",
+      "check_given_answer": "c",
+      "check_agrees": true,
+      "check_suggested_answer": "c",
+      "check_explanation": "The external tip of the nose is composed of elastic cartilage, which appears yellow due to abundant elastin fibers.",
+      "check_why_others_wrong": {
+        "a": "Hyaline cartilage is found in trachea, ribs, not the nasal tip.",
+        "b": "Fibrocartilage is dense and found in intervertebral discs, not the nose.",
+        "d": "The nasal tip does contain cartilage, so this is incorrect."
+      },
+      "check_concerns": [],
+      "check_model_used": "groq:openai/gpt-oss-120b",
+      "check_input_hash": "6b3aa3d8ac777703",
+      "check_reviewed_at": "2026-10-11T07:58:53.683343+00:00"
     }
   ],
   "unmatched_answer_key_entries": [],
