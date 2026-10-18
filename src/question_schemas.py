@@ -95,6 +95,46 @@ class UnmatchedAnswerKeyEntry(BaseModel):
     suggestions: list[Suggestion] = Field(default_factory=list)
 
 
+class ExtractionProvenance(BaseModel):
+    """How a record was extracted -- additive, optional, never used for routing.
+
+    `method` is one of: "builtin" (segmentation.py's hand-written
+    parsers), "layout_profile" (a stored, previously validated layout
+    profile), "ai_discovered_layout" (a profile inferred by the AI for
+    this very document and validated on it).
+
+    Line refs look like "p7:12": page 7, 12th non-empty line of that
+    page's reconstructed text (counted BEFORE running-header/footer
+    stripping, so they can be located in the SourceDocument JSON). They
+    are only filled by the layout-profile engine; builtin records carry
+    page spans only (SourceSpan), as before.
+    """
+
+    method: str
+    profile_id: Optional[str] = None
+    profile_state: Optional[str] = None
+    first_line_ref: Optional[str] = None
+    last_line_ref: Optional[str] = None
+    answer_ref: Optional[str] = None  # where source_answer was read from
+
+
+class LayoutResolution(BaseModel):
+    """Document-level record of how the layout was understood. Additive."""
+
+    method: str  # builtin | layout_profile | ai_discovered_layout | unresolved
+    profile_id: Optional[str] = None
+    profile_state: Optional[str] = None
+    validation_verdict: str = "unknown"  # pass | weak | fail
+    validation_score: float = 0.0
+    checks: list[dict] = Field(default_factory=list)
+    considered: list[dict] = Field(default_factory=list)  # every candidate tried
+    ai_model: Optional[str] = None
+    ai_attempts: int = 0
+    ai_cache_hit: bool = False
+    notes: list[str] = Field(default_factory=list)
+    resolved_at: Optional[str] = None
+
+
 class QuestionRecord(BaseModel):
     """One parsed question, of whatever type."""
 
@@ -187,6 +227,10 @@ class QuestionRecord(BaseModel):
 
     source_spans: list[SourceSpan] = Field(default_factory=list)
 
+    # How this record was extracted (builtin parser vs layout profile vs
+    # AI-discovered layout). Additive; None on records from older runs.
+    extraction: Optional[ExtractionProvenance] = None
+
     # Structured anomalies (e.g. "multi_block_answer_conflict",
     # "mid_question_duplicate_content") -- deduplicated, never silently
     # repaired away.
@@ -254,6 +298,10 @@ class QuestionDocument(BaseModel):
     # Document-level parsing anomalies not tied to one question, e.g.
     # "no_sections_detected", "duplicate_MODEL_ANSWERS_block_conflict".
     document_anomalies: list[str] = Field(default_factory=list)
+
+    # How the layout of this document was resolved (adaptive layer).
+    # Additive; None on documents segmented by plain segmentation.py.
+    layout_resolution: Optional[LayoutResolution] = None
 
     needs_review: bool = False
     review_reasons: list[str] = Field(default_factory=list)
